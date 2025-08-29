@@ -61,48 +61,59 @@ function NavbarComponent() {
                 Home
               </Nav.Link>
 
-              {/* About */}
-              <div 
-                className="nav-item dropdown"
-                onMouseEnter={() => handleMouseEnter('about')}
-                onMouseLeave={handleMouseLeave}
-              >
-                <a className="nav-link dropdown-toggle" href="#" role="button">
-                  About
-                </a>
+              {/* Desktop Mega Menu Navigation - Hidden on mobile/tablet */}
+              <div className="d-none d-lg-block">
+                {/* About */}
+                <div 
+                  className="nav-item dropdown d-inline-block"
+                  onMouseEnter={() => handleMouseEnter('about')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <a className="nav-link dropdown-toggle" href="#" role="button">
+                    About
+                  </a>
+                </div>
+
+                {/* LiveBalanced */}
+                <div 
+                  className="nav-item dropdown d-inline-block"
+                  onMouseEnter={() => handleMouseEnter('livebalanced')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <a className="nav-link dropdown-toggle" href="#" role="button">
+                    LiveBalanced
+                  </a>
+                </div>
+
+                {/* Community Engagement */}
+                <div 
+                  className="nav-item dropdown d-inline-block"
+                  onMouseEnter={() => handleMouseEnter('community')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <a className="nav-link dropdown-toggle" href="#" role="button">
+                    Community Engagement
+                  </a>
+                </div>
+
+                {/* News & Media */}
+                <div 
+                  className="nav-item dropdown d-inline-block"
+                  onMouseEnter={() => handleMouseEnter('news')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <a className="nav-link dropdown-toggle" href="#" role="button">
+                    News & Media
+                  </a>
+                </div>
               </div>
 
-              {/* LiveBalanced */}
-              <div 
-                className="nav-item dropdown"
-                onMouseEnter={() => handleMouseEnter('livebalanced')}
-                onMouseLeave={handleMouseLeave}
-              >
-                <a className="nav-link dropdown-toggle" href="#" role="button">
-                  LiveBalanced
-                </a>
-              </div>
-
-              {/* Community Engagement */}
-              <div 
-                className="nav-item dropdown"
-                onMouseEnter={() => handleMouseEnter('community')}
-                onMouseLeave={handleMouseLeave}
-              >
-                <a className="nav-link dropdown-toggle" href="#" role="button">
-                  Community Engagement
-                </a>
-              </div>
-
-              {/* News & Media */}
-              <div 
-                className="nav-item dropdown"
-                onMouseEnter={() => handleMouseEnter('news')}
-                onMouseLeave={handleMouseLeave}
-              >
-                <a className="nav-link dropdown-toggle" href="#" role="button">
-                  News & Media
-                </a>
+              {/* Mobile/Tablet Simple Dropdown Navigation - Hidden on desktop */}
+              <div className="d-lg-none">
+                <AboutMenu variant="mobile" />
+                <LiveBalancedMenu variant="mobile" />
+                <CommunityMenu variant="mobile" />
+                <NewsMenu variant="mobile" />
               </div>
 
               {/* Contact */}
@@ -114,21 +125,18 @@ function NavbarComponent() {
         </Container>
       </Navbar>
 
-      {/* Mega Menu Row */}
+      {/* Desktop Mega Menu Row - Hidden on mobile/tablet */}
       {activeMegaMenu && (
         <div 
-          className="mega-menu-row"
+          className="mega-menu-row d-none d-lg-block"
           onMouseEnter={handleMegaMenuEnter}
           onMouseLeave={handleMegaMenuLeave}
         >
           <Container fluid className="container-xl">
-            {activeMegaMenu === 'about' && <AboutMenu />}
-
-            {activeMegaMenu === 'livebalanced' && <LiveBalancedMenu />}
-
-            {activeMegaMenu === 'community' && <CommunityMenu />}
-
-            {activeMegaMenu === 'news' && <NewsMenu />}
+            {activeMegaMenu === 'about' && <AboutMenu variant="desktop" />}
+            {activeMegaMenu === 'livebalanced' && <LiveBalancedMenu variant="desktop" />}
+            {activeMegaMenu === 'community' && <CommunityMenu variant="desktop" />}
+            {activeMegaMenu === 'news' && <NewsMenu variant="desktop" />}
           </Container>
         </div>
       )}

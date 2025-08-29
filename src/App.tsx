@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
-import NavbarComponent from './components/Navbar'
+import NavbarComponent from './components/Navbar/Navbar'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 
@@ -12,9 +11,6 @@ function App() {
     <Router>
       <NavbarComponent />
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
         
       </div>
      <Routes>

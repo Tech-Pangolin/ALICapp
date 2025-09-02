@@ -25,50 +25,244 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
     );
   }
 
+  const devStyles = {
+    // Container styles
+    menuContainer: {
+      padding: '40px 0',
+      borderRadius: '8px'
+    },
+    
+    // Image section styles
+    imageSection: {
+      height: '400px'
+    },
+    
+    heroImage: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover' as const,
+      objectPosition: 'center 30%'
+    },
+    
+    // Text content styles
+    textContent: {
+      padding: '20px 0'
+    },
+    
+    mainHeading: {
+      fontSize: '2.5rem',
+      fontWeight: '700',
+      color: '#2c3e50',
+      textTransform: 'uppercase' as const,
+      lineHeight: '1.1',
+      marginBottom: '15px'
+    },
+    
+    // Decorative lines styles
+    decorativeLines: {
+      marginBottom: '20px'
+    },
+    
+    greenLine: {
+      width: '60px',
+      height: '3px',
+      backgroundColor: '#2c5f2d',
+      marginBottom: '5px'
+    },
+    
+    orangeLine: {
+      width: '80px',
+      height: '3px',
+      backgroundColor: '#f39c12'
+    },
+    
+    // Styled text styles
+    styledText: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
+    
+    greenText: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      color: '#2c5f2d',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
+    
+    orangeText: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      color: '#f39c12',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
+    
+    orangeTextNoMargin: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      color: '#f39c12',
+      textTransform: 'uppercase' as const
+    },
+    
+    // Right section styles
+    rightSection: {
+      borderLeft: '1px solid #d1d5db',
+      padding: '20px 0'
+    },
+    
+    navGrid: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gridTemplateRows: 'auto auto',
+      gap: '25px',
+      alignItems: 'start'
+    },
+    
+    // Navigation header styles
+    navLinkHeaderText: {
+      fontSize: '0.9rem',
+      fontWeight: '700',
+      color: '#2c3e50',
+      textTransform: 'uppercase' as const,
+      letterSpacing: '0.5px',
+      paddingBottom: '0.2rem',
+      textAlign: 'left' as const
+    },
+    
+    // Navigation item styles
+    navItem: {
+      fontSize: '0.85rem',
+      color: '#2c3e50',
+      marginBottom: '8px',
+      textTransform: 'uppercase' as const
+    }
+  }
+
   return (
-    <div className="row">
-      <div className="col-lg-6">
-        <div className="mega-menu-image">
-          <img
-            src="public/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
-            alt="About Atlanta Life"
-            className="img-fluid rounded"
-            style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-          />
-          <div className="mt-2">
-            <h6 className="fw-bold">Building a Legacy</h6>
-            <p className="small text-muted">Discover our rich history and commitment to community.</p>
+    <div className="about-menu-container w-100" style={devStyles.menuContainer}>
+      <div className="row g-0 w-100">
+        {/* Left Section - Square Image */}
+        <div className="col-lg-4">
+          <div className="image-section" style={devStyles.imageSection}>
+            <img
+              src="public/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
+              alt="About Atlanta Life"
+              style={devStyles.heroImage}
+            />
           </div>
         </div>
-      </div>
-      <div className="col-lg-6" style={{ borderLeft: '1px solid rgb(150, 155, 159)' }}>
-        <div className="row">
-          <div className="col-md-6">
-            <h6 className="fw-bold mb-3">CORPORATE PROFILE</h6>
-            <a href="#equitrust" className="dropdown-item">EquiTrust Life Insurance Company</a>
-            <a href="#mbe" className="dropdown-item">Minority Business Enterprise</a>
-            <a href="#partnerships" className="dropdown-item">Partnerships</a>
-          </div>
-          <div className="col-md-6">
-            <h6 className="fw-bold mb-3">OUR STORY</h6>
-            <a href="#history" className="dropdown-item">History</a>
-            <a href="#community" className="dropdown-item">Our Community</a>
-            <a href="#mission" className="dropdown-item">Mission & Vision</a>
+        
+        {/* Center Section - Text Content */}
+        <div className="col-lg-3">
+          <div className="text-content" style={devStyles.textContent}>
+            <h2 className="main-heading" style={devStyles.mainHeading}>
+              <div>OUR STORY</div>
+              <div>MAKES US</div>
+              <div>READY FOR</div>
+              <div>THE FUTURE</div>
+            </h2>
+            
+            {/* Decorative Lines */}
+            <div style={devStyles.decorativeLines}>
+              <div style={devStyles.greenLine}></div>
+              <div style={devStyles.orangeLine}></div>
+            </div>
+            
+            {/* Styled Text (Not Links) */}
+            <div className="styled-text">
+              <div style={devStyles.greenText}>
+                EXPLORE OUR STORY
+              </div>
+              <div style={devStyles.orangeText}>
+                EXPLORE OUR LEGACY
+              </div>
+              <div style={devStyles.orangeTextNoMargin}>
+                EXPLORE OUR COMMITMENT
+              </div>
+            </div>
           </div>
         </div>
-        <div className="row mt-3">
-          <div className="col-md-6">
-            <h6 className="fw-bold mb-3">OUR TEAM</h6>
-            <a href="#leadership" className="dropdown-item">Executive Leadership</a>
-            <a href="#business-dev" className="dropdown-item">Business Development</a>
-            <a href="#actuarial" className="dropdown-item">Actuarial & Risk Management</a>
-            <a href="#community-affairs" className="dropdown-item">Community Affairs</a>
-            <a href="#internship" className="dropdown-item">Internship Program</a>
-          </div>
-          <div className="col-md-6">
-            <h6 className="fw-bold mb-3">MORE ABOUT US</h6>
-            <a href="#newsroom" className="dropdown-item">Newsroom</a>
-            <a href="#awards" className="dropdown-item">Awards & Recognition</a>
+        
+        {/* Right Section - Navigation Grid */}
+        <div className="col-lg-5" style={devStyles.rightSection}>
+          <div className="nav-grid" style={devStyles.navGrid}>
+            {/* CORPORATE PROFILE */}
+            <div className="nav-section">
+              <h6 className="section-header" style={devStyles.navLinkHeaderText}>
+                CORPORATE PROFILE
+              </h6>
+              <div className="nav-items">
+                <div style={devStyles.navItem}>
+                  EQUITRUST LIFE INSURANCE COMPANY
+                </div>
+                <div style={devStyles.navItem}>
+                  MINORITY BUSINESS ENTERPRISE
+                </div>
+                <div style={devStyles.navItem}>
+                  PARTNERSHIPS
+                </div>
+              </div>
+            </div>
+            
+            {/* OUR STORY */}
+            <div className="nav-section">
+              <h6 className="section-header" style={devStyles.navLinkHeaderText}>
+                OUR STORY
+              </h6>
+              <div className="nav-items">
+                <div style={devStyles.navItem}>
+                  HISTORY
+                </div>
+                <div style={devStyles.navItem}>
+                  OUR COMMUNITY
+                </div>
+                <div style={devStyles.navItem}>
+                  MISSION & VISION
+                </div>
+              </div>
+            </div>
+            
+            {/* OUR TEAM */}
+            <div className="nav-section">
+              <h6 className="section-header" style={devStyles.navLinkHeaderText}>
+                OUR TEAM
+              </h6>
+              <div className="nav-items">
+                <div style={devStyles.navItem}>
+                  EXECUTIVE LEADERSHIP
+                </div>
+                <div style={devStyles.navItem}>
+                  BUSINESS DEVELOPMENT
+                </div>
+                <div style={devStyles.navItem}>
+                  ACTUARIAL & RISK MANAGEMENT
+                </div>
+                <div style={devStyles.navItem}>
+                  COMMUNITY AFFAIRS
+                </div>
+                <div style={devStyles.navItem}>
+                  INTERNSHIP PROGRAM
+                </div>
+              </div>
+            </div>
+            
+            {/* MORE ABOUT US */}
+            <div className="nav-section">
+              <h6 className="section-header" style={devStyles.navLinkHeaderText}>
+                MORE ABOUT US
+              </h6>
+              <div className="nav-items">
+                <div style={devStyles.navItem}>
+                  NEWSROOM
+                </div>
+                <div style={devStyles.navItem}>
+                  AWARDS & RECOGNITION
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

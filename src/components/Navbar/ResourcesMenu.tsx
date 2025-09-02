@@ -1,13 +1,10 @@
 import { NavDropdown } from "react-bootstrap";
+import type { MenuProps } from "../../types";
 
-interface CommunityMenuProps {
-  variant?: 'desktop' | 'mobile';
-}
-
-const CommunityMenu = ({ variant = 'desktop' }: CommunityMenuProps) => {
+const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {
     return (
-      <NavDropdown title="Community Engagement" id="mobile-community-dropdown">
+      <NavDropdown title="Resources" id="mobile-resources-dropdown">
         <NavDropdown.Item href="childrensbooks.html">Essential Reads for Every Child</NavDropdown.Item>
         <NavDropdown.Item href="#education">Education Initiatives</NavDropdown.Item>
         <NavDropdown.Item href="#volunteer">Volunteer Opportunities</NavDropdown.Item>
@@ -45,7 +42,7 @@ const CommunityMenu = ({ variant = 'desktop' }: CommunityMenuProps) => {
         <div className="mega-menu-image">
           <img
             src="public/img/navbar/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
-            alt="Community Engagement"
+            alt="Community Resources"
             className="img-fluid rounded"
             style={{ width: '100%', height: '200px', objectFit: 'cover' }}
           />
@@ -59,4 +56,4 @@ const CommunityMenu = ({ variant = 'desktop' }: CommunityMenuProps) => {
   );
 };
 
-export default CommunityMenu;
+export default ResourcesMenu;

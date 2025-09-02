@@ -1,10 +1,7 @@
 import { NavDropdown } from "react-bootstrap";
+import type { MenuProps } from "../../types";
 
-interface NewsMenuProps {
-  variant?: 'desktop' | 'mobile';
-}
-
-const NewsMenu = ({ variant = 'desktop' }: NewsMenuProps) => {
+const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {
     return (
       <NavDropdown title="News & Media" id="mobile-news-dropdown">
@@ -51,13 +48,13 @@ const NewsMenu = ({ variant = 'desktop' }: NewsMenuProps) => {
         <div className="mega-menu-image">
           <img
             src="public/img/navbar/roman-kraft-_Zua2hyvTBk-unsplash.jpg"
-            alt="News & Media"
+            alt="Contact Us"
             className="img-fluid rounded"
             style={{ width: '100%', height: '200px', objectFit: 'cover' }}
           />
           <div className="mt-2">
-            <h6 className="fw-bold">Stay Informed</h6>
-            <p className="small text-muted">Latest news, publications, and media resources.</p>
+            <h6 className="fw-bold">We're Here to Help</h6>
+            <p className="small text-muted">Get in touch with our team for assistance.</p>
           </div>
         </div>
       </div>
@@ -65,4 +62,4 @@ const NewsMenu = ({ variant = 'desktop' }: NewsMenuProps) => {
   );
 };
 
-export default NewsMenu;
+export default ContactMenu;

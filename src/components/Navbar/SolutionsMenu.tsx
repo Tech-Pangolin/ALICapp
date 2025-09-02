@@ -1,13 +1,10 @@
 import { NavDropdown } from "react-bootstrap";
+import type { MenuProps } from "../../types";
 
-interface LiveBalancedMenuProps {
-  variant?: 'desktop' | 'mobile';
-}
-
-const LiveBalancedMenu = ({ variant = 'desktop' }: LiveBalancedMenuProps) => {
+const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {
     return (
-      <NavDropdown title="LiveBalanced" id="mobile-livebalanced-dropdown">
+      <NavDropdown title="Solutions" id="mobile-solutions-dropdown">
         <NavDropdown.Item href="livebalanced.html">About LiveBalanced</NavDropdown.Item>
         <NavDropdown.Item href="healthandproductivity.html">Health & Productivity</NavDropdown.Item>
         <NavDropdown.Item href="financialwellness.html">Financial Wellness</NavDropdown.Item>
@@ -51,7 +48,7 @@ const LiveBalancedMenu = ({ variant = 'desktop' }: LiveBalancedMenuProps) => {
         <div className="mega-menu-image">
           <img
             src="public/img/navbar/kike-vega-F2qh3yjz6Jk-unsplash.jpg"
-            alt="LiveBalanced Wellness"
+            alt="ALIC Solutions"
             className="img-fluid rounded"
             style={{ width: '100%', height: '200px', objectFit: 'cover' }}
           />
@@ -65,4 +62,4 @@ const LiveBalancedMenu = ({ variant = 'desktop' }: LiveBalancedMenuProps) => {
   );
 };
 
-export default LiveBalancedMenu;
+export default SolutionsMenu;

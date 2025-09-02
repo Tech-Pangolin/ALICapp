@@ -1,10 +1,7 @@
 import { NavDropdown } from "react-bootstrap";
+import type { MenuProps } from "../../types";
 
-interface AboutMenuProps {
-  variant?: 'desktop' | 'mobile';
-}
-
-const AboutMenu = ({ variant = 'desktop' }: AboutMenuProps) => {
+const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {
     return (
       <NavDropdown title="About" id="mobile-about-dropdown">

@@ -18,37 +18,166 @@ const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
     );
   }
 
+  const devStyles = {
+    // Container styles
+    menuContainer: {
+      padding: '40px 0',
+      borderRadius: '8px'
+    },
+    
+    // Image section styles
+    imageSection: {
+      height: '400px'
+    },
+    
+    heroImage: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover' as const,
+      objectPosition: 'center 30%'
+    },
+    
+    // Text content styles
+    textContent: {
+      padding: '20px 0'
+    },
+    
+    mainHeading: {
+      fontSize: '2.5rem',
+      fontWeight: '700',
+      color: '#2c3e50',
+      textTransform: 'uppercase' as const,
+      lineHeight: '1.1',
+      marginBottom: '15px'
+    },
+    
+    // Decorative lines styles
+    decorativeLines: {
+      marginBottom: '20px'
+    },
+    
+    blueLine: {
+      width: '60px',
+      height: '3px',
+      backgroundColor: '#2c3e50',
+      marginBottom: '5px'
+    },
+    
+    orangeLine: {
+      width: '80px',
+      height: '3px',
+      backgroundColor: '#f39c12'
+    },
+    
+    // Styled text styles
+    styledText: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
+    
+    blueText: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      color: '#2c3e50',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
+    
+    orangeText: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      color: '#f39c12',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
+    
+    orangeTextNoMargin: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      color: '#f39c12',
+      textTransform: 'uppercase' as const
+    },
+    
+    // Right section styles
+    rightSection: {
+      borderLeft: '1px solid #d1d5db',
+      padding: '20px 0'
+    },
+    
+    // Right section text styles
+    rightSectionText: {
+      fontSize: '1.1rem',
+      fontWeight: '600',
+      color: '#2c3e50',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
+    
+    rightSectionSubText: {
+      fontSize: '0.9rem',
+      fontWeight: '500',
+      color: '#2c3e50',
+      textTransform: 'uppercase' as const,
+      letterSpacing: '0.5px'
+    }
+  }
+
   return (
-    <div className="row">
-      <div className="col-lg-8">
-        <div className="row">
-          <div className="col-md-6">
-            <h6 className="fw-bold mb-3">Community Programs</h6>
-            <a href="childrensbooks.html" className="dropdown-item">Essential Reads for Every Child</a>
-            <a href="#education" className="dropdown-item">Education Initiatives</a>
-            <a href="#volunteer" className="dropdown-item">Volunteer Opportunities</a>
-            <a href="#partnerships" className="dropdown-item">Community Partnerships</a>
-          </div>
-          <div className="col-md-6">
-            <h6 className="fw-bold mb-3">Social Impact</h6>
-            <a href="#foundation" className="dropdown-item">Atlanta Life Foundation</a>
-            <a href="#grants" className="dropdown-item">Grant Programs</a>
-            <a href="#events" className="dropdown-item">Community Events</a>
-            <a href="#stories" className="dropdown-item">Impact Stories</a>
+    <div className="resources-menu-container w-100" style={devStyles.menuContainer}>
+      <div className="row g-0 w-100">
+        {/* Left Section - Square Image */}
+        <div className="col-lg-4">
+          <div className="image-section" style={devStyles.imageSection}>
+            <img
+              src="public/img/navbar/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
+              alt="Community Resources"
+              style={devStyles.heroImage}
+            />
           </div>
         </div>
-      </div>
-      <div className="col-lg-4">
-        <div className="mega-menu-image">
-          <img
-            src="public/img/navbar/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
-            alt="Community Resources"
-            className="img-fluid rounded"
-            style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-          />
-          <div className="mt-2">
-            <h6 className="fw-bold">Making a Difference</h6>
-            <p className="small text-muted">Building stronger communities through engagement.</p>
+        
+        {/* Center Section - Text Content */}
+        <div className="col-lg-3">
+          <div className="text-content" style={devStyles.textContent}>
+            <h2 className="main-heading" style={devStyles.mainHeading}>
+              <div>WE ARE HERE</div>
+              <div>TO SECURE</div>
+              <div>YOUR</div>
+              <div>FUTURE</div>
+            </h2>
+            
+            {/* Decorative Lines */}
+            <div style={devStyles.decorativeLines}>
+              <div style={devStyles.blueLine}></div>
+              <div style={devStyles.orangeLine}></div>
+            </div>
+            
+            {/* Styled Text (Not Links) */}
+            <div className="styled-text">
+              <div style={devStyles.blueText}>
+                EXPLORE OUR <span style={{ color: '#f39c12' }}>RESOURCES</span>
+              </div>
+              <div style={devStyles.orangeText}>
+                EXPLORE OUR <span style={{ color: '#f39c12' }}>APPROACH</span>
+              </div>
+              <div style={devStyles.orangeTextNoMargin}>
+                EXPLORE OUR <span style={{ color: '#f39c12' }}>COMMITMENT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Right Section - Family Content */}
+        <div className="col-lg-5" style={devStyles.rightSection}>
+          <div className="family-content">
+            <div style={devStyles.rightSectionText}>
+              FOR FAMILIES
+            </div>
+            <div style={devStyles.rightSectionSubText}>
+              ESSENTIAL READS FOR EVERY CHILD
+            </div>
           </div>
         </div>
       </div>

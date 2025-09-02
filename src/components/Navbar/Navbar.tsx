@@ -124,7 +124,7 @@ function NavbarComponent() {
         <div 
           className="mega-menu-row d-none d-lg-block"
           onMouseEnter={handleMegaMenuEnter}
-          onMouseLeave={handleMegaMenuLeave}
+          // onMouseLeave={handleMegaMenuLeave}
         >
           <Container fluid className="container-xl">
             {activeMegaMenu === 'about' && <AboutMenu variant="desktop" />}

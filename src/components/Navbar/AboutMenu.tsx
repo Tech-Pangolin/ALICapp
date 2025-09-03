@@ -146,7 +146,7 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
       <div className="row g-0 w-100">
         {/* Left Section - Square Image */}
         <div className="col-lg-4">
-          <div className="image-section" style={devStyles.imageSection}>
+          <div className="image-section me-3" style={devStyles.imageSection}>
             <img
               src="public/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
               alt="About Atlanta Life"
@@ -188,7 +188,7 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
         
         {/* Right Section - Navigation Grid */}
         <div className="col-lg-5" style={devStyles.rightSection}>
-          <div className="nav-grid" style={devStyles.navGrid}>
+          <div className="ml-3 nav-grid" style={devStyles.navGrid}>
             {/* CORPORATE PROFILE */}
             <div className="nav-section">
               <h6 className="section-header" style={devStyles.navLinkHeaderText}>

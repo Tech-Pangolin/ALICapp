@@ -2,9 +2,9 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useRef } from "react";
 import alicLogo from '/img/atl-logo.png';
 import AboutMenu from './AboutMenu';
-import LiveBalancedMenu from './LiveBalancedMenu';
-import CommunityMenu from './CommunityMenu';
-import NewsMenu from './NewsMenu';
+import SolutionsMenu from './SolutionsMenu';
+import ResourcesMenu from './ResourcesMenu';
+import ContactMenu from './ContactMenu';
 
 function NavbarComponent() {
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
@@ -57,12 +57,10 @@ function NavbarComponent() {
 
           <Navbar.Collapse id="main-navbar">
             <Nav className="ms-auto">
-              <Nav.Link href="index.html#hero" active>
-                Home
-              </Nav.Link>
-
+              
               {/* Desktop Mega Menu Navigation - Hidden on mobile/tablet */}
               <div className="d-none d-lg-block">
+
                 {/* About */}
                 <div 
                   className="nav-item dropdown d-inline-block"
@@ -70,40 +68,40 @@ function NavbarComponent() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a className="nav-link dropdown-toggle" href="#" role="button">
-                    About
+                    About Us
                   </a>
                 </div>
 
-                {/* LiveBalanced */}
+                {/* Solutions */}
                 <div 
                   className="nav-item dropdown d-inline-block"
-                  onMouseEnter={() => handleMouseEnter('livebalanced')}
+                  onMouseEnter={() => handleMouseEnter('solutions')}
                   onMouseLeave={handleMouseLeave}
                 >
                   <a className="nav-link dropdown-toggle" href="#" role="button">
-                    LiveBalanced
+                    Solutions
                   </a>
                 </div>
 
-                {/* Community Engagement */}
+                {/* Resources */}
                 <div 
                   className="nav-item dropdown d-inline-block"
-                  onMouseEnter={() => handleMouseEnter('community')}
+                  onMouseEnter={() => handleMouseEnter('resources')}
                   onMouseLeave={handleMouseLeave}
                 >
                   <a className="nav-link dropdown-toggle" href="#" role="button">
-                    Community Engagement
+                    Resources
                   </a>
                 </div>
 
-                {/* News & Media */}
+                {/* Contact Us */}
                 <div 
                   className="nav-item dropdown d-inline-block"
-                  onMouseEnter={() => handleMouseEnter('news')}
+                  onMouseEnter={() => handleMouseEnter('contact')}
                   onMouseLeave={handleMouseLeave}
                 >
                   <a className="nav-link dropdown-toggle" href="#" role="button">
-                    News & Media
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -111,15 +109,11 @@ function NavbarComponent() {
               {/* Mobile/Tablet Simple Dropdown Navigation - Hidden on desktop */}
               <div className="d-lg-none">
                 <AboutMenu variant="mobile" />
-                <LiveBalancedMenu variant="mobile" />
-                <CommunityMenu variant="mobile" />
-                <NewsMenu variant="mobile" />
+                <SolutionsMenu variant="mobile" />
+                <ResourcesMenu variant="mobile" />
+                <ContactMenu variant="mobile" />
               </div>
 
-              {/* Contact */}
-              <Nav.Link href="index.html#contact" style={{ color: "#CC8F11" }}>
-                Contact
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -134,9 +128,9 @@ function NavbarComponent() {
         >
           <Container fluid className="container-xl">
             {activeMegaMenu === 'about' && <AboutMenu variant="desktop" />}
-            {activeMegaMenu === 'livebalanced' && <LiveBalancedMenu variant="desktop" />}
-            {activeMegaMenu === 'community' && <CommunityMenu variant="desktop" />}
-            {activeMegaMenu === 'news' && <NewsMenu variant="desktop" />}
+            {activeMegaMenu === 'solutions' && <SolutionsMenu variant="desktop" />}
+            {activeMegaMenu === 'resources' && <ResourcesMenu variant="desktop" />}
+            {activeMegaMenu === 'contact' && <ContactMenu variant="desktop" />}
           </Container>
         </div>
       )}

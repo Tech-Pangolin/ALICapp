@@ -1,7 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import './css/style.css'
+import './css/custom.css'
+import './css/healthandproductivity_1755628568.css'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(

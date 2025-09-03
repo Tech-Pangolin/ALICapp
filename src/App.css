@@ -6,10 +6,10 @@
 /* Mega Menu Row Styles */
 .mega-menu-row {
   position: fixed;
-  top: 72px; /* Adjust based on your navbar height */
+  top: 50px; /* Position directly below navbar */
   left: 0;
   right: 0;
-  background: white;
+  background: #f0f4f8;
   border-top: 1px solid var(--off-white-color);
   border-bottom: 1px solid var(--off-white-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -44,12 +44,14 @@
 /* Dropdown item styling */
 .dropdown-item {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   color: #333;
   text-decoration: none;
   border-radius: 4px;
-  margin: 0.25rem 0;
+  margin: 0.1rem 0;
   transition: all 0.2s ease;
+  line-height: 1.2;
+  font-size: 0.875rem; /* Bootstrap's small font size */
 }
 
 .dropdown-item:hover {
@@ -72,6 +74,16 @@
 
 .nav-item.dropdown .nav-link:hover {
   color: var(--gold-color);
+}
+
+/* Mega menu compact styling */
+.mega-menu-row h6 {
+  margin-bottom: 0.75rem !important;
+}
+
+.mega-menu-row .dropdown-item {
+  padding: 0.15rem 1rem;
+  margin: 0.05rem 0;
 }
 
 /* Responsive adjustments */

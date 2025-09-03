@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Hero from "../components/homepage/Hero";
+import CelebrateSection from "../components/homepage/CelebrateSection";
 
 const Home = () => {
   return (
@@ -7,6 +8,10 @@ const Home = () => {
       {/* ======= Hero Section ======= */}
       <Hero />
       {/* End Hero */}
+
+      {/* ======= Celebrate Section ======= */}
+      <CelebrateSection />
+      {/* End Celebrate */}
 
       {/* ======= About Section ======= */}
       <section id="about" className="about">

@@ -2,6 +2,26 @@ section#hero{
   /* margin-top: 100px!important; */
 }
 
+/* Fix for dropdown menu text overflow */
+.dropdown-item {
+  word-wrap: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  white-space: normal;
+  max-width: 100%;
+}
+
+.col-md-3 .dropdown-item {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.col-md-3 {
+  overflow: hidden;
+  word-wrap: normal;
+}
+
 .hero .btn-get-started {
   padding:15px!important;
  }

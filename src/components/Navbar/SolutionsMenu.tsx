@@ -1,26 +1,25 @@
 import { NavDropdown } from "react-bootstrap";
 import type { MenuProps } from "../../types";
 
-const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
+const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {
     return (
-      <NavDropdown title="About" id="mobile-about-dropdown">
-        <NavDropdown.Item href="#equitrust">EquiTrust Life Insurance Company</NavDropdown.Item>
-        <NavDropdown.Item href="#mbe">Minority Business Enterprise</NavDropdown.Item>
+      <NavDropdown title="Solutions" id="mobile-solutions-dropdown">
+        <NavDropdown.Item href="#reinsurance-solutions">Reinsurance Solutions</NavDropdown.Item>
+        <NavDropdown.Item href="#how-it-works">How It Works</NavDropdown.Item>
+        <NavDropdown.Item href="#risk-management">Risk Management</NavDropdown.Item>
         <NavDropdown.Item href="#partnerships">Partnerships</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#history">History</NavDropdown.Item>
-        <NavDropdown.Item href="#community">Our Community</NavDropdown.Item>
-        <NavDropdown.Item href="#mission">Mission & Vision</NavDropdown.Item>
+        <NavDropdown.Item href="#livebalanced">About LiveBalanced™</NavDropdown.Item>
+        <NavDropdown.Item href="#physical-mental-wellness">Physical & Mental Wellness</NavDropdown.Item>
+        <NavDropdown.Item href="#wealth-equity">Wealth & Equity</NavDropdown.Item>
+        <NavDropdown.Item href="#purpose-alignment">Purpose Alignment</NavDropdown.Item>
+        <NavDropdown.Item href="#newsletter">The Newsletter</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#leadership">Executive Leadership</NavDropdown.Item>
-        <NavDropdown.Item href="#business-dev">Business Development</NavDropdown.Item>
-        <NavDropdown.Item href="#actuarial">Actuarial & Risk Management</NavDropdown.Item>
-        <NavDropdown.Item href="#community-affairs">Community Affairs</NavDropdown.Item>
-        <NavDropdown.Item href="#internship">Internship Program</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#newsroom">Newsroom</NavDropdown.Item>
-        <NavDropdown.Item href="#awards">Awards & Recognition</NavDropdown.Item>
+        <NavDropdown.Item href="#local-community">Local Community Engagement</NavDropdown.Item>
+        <NavDropdown.Item href="#continued-education">Continued Education</NavDropdown.Item>
+        <NavDropdown.Item href="#corporate-sustainability">Corporate Sustainability</NavDropdown.Item>
+        <NavDropdown.Item href="#health-productivity">Health & Productivity</NavDropdown.Item>
       </NavDropdown>
     );
   }
@@ -63,10 +62,10 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
       marginBottom: '20px'
     },
     
-    greenLine: {
+    blueLine: {
       width: '60px',
       height: '3px',
-      backgroundColor: '#2c5f2d',
+      backgroundColor: '#2c3e50',
       marginBottom: '5px'
     },
     
@@ -84,10 +83,10 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
       marginBottom: '8px'
     },
     
-    greenText: {
+    blueText: {
       fontSize: '1.1rem',
       fontWeight: '600',
-      color: '#2c5f2d',
+      color: '#2c3e50',
       textTransform: 'uppercase' as const,
       marginBottom: '8px'
     },
@@ -132,6 +131,17 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
       textAlign: 'left' as const
     },
     
+    // LiveBalanced header special styling
+    livebalancedHeader: {
+      fontSize: '0.9rem',
+      fontWeight: '700',
+      color: '#f39c12',
+      textTransform: 'uppercase' as const,
+      letterSpacing: '0.5px',
+      paddingBottom: '0.2rem',
+      textAlign: 'left' as const
+    },
+    
     // Navigation item styles
     navItem: {
       fontSize: '0.85rem',
@@ -142,14 +152,14 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
   }
 
   return (
-    <div className="about-menu-container w-100" style={devStyles.menuContainer}>
+    <div className="solutions-menu-container w-100" style={devStyles.menuContainer}>
       <div className="row g-0 w-100">
         {/* Left Section - Square Image */}
         <div className="col-lg-4">
           <div className="image-section" style={devStyles.imageSection}>
             <img
-              src="public/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
-              alt="About Atlanta Life"
+              src="public/img/navbar/kike-vega-F2qh3yjz6Jk-unsplash.jpg"
+              alt="ALIC Solutions"
               style={devStyles.heroImage}
             />
           </div>
@@ -159,25 +169,22 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
         <div className="col-lg-3">
           <div className="text-content" style={devStyles.textContent}>
             <h2 className="main-heading" style={devStyles.mainHeading}>
-              <div>OUR STORY</div>
-              <div>MAKES US</div>
-              <div>READY FOR</div>
-              <div>THE FUTURE</div>
+              OUR SUCCESS IS YOUR SUCCESS
             </h2>
             
             {/* Decorative Lines */}
             <div style={devStyles.decorativeLines}>
-              <div style={devStyles.greenLine}></div>
+              <div style={devStyles.blueLine}></div>
               <div style={devStyles.orangeLine}></div>
             </div>
             
             {/* Styled Text (Not Links) */}
             <div className="styled-text">
-              <div style={devStyles.greenText}>
-                EXPLORE OUR STORY
+              <div style={devStyles.blueText}>
+                EXPLORE OUR SOLUTIONS
               </div>
               <div style={devStyles.orangeText}>
-                EXPLORE OUR LEGACY
+                EXPLORE OUR CAPABILITIES
               </div>
               <div style={devStyles.orangeTextNoMargin}>
                 EXPLORE OUR COMMITMENT
@@ -189,17 +196,17 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
         {/* Right Section - Navigation Grid */}
         <div className="col-lg-5" style={devStyles.rightSection}>
           <div className="nav-grid" style={devStyles.navGrid}>
-            {/* CORPORATE PROFILE */}
+            {/* REINSURANCE SOLUTIONS */}
             <div className="nav-section">
               <h6 className="section-header" style={devStyles.navLinkHeaderText}>
-                CORPORATE PROFILE
+                REINSURANCE SOLUTIONS
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  EQUITRUST LIFE INSURANCE COMPANY
+                  HOW IT WORKS
                 </div>
                 <div style={devStyles.navItem}>
-                  MINORITY BUSINESS ENTERPRISE
+                  RISK MANAGEMENT
                 </div>
                 <div style={devStyles.navItem}>
                   PARTNERSHIPS
@@ -207,59 +214,47 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
               </div>
             </div>
             
-            {/* OUR STORY */}
+            {/* CORPORATE CAPABILITIES */}
             <div className="nav-section">
               <h6 className="section-header" style={devStyles.navLinkHeaderText}>
-                OUR STORY
+                CORPORATE CAPABILITIES
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  HISTORY
+                  LOCAL COMMUNITY ENGAGEMENT
                 </div>
                 <div style={devStyles.navItem}>
-                  OUR COMMUNITY
+                  CONTINUED EDUCATION
                 </div>
                 <div style={devStyles.navItem}>
-                  MISSION & VISION
+                  CORPORATE SUSTAINABILITY
+                </div>
+                <div style={devStyles.navItem}>
+                  HEALTH & PRODUCTIVITY
                 </div>
               </div>
             </div>
             
-            {/* OUR TEAM */}
+            {/* LIVEBALANCED™ */}
             <div className="nav-section">
-              <h6 className="section-header" style={devStyles.navLinkHeaderText}>
-                OUR TEAM
+              <h6 className="section-header" style={devStyles.livebalancedHeader}>
+                LIVEBALANCED™
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  EXECUTIVE LEADERSHIP
+                  ABOUT LIVEBALANCED™
                 </div>
                 <div style={devStyles.navItem}>
-                  BUSINESS DEVELOPMENT
+                  PHYSICAL & MENTAL WELLNESS
                 </div>
                 <div style={devStyles.navItem}>
-                  ACTUARIAL & RISK MANAGEMENT
+                  WEALTH & EQUITY
                 </div>
                 <div style={devStyles.navItem}>
-                  COMMUNITY AFFAIRS
+                  PURPOSE ALIGNMENT
                 </div>
                 <div style={devStyles.navItem}>
-                  INTERNSHIP PROGRAM
-                </div>
-              </div>
-            </div>
-            
-            {/* MORE ABOUT US */}
-            <div className="nav-section">
-              <h6 className="section-header" style={devStyles.navLinkHeaderText}>
-                MORE ABOUT US
-              </h6>
-              <div className="nav-items">
-                <div style={devStyles.navItem}>
-                  NEWSROOM
-                </div>
-                <div style={devStyles.navItem}>
-                  AWARDS & RECOGNITION
+                  THE NEWSLETTER
                 </div>
               </div>
             </div>
@@ -270,4 +265,4 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
   );
 };
 
-export default AboutMenu;
+export default SolutionsMenu;

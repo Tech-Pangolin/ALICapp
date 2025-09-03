@@ -158,7 +158,7 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
         <div className="col-lg-4">
           <div className="image-section" style={devStyles.imageSection}>
             <img
-              src="public/img/navbar/kike-vega-F2qh3yjz6Jk-unsplash.jpg"
+              src="/img/navbar/kike-vega-F2qh3yjz6Jk-unsplash.jpg"
               alt="ALIC Solutions"
               style={devStyles.heroImage}
             />

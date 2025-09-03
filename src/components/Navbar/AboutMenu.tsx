@@ -148,7 +148,7 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
         <div className="col-lg-4">
           <div className="image-section me-3" style={devStyles.imageSection}>
             <img
-              src="public/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
+              src="/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
               alt="About Atlanta Life"
               style={devStyles.heroImage}
             />

@@ -3,12 +3,9 @@ import React from 'react';
 const MentalWellness: React.FC = () => {
     return (
         <div id="mentalwellness">
-           <main id="main">
+            <main id="main">
 
-                {/* <!-- ======= Breadcrumbs ======= --> */}
-              
 
-                {/* <!-- ======= Blog Section ======= --> */}
                 <section id="blog" className="blog" style={{ backgroundColor: '#0B3144' }}>
                     <div className="container" data-aos="fade-up">
 
@@ -47,7 +44,7 @@ const MentalWellness: React.FC = () => {
                                 <div className="col-12 col-md-6">
                                     <div>
                                         <img src="/img/wellness/mental-image.png" className="img-fluid mx-5" alt=""
-                                            srcSet=""/>
+                                            srcSet="" />
                                     </div>
                                     <h3 className="mt-3 ms-5">Impact:</h3>
                                     <div className="row">

@@ -5,6 +5,11 @@ import Home from './pages/Home';
 import LiveBalanced from './pages/livebalanced/LiveBalanced';
 import PhysicalWellness from './pages/livebalanced/PhysicalWellness';
 import MentalWellness from './pages/livebalanced/MentalWellness';
+import FinancialWellness from './pages/livebalanced/FinancialWellness';
+import SocialWellness from './pages/livebalanced/SocialWellness';
+import HealthProductivity from './pages/health/HealthProductivity';
+import Footer from './components/Footer/Footer';
+import Copyright from './components/Footer/Copyright';
 
 function App() {
   return (
@@ -15,7 +20,12 @@ function App() {
         <Route path="/livebalanced" element={<LiveBalanced />} />
         <Route path="/livebalanced/physicalwellness" element={<PhysicalWellness />} />
         <Route path="/livebalanced/mentalwellness" element={<MentalWellness />} />
+        <Route path="/livebalanced/financialwellness" element={<FinancialWellness />} />
+        <Route path="/livebalanced/socialwellness" element={<SocialWellness />} />
+        <Route path="/health/healthandproductivity" element={<HealthProductivity />} />
       </Routes>
+      <Footer />
+      <Copyright />
     </Router>
   )
 }

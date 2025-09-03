@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
+import Timeline from "../components/Home/Timeline";
 
 const Home = () => {
   return (
@@ -32,7 +33,7 @@ const Home = () => {
         </Container>
       </section>
       {/* End Hero */}
-
+      <Timeline />
       {/* ======= About Section ======= */}
       <section id="about" className="about">
         <Container data-aos="fade-up" style={{ marginBottom: "20px" }}>
@@ -75,7 +76,7 @@ const Home = () => {
           <Row>
             <Col lg={3} data-aos="fade-up" data-aos-delay="200">
               <div className="box">
-                <img src="assets/img/values-1.png" className="img-fluid" alt="Trusted Benefits Provider" />
+                <img src="/img/values-1.png" className="img-fluid" alt="Trusted Benefits Provider" />
                 <h3>Trusted Benefits Provider</h3>
                 <p>
                   With over a century of service, we offer essential coverage and help insurers and governments manage
@@ -86,7 +87,7 @@ const Home = () => {
 
             <Col lg={3} data-aos="fade-up" data-aos-delay="400">
               <div className="box">
-                <img src="assets/img/values-2.png" className="img-fluid" alt="Expert in Risk Sharing" />
+                <img src="/img/values-2.png" className="img-fluid" alt="Expert in Risk Sharing" />
                 <h3>Expert in Risk Sharing</h3>
                 <p>
                   Our team crafts customized risk management solutions and tailored strategies to safeguard long-term
@@ -97,7 +98,7 @@ const Home = () => {
 
             <Col lg={3} data-aos="fade-up" data-aos-delay="600">
               <div className="box">
-                <img src="assets/img/values-3.png" className="img-fluid" alt="Committed to the Community" />
+                <img src="/img/values-3.png" className="img-fluid" alt="Committed to the Community" />
                 <h3>Committed to the Community</h3>
                 <p>
                   Beyond business, we are deeply committed to the well-being of the communities we serve across the
@@ -108,7 +109,7 @@ const Home = () => {
 
             <Col lg={3} data-aos="fade-up" data-aos-delay="800">
               <div className="box">
-                <img src="assets/img/values-3.png" className="img-fluid" alt="Supplier Diversity" />
+                <img src="/img/values-3.png" className="img-fluid" alt="Supplier Diversity" />
                 <h3>Solution for Supplier Diversity Spend</h3>
                 <p>
                   As a certified Minority Business Enterprise (MBE), we provide partners a unique opportunity to achieve

@@ -131,7 +131,7 @@ const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
         <div className="col-lg-4">
           <div className="image-section" style={devStyles.imageSection}>
             <img
-              src="public/img/navbar/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
+              src="/img/navbar/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
               alt="Community Resources"
               style={devStyles.heroImage}
             />

@@ -8,13 +8,7 @@ const PhysicalWellness: React.FC = () => {
                {/* <!-- ======= Breadcrumbs ======= --> */}
                <section className="breadcrumbs" style={{ backgroundColor: "#FFF", padding: 0, minHeight: 0 }}>
                    <div className="container">
-                       {/* 
-                   <ol>
-                       <li><a href="index.html">Home</a></li>
-                       <li>360 Wellness</li>
-                   </ol>
-                   <h2>360 Wellness</h2> */}
-
+                    
                     </div>
                 </section>
 

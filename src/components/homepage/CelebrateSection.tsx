@@ -1,7 +1,7 @@
 import React from 'react';
 import './CelebrateSection.css';
 import type { CelebrateSectionProps } from '../../types';
-import { CaretDownSquare, CaretDownSquareFill } from 'react-bootstrap-icons';
+import { CaretDownSquare } from 'react-bootstrap-icons';
 
 
 const CelebrateSection: React.FC<CelebrateSectionProps> = ({

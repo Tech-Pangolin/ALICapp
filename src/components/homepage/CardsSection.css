@@ -1,3 +1,5 @@
+@import './base.css';
+
 /* Cards Section Styles */
 .cards-section {
   width: 100vw !important;
@@ -12,7 +14,7 @@
   right: 50%;
   margin-left: -50vw !important;
   margin-right: -50vw !important;
-  background-color: #f8f9fa;
+  background-color: var(--white);
 }
 
 .cards-title-container {
@@ -22,11 +24,9 @@
 }
 
 .cards-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ss-font), sans-serif;
   font-weight: 700;
-  font-size: large;
-  color: #0b3144;
-  text-transform: uppercase;
+  color: var(--primary-blue);
   letter-spacing: 3px;
   line-height: 1.1;
   margin: 0;
@@ -54,10 +54,7 @@
 }
 
 .single-card-header {
-  font-family: "Open Sans", sans-serif;
-  font-size: larger;
-  color: #D4AF37;
-  text-transform: uppercase;
+  font-family: var(--ss-font), sans-serif;
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -80,10 +77,9 @@
 }
 
 .single-card-description {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-family: var(--ss-font), sans-serif;
   font-weight: 100;
-  color: #0b3144;
+  color: var(--primary-blue);
   line-height: 1.6;
 }
 
@@ -93,93 +89,4 @@
   margin: 20px 0 0 0;
   display: block;
   margin-top: auto;
-}
-
-/* Responsive Design */
-@media (max-width: 1199px) {
-  .cards-title {
-    font-size: 64px;
-    letter-spacing: 2px;
-  }
-  
-  .single-card-header {
-    font-size: 42px;
-  }
-  
-  .cards-section {
-    padding: 70px 0 !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .cards-title {
-    font-size: 56px;
-    letter-spacing: 2px;
-  }
-  
-  .single-card-header {
-    font-size: 36px;
-  }
-  
-  .single-card-description {
-    font-size: 16px;
-  }
-  
-  .cards-section {
-    padding: 60px 0 !important;
-  }
-  
-  .single-card-column {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cards-title {
-    font-size: 44px;
-    letter-spacing: 1px;
-    padding: 0 20px;
-  }
-  
-  .single-card-header {
-    font-size: 32px;
-  }
-  
-  .single-card-description {
-    font-size: 16px;
-    padding: 0 15px;
-  }
-  
-  .cards-section {
-    padding: 50px 0 !important;
-  }
-  
-  .single-card-content {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .cards-title {
-    font-size: 36px;
-    letter-spacing: 1px;
-    padding: 0 15px;
-  }
-  
-  .single-card-header {
-    font-size: 28px;
-  }
-  
-  .single-card-description {
-    font-size: 15px;
-    padding: 0 10px;
-  }
-  
-  .cards-section {
-    padding: 40px 0 !important;
-  }
-  
-  .single-card-column {
-    padding: 15px;
-  }
 }

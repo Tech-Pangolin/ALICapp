@@ -9,9 +9,9 @@ const CardsSection: React.FC = () => {
       <Container fluid>
         <Row className="justify-content-center">
           <div className="cards-title-container">
-            <h1 className="cards-title">
+            <h2 className="fw-bold text-uppercase">
               A UNIQUE INSURANCE COMPANY WHOSE LEGACY <br /> & EXPERTISE WILL SECURE YOUR FUTURE
-            </h1>
+            </h2>
           </div>
         </Row>
         <Row className="cards-content-row">

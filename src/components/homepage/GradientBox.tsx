@@ -6,10 +6,10 @@ const GradientBox: React.FC = () => {
     <section className="gradient-box-section">
       <div className="white-box">
         <div className="white-box-content">
-          <div className="main-text">
+          <h1 className="display-1 fw-bold text-uppercase main-text">
             BUILT ON RESILIENCE,<br />
             ANCHORED BY PROGRESS.
-          </div>
+          </h1>
         </div>
       </div>
     </section>

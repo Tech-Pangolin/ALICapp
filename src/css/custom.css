@@ -1230,7 +1230,13 @@ section#hero {
   background-size: cover;
   height: 4075px;
   width: 100%;
-  margin-top: 50px;
+  padding-top: 50px;
+}
+#timeline h1{
+  color: #CC9110;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: bolder;
 }
 #timeline h2{
 color:#FFF;

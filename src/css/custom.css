@@ -1223,28 +1223,31 @@ section#hero {
   border: #CA7A10;
 }
 
-
+#mobile-timeline {
+  height: 100%;
+  width: 100%;
+}
 #timeline {
   background: url(/img/timeline/timelinebackground.png) no-repeat center center;
   background-color: #0B3144;
-  background-size: cover;
-  height: 4075px;
+  background-size: contain;
+  height: 100%;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 140px;
 }
-#timeline h1{
+#timeline h1, #mobile-timeline h1{
   color: #CC9110;
   text-transform: uppercase;
   font-size: 65px;
   font-weight: bolder;
 }
-#timeline h2{
+#timeline h2, #mobile-timeline h2{
 color:#FFF;
 text-transform: uppercase;
 font-size: 24px;
 font-weight: bold;
 }
-#timeline h3{
+#timeline h3, #mobile-timeline h3 {
 color:#FFF;
 font-size: 20px;
 }

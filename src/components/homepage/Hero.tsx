@@ -19,13 +19,7 @@ const Hero: React.FC = () => {
 
           {/* Right Column - Text Content */}
           <Col lg={7} className="d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="400">
-            <div className="hero-content">
-              <h1 className="hero-title-main">
-                HONORING THE PAST &<br />
-                BUILDING THE FUTURE<br />
-                TOGETHER.
-              </h1>
-            </div>
+            
           </Col>
         </Row>
       </Container>

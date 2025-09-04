@@ -13,7 +13,7 @@ const PhysicalWellness: React.FC = () => {
                 </section>
 
                 {/* <!-- ======= Blog Section ======= --> */}
-                <section id="blog" className="blog pw">
+                <section id="blog" className="blog pw" style={{backgroundColor:"#FFF"}}>
                     <div className="container" data-aos="fade-up">
 
                         <div className="row">
@@ -32,7 +32,7 @@ const PhysicalWellness: React.FC = () => {
                                 <h3>What We Deliver:</h3>
                             </div>
                             <div className="col-12">
-                                <img src="assets/img/wellness/iconrow1.png" className="img-fluid" alt="" srcSet=""/>
+                                <img src="/img/wellness/iconrow1.png" className="img-fluid" alt="" srcSet=""/>
                             </div>
                             <div className="col-6 my-3">
                                 <h4>Disability & Return-to-Work Programs</h4>
@@ -44,7 +44,7 @@ const PhysicalWellness: React.FC = () => {
                                 <p>Chronic condition management, sleep hygiene, ergonomic awareness, and nutrition.</p>
                             </div>
                             <div className="col-12  my-3">
-                                <img src="assets/img/wellness/iconrow2.png" className="img-fluid" alt="" srcSet=""/>
+                                <img src="/img/wellness/iconrow2.png" className="img-fluid" alt="" srcSet=""/>
                             </div>
                             <div className="col-6 my-3">
                                 <h4>Community Health Activations</h4>

@@ -1,11 +1,10 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { ArrowRight } from "react-bootstrap-icons";
 import Timeline from "../components/Home/Timeline";
 import Hero from "../components/homepage/Hero";
 import CelebrateSection from "../components/homepage/CelebrateSection";
 import GradientBox from "../components/homepage/GradientBox";
 import CardsSection from "../components/homepage/CardsSection";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Home = () => {
   const [expanded, setExpanded] = useState(true);

@@ -1,39 +1,31 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
 import Timeline from "../components/Home/Timeline";
+import Hero from "../components/homepage/Hero";
+import CelebrateSection from "../components/homepage/CelebrateSection";
+import GradientBox from "../components/homepage/GradientBox";
+import CardsSection from "../components/homepage/CardsSection";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [expanded, setExpanded] = useState(true);
   return (
     <>
       {/* ======= Hero Section ======= */}
-      <section id="hero" className="d-flex align-items-center hero">
-        <Container>
-          <Row>
-            <Col lg={6} className="d-flex flex-column justify-content-center">
-              <h1 data-aos="fade-up" data-aos-delay="400">
-                Your Trusted Partner for Comprehensive Risk Solutions and Diverse Reinsurance
-              </h1>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <div className="text-center text-lg-start">
-                  <Button
-                    href="mailto:BusinessDevelopment@atlantalife.com?subject=I%20want%20to%20learn%20more%20about%20Atlanta%20Life!"
-                    className="d-inline-flex align-items-center justify-content-center align-self-center btn-get-started"
-                  >
-                    <span>Make a collective impact with us!</span>
-                    <ArrowRight className="ms-2" />
-                  </Button>
-                </div>
-              </div>
-            </Col>
+      <Hero />
 
-            <Col lg={6} className="hero-img" data-aos="zoom-out" data-aos-delay="200">
-              {/* Add an image here if needed */}
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      {/* End Hero */}
-      <Timeline />
+      {/* ======= Celebrate Section ======= */}
+      <CelebrateSection setExpanded={setExpanded} />
+
+      {/* ======= Timeline Section ======= */}
+      {expanded && <Timeline />}
+
+      {/* ======= Gradient Box Section ======= */}
+      <GradientBox />
+
+      {/* ======= Cards Section ======= */}
+      <CardsSection />
+
       {/* ======= About Section ======= */}
       <section id="about" className="about">
         <Container data-aos="fade-up" style={{ marginBottom: "20px" }}>

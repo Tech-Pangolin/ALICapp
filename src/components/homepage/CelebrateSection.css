@@ -1,0 +1,52 @@
+.celebrate-section {
+  width: 100%;
+  position: relative;
+  padding: unset;
+}
+
+.celebrate-background {
+  width: 100%;
+  height: 400px;
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 20%),
+    linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 10%),
+    url('../img/home/celebrate-background.png') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.celebrate-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 80%;
+  height: auto;
+}
+
+.celebrate-additional-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  text-align: center;
+}
+
+.discover-text {
+  color: #D4AF37;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.chevron-icon {
+  color: white;
+  font-size: 16px;
+  line-height: 1;
+}

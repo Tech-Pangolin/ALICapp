@@ -229,6 +229,7 @@ section {
 
 .navbar a,
 .navbar a:focus {
+  text-transform: uppercase;
   /* display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2552,3 +2553,6 @@ section#workforce .btn{
 .children img {
   margin-bottom: 50px
 }
+
+
+

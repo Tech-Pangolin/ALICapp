@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useRef } from "react";
-import alicLogo from '/img/atl-logo.png';
+import alicLogo from '/img/ALIClogo.png';
 import AboutMenu from './AboutMenu';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
@@ -42,14 +42,14 @@ function NavbarComponent() {
       <Navbar bg="light" expand="lg" fixed="top" className="shadow-sm">
         <Container fluid className="container-xl">
           {/* Logo */}
-          <Navbar.Brand href="index.html" className="d-flex align-items-center">
+          <Navbar.Brand href="/" className="d-flex align-items-center">
             <img
               src={alicLogo}
               alt="Atlanta Life Logo"
-              height="40"
-              className="me-2"
+              height="60"
+              className="me-2 my-3"
             />
-            <span>Atlanta Life</span>
+         
           </Navbar.Brand>
 
           {/* Toggle for mobile */}

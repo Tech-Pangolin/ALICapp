@@ -85,7 +85,7 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
     
     blueText: {
       fontSize: '1.1rem',
-      fontWeight: '600',
+      // fontWeight: '600',
       color: '#2c3e50',
       textTransform: 'uppercase' as const,
       marginBottom: '8px'
@@ -93,7 +93,7 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
     
     orangeText: {
       fontSize: '1.1rem',
-      fontWeight: '600',
+      // fontWeight: '600',
       color: '#f39c12',
       textTransform: 'uppercase' as const,
       marginBottom: '8px'
@@ -156,9 +156,9 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
       <div className="row g-0 w-100">
         {/* Left Section - Square Image */}
         <div className="col-lg-4">
-          <div className="image-section" style={devStyles.imageSection}>
+          <div className="image-section me-3" style={devStyles.imageSection}>
             <img
-              src="public/img/navbar/kike-vega-F2qh3yjz6Jk-unsplash.jpg"
+              src="/img/navbar/kike-vega-F2qh3yjz6Jk-unsplash.jpg"
               alt="ALIC Solutions"
               style={devStyles.heroImage}
             />
@@ -173,21 +173,21 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
             </h2>
             
             {/* Decorative Lines */}
-            <div style={devStyles.decorativeLines}>
-              <div style={devStyles.blueLine}></div>
-              <div style={devStyles.orangeLine}></div>
+             <div style={{width:"50%", border:'none'}}>
+              <img src="/img/navbar/bar.jpg" alt="" className="img-fluid" />
             </div>
             
+            
             {/* Styled Text (Not Links) */}
-            <div className="styled-text">
+            <div className="styled-text mt-3">
               <div style={devStyles.blueText}>
-                EXPLORE OUR SOLUTIONS
+                EXPLORE OUR <span style={devStyles.orangeText}>SOLUTIONS</span>
               </div>
-              <div style={devStyles.orangeText}>
-                EXPLORE OUR CAPABILITIES
+              <div style={devStyles.blueText}>
+                EXPLORE OUR <span style={devStyles.orangeText}>CAPABILITIES</span>
               </div>
-              <div style={devStyles.orangeTextNoMargin}>
-                EXPLORE OUR COMMITMENT
+              <div style={devStyles.blueText}>
+                EXPLORE OUR <span style={devStyles.orangeText}>COMMITMENT</span>
               </div>
             </div>
           </div>
@@ -195,7 +195,7 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
         
         {/* Right Section - Navigation Grid */}
         <div className="col-lg-5" style={devStyles.rightSection}>
-          <div className="nav-grid" style={devStyles.navGrid}>
+          <div className="nav-grid ms-3" style={devStyles.navGrid}>
             {/* REINSURANCE SOLUTIONS */}
             <div className="nav-section">
               <h6 className="section-header" style={devStyles.navLinkHeaderText}>
@@ -230,7 +230,7 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
                   CORPORATE SUSTAINABILITY
                 </div>
                 <div style={devStyles.navItem}>
-                  HEALTH & PRODUCTIVITY
+                  <a href="/health/healthandproductivity">HEALTH & PRODUCTIVITY</a>
                 </div>
               </div>
             </div>
@@ -242,19 +242,22 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  ABOUT LIVEBALANCED™
+                  <a href="/livebalanced">ABOUT LIVEBALANCED™</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  PHYSICAL & MENTAL WELLNESS
+                  <a href="/livebalanced/physicalwellness">PHYSICAL WELLNESS</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  WEALTH & EQUITY
+                  <a href="/livebalanced/socialwellness">SOCIAL WELLNESS</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  PURPOSE ALIGNMENT
+                  <a href="/livebalanced/financialwellness">WEALTH & EQUITY</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  THE NEWSLETTER
+                  <a href="/livebalanced/mentalwellness">PURPOSE ALIGNMENT</a>
+                </div>
+                <div style={devStyles.navItem}>
+                  <a href="/publications">THE NEWSLETTER</a>
                 </div>
               </div>
             </div>

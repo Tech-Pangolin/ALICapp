@@ -1,41 +1,32 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { ArrowRight } from "react-bootstrap-icons";
+import Timeline from "../components/homepage/Timeline";
+import Hero from "../components/homepage/Hero";
+import CelebrateSection from "../components/homepage/CelebrateSection";
+import GradientBox from "../components/homepage/GradientBox";
+import CardsSection from "../components/homepage/CardsSection";
+import { useState } from "react";
 
 const Home = () => {
+  const [expanded, setExpanded] = useState(false);
   return (
     <>
       {/* ======= Hero Section ======= */}
-      <section id="hero" className="d-flex align-items-center hero">
-        <Container>
-          <Row>
-            <Col lg={6} className="d-flex flex-column justify-content-center">
-              <h1 data-aos="fade-up" data-aos-delay="400">
-                Your Trusted Partner for Comprehensive Risk Solutions and Diverse Reinsurance
-              </h1>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <div className="text-center text-lg-start">
-                  <Button
-                    href="mailto:BusinessDevelopment@atlantalife.com?subject=I%20want%20to%20learn%20more%20about%20Atlanta%20Life!"
-                    className="d-inline-flex align-items-center justify-content-center align-self-center btn-get-started"
-                  >
-                    <span>Make a collective impact with us!</span>
-                    <ArrowRight className="ms-2" />
-                  </Button>
-                </div>
-              </div>
-            </Col>
+      <Hero />
 
-            <Col lg={6} className="hero-img" data-aos="zoom-out" data-aos-delay="200">
-              {/* Add an image here if needed */}
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      {/* End Hero */}
+      {/* ======= Celebrate Section ======= */}
+      <CelebrateSection setExpanded={setExpanded} expanded={expanded} />
+
+      {/* ======= Timeline Section ======= */}
+      {expanded && <Timeline setExpanded={setExpanded} expanded={expanded} />}
+
+      {/* ======= Gradient Box Section ======= */}
+      <GradientBox />
+
+      {/* ======= Cards Section ======= */}
+      <CardsSection />
 
       {/* ======= About Section ======= */}
       <section id="about" className="about">
-        <Container data-aos="fade-up" style={{ marginBottom: "20px" }}>
+        {/* <Container data-aos="fade-up" style={{ marginBottom: "20px" }}>
           <Row className="gx-0">
             <Col lg={6} className="d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
               <div className="content">
@@ -60,13 +51,13 @@ const Home = () => {
               </div>
             </Col>
           </Row>
-        </Container>
-      </section>
+        </Container>*/}
+      </section> 
       {/* End About */}
 
       {/* ======= Values Section ======= */}
       <section id="values" className="values">
-        <Container data-aos="fade-up">
+        {/* <Container data-aos="fade-up">
           <header className="section-header">
             <h2>Why Partner With Us</h2>
             <p>US-Based Coverage Provider, Serving a Nationwide Audience</p>
@@ -75,7 +66,7 @@ const Home = () => {
           <Row>
             <Col lg={3} data-aos="fade-up" data-aos-delay="200">
               <div className="box">
-                <img src="assets/img/values-1.png" className="img-fluid" alt="Trusted Benefits Provider" />
+                <img src="/img/values-1.png" className="img-fluid" alt="Trusted Benefits Provider" />
                 <h3>Trusted Benefits Provider</h3>
                 <p>
                   With over a century of service, we offer essential coverage and help insurers and governments manage
@@ -86,7 +77,7 @@ const Home = () => {
 
             <Col lg={3} data-aos="fade-up" data-aos-delay="400">
               <div className="box">
-                <img src="assets/img/values-2.png" className="img-fluid" alt="Expert in Risk Sharing" />
+                <img src="/img/values-2.png" className="img-fluid" alt="Expert in Risk Sharing" />
                 <h3>Expert in Risk Sharing</h3>
                 <p>
                   Our team crafts customized risk management solutions and tailored strategies to safeguard long-term
@@ -97,7 +88,7 @@ const Home = () => {
 
             <Col lg={3} data-aos="fade-up" data-aos-delay="600">
               <div className="box">
-                <img src="assets/img/values-3.png" className="img-fluid" alt="Committed to the Community" />
+                <img src="/img/values-3.png" className="img-fluid" alt="Committed to the Community" />
                 <h3>Committed to the Community</h3>
                 <p>
                   Beyond business, we are deeply committed to the well-being of the communities we serve across the
@@ -108,7 +99,7 @@ const Home = () => {
 
             <Col lg={3} data-aos="fade-up" data-aos-delay="800">
               <div className="box">
-                <img src="assets/img/values-3.png" className="img-fluid" alt="Supplier Diversity" />
+                <img src="/img/values-3.png" className="img-fluid" alt="Supplier Diversity" />
                 <h3>Solution for Supplier Diversity Spend</h3>
                 <p>
                   As a certified Minority Business Enterprise (MBE), we provide partners a unique opportunity to achieve
@@ -117,7 +108,7 @@ const Home = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </section>
       {/* End Values */}
 

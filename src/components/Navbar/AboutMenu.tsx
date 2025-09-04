@@ -75,6 +75,13 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
       height: '3px',
       backgroundColor: '#f39c12'
     },
+     blueText: {
+      fontSize: '1.1rem',
+      // fontWeight: '600',
+      color: '#2c3e50',
+      textTransform: 'uppercase' as const,
+      marginBottom: '8px'
+    },
     
     // Styled text styles
     styledText: {
@@ -94,7 +101,7 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
     
     orangeText: {
       fontSize: '1.1rem',
-      fontWeight: '600',
+      // fontWeight: '',
       color: '#f39c12',
       textTransform: 'uppercase' as const,
       marginBottom: '8px'
@@ -146,9 +153,9 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
       <div className="row g-0 w-100">
         {/* Left Section - Square Image */}
         <div className="col-lg-4">
-          <div className="image-section" style={devStyles.imageSection}>
+          <div className="image-section me-3" style={devStyles.imageSection}>
             <img
-              src="public/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
+              src="/img/navbar/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg"
               alt="About Atlanta Life"
               style={devStyles.heroImage}
             />
@@ -166,21 +173,20 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
             </h2>
             
             {/* Decorative Lines */}
-            <div style={devStyles.decorativeLines}>
-              <div style={devStyles.greenLine}></div>
-              <div style={devStyles.orangeLine}></div>
+            <div style={{width:"50%", border:'none'}}>
+              <img src="/img/navbar/bar.jpg" alt="" className="img-fluid" />
             </div>
             
             {/* Styled Text (Not Links) */}
-            <div className="styled-text">
-              <div style={devStyles.greenText}>
-                EXPLORE OUR STORY
+            <div className="styled-text mt-3">
+              <div style={devStyles.blueText}>
+                EXPLORE OUR <span style={devStyles.orangeText}>STORY</span>
               </div>
-              <div style={devStyles.orangeText}>
-                EXPLORE OUR LEGACY
+              <div style={devStyles.blueText}>
+                EXPLORE OUR <span style={devStyles.orangeText}>LEGACY</span>
               </div>
-              <div style={devStyles.orangeTextNoMargin}>
-                EXPLORE OUR COMMITMENT
+              <div style={devStyles.blueText}>
+                EXPLORE OUR <span style={devStyles.orangeText}>COMMITMENT</span>
               </div>
             </div>
           </div>
@@ -188,7 +194,7 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
         
         {/* Right Section - Navigation Grid */}
         <div className="col-lg-5" style={devStyles.rightSection}>
-          <div className="nav-grid" style={devStyles.navGrid}>
+          <div className="ms-3 nav-grid" style={devStyles.navGrid}>
             {/* CORPORATE PROFILE */}
             <div className="nav-section">
               <h6 className="section-header" style={devStyles.navLinkHeaderText}>

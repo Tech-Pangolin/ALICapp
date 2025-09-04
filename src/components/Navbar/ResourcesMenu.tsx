@@ -5,7 +5,7 @@ const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {
     return (
       <NavDropdown title="Resources" id="mobile-resources-dropdown">
-        <NavDropdown.Item href="childrensbooks.html">Essential Reads for Every Child</NavDropdown.Item>
+        <NavDropdown.Item href="/resources/readsforchildren">Essential Reads for Every Child</NavDropdown.Item>
         <NavDropdown.Item href="#education">Education Initiatives</NavDropdown.Item>
         <NavDropdown.Item href="#volunteer">Volunteer Opportunities</NavDropdown.Item>
         <NavDropdown.Item href="#partnerships">Community Partnerships</NavDropdown.Item>

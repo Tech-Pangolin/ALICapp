@@ -10,11 +10,12 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
         <NavDropdown.Item href="#risk-management">Risk Management</NavDropdown.Item>
         <NavDropdown.Item href="#partnerships">Partnerships</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#livebalanced">About LiveBalanced™</NavDropdown.Item>
-        <NavDropdown.Item href="#physical-mental-wellness">Physical & Mental Wellness</NavDropdown.Item>
-        <NavDropdown.Item href="#wealth-equity">Wealth & Equity</NavDropdown.Item>
-        <NavDropdown.Item href="#purpose-alignment">Purpose Alignment</NavDropdown.Item>
-        <NavDropdown.Item href="#newsletter">The Newsletter</NavDropdown.Item>
+        <NavDropdown.Item href="/livebalanced">About LiveBalanced™</NavDropdown.Item>
+        <NavDropdown.Item href="/livebalanced/physicalwellness">Physical Wellness</NavDropdown.Item>
+        <NavDropdown.Item href="/livebalanced/socialwellness">Social Wellness</NavDropdown.Item>
+        <NavDropdown.Item href="/livebalanced/financialwellness">Wealth & Equity</NavDropdown.Item>
+        <NavDropdown.Item href="/livebalanced/mentalwellness">Purpose Alignment</NavDropdown.Item>
+        <NavDropdown.Item href="/publications">The Newsletter</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#local-community">Local Community Engagement</NavDropdown.Item>
         <NavDropdown.Item href="#continued-education">Continued Education</NavDropdown.Item>

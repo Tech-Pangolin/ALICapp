@@ -1,11 +1,13 @@
 import React from 'react';
 import './CelebrateSection.css';
 import type { CelebrateSectionProps } from '../../types';
+import { CaretDownSquare, CaretDownSquareFill } from 'react-bootstrap-icons';
 
 
 const CelebrateSection: React.FC<CelebrateSectionProps> = ({
   textImagePath = '/img/home/celebrate-text.png',
-  className = ''
+  className = '',
+  setExpanded,expanded
 }) => {
   return (
     <section className={`celebrate-section ${className}`}>
@@ -19,7 +21,7 @@ const CelebrateSection: React.FC<CelebrateSectionProps> = ({
         />
         <div className="celebrate-additional-text">
           <div className="discover-text">DISCOVER OUR STORY</div>
-          <div className="chevron-icon">▼</div>
+          {!expanded && <div className="chevron-icon text-center" style={{cursor:"pointer"}} onClick={() => setExpanded(true)}><CaretDownSquare size={50}/></div>}
         </div>
       </div>
     </section>

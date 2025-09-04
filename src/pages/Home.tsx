@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Timeline from "../components/Home/Timeline";
+import Timeline from "../components/homepage/Timeline";
 import Hero from "../components/homepage/Hero";
 import CelebrateSection from "../components/homepage/CelebrateSection";
 import GradientBox from "../components/homepage/GradientBox";
@@ -7,17 +7,17 @@ import CardsSection from "../components/homepage/CardsSection";
 import { useState } from "react";
 
 const Home = () => {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   return (
     <>
       {/* ======= Hero Section ======= */}
       <Hero />
 
       {/* ======= Celebrate Section ======= */}
-      <CelebrateSection setExpanded={setExpanded} />
+      <CelebrateSection setExpanded={setExpanded} expanded={expanded} />
 
       {/* ======= Timeline Section ======= */}
-      {expanded && <Timeline />}
+      {expanded && <Timeline setExpanded={setExpanded} expanded={expanded} />}
 
       {/* ======= Gradient Box Section ======= */}
       <GradientBox />
@@ -27,7 +27,7 @@ const Home = () => {
 
       {/* ======= About Section ======= */}
       <section id="about" className="about">
-        <Container data-aos="fade-up" style={{ marginBottom: "20px" }}>
+        {/* <Container data-aos="fade-up" style={{ marginBottom: "20px" }}>
           <Row className="gx-0">
             <Col lg={6} className="d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
               <div className="content">
@@ -52,13 +52,13 @@ const Home = () => {
               </div>
             </Col>
           </Row>
-        </Container>
-      </section>
+        </Container>*/}
+      </section> 
       {/* End About */}
 
       {/* ======= Values Section ======= */}
       <section id="values" className="values">
-        <Container data-aos="fade-up">
+        {/* <Container data-aos="fade-up">
           <header className="section-header">
             <h2>Why Partner With Us</h2>
             <p>US-Based Coverage Provider, Serving a Nationwide Audience</p>
@@ -109,7 +109,7 @@ const Home = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </section>
       {/* End Values */}
 

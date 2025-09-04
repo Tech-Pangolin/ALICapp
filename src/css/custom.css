@@ -1233,7 +1233,7 @@ section#hero {
   background-size: contain;
   height: 100%;
   width: 100%;
-  padding-top: 140px;
+  padding-top: 165px;
 }
 #timeline h1, #mobile-timeline h1{
   color: #CC9110;
@@ -1250,4 +1250,100 @@ font-weight: bold;
 #timeline h3, #mobile-timeline h3 {
 color:#FFF;
 font-size: 20px;
+}
+
+
+
+.knob-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-family: system-ui, sans-serif;
+}
+
+.knob {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #444, #111);
+  border: 4px solid #222;
+  position: relative;
+  transition: transform 1.5s ease-in-out;
+  box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.6),
+    inset 6px 6px 12px rgba(255, 255, 255, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Indicator line */
+.knob::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  width: 6px;
+  height: 36px;
+  background: #f1c40f;
+  border-radius: 3px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(241, 196, 15, 0.6);
+}
+
+/* Center circle */
+@property --p{
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p:20;
+  --b:22px;
+  --c:darkred;
+  --w:150px;
+  
+  width:var(--w);
+  aspect-ratio:1;
+  position:relative;
+  display:inline-grid;
+  margin:5px;
+  place-content:center;
+  font-size:25px;
+  font-weight:bold;
+  font-family:sans-serif;
+}
+.pie:before,
+.pie:after {
+  content:"";
+  position:absolute;
+  border-radius:50%;
+}
+.pie:before {
+  inset:0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset:calc(50% - var(--b)/2);
+  background:var(--c);
+  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+.animate {
+  animation:p 1s .5s both;
+}
+.no-round:before {
+  background-size:0 0,auto;
+}
+.no-round:after {
+  content:none;
+}
+@keyframes p {
+  from{--p:0}
+}
+
+body {
+  background:#f2f2f2;
 }

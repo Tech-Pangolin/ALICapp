@@ -1,38 +1,10 @@
 import React, { useEffect } from "react";
-import Chart from "chart.js/auto";
+import 'react-circular-progressbar/dist/styles.css';
+
 
 const LiveBalanced: React.FC = () => {
     useEffect(() => {
-        // const financialCtx = (document.getElementById("financialChart") as HTMLCanvasElement)?.getContext("2d");
 
-        // if (financialCtx) {
-        //   new Chart(financialCtx, {
-        //     type: "doughnut",
-        //     data: {
-        //       labels: ["Financially Healthy", "Not Financially Healthy"],
-        //       datasets: [
-        //         {
-        //           data: [31, 69],
-        //           backgroundColor: ["#87CEEB", "#0C3144"],
-        //           borderColor: ["#0C3144", "#0C3144"],
-        //           borderWidth: 2,
-        //         },
-        //       ],
-        //     },
-        //     options: {
-        //       responsive: true,
-        //       maintainAspectRatio: false,
-        //       plugins: {
-        //         legend: { display: false },
-        //         tooltip: { enabled: false },
-        //       },
-        //       cutout: "60%",
-        //       elements: {
-        //         arc: { borderWidth: 2 },
-        //       },
-        //     }
-        //     });
-        // }
     }, []);
 
     return (
@@ -41,7 +13,7 @@ const LiveBalanced: React.FC = () => {
             <main id="main">
                 {/* 
                 <!-- ======= LiveBalanced Hero Section ======= --> */}
-                <section id="livebalanced-hero" className="hero d-flex align-items-center">
+                <section id="livebalanced-hero" className="hero d-flex align-items-center" style={{ backgroundImage: 'url(/img/hero-bg1.png)', backgroundSize: 'cover' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 d-flex flex-column justify-content-center">
@@ -196,11 +168,14 @@ const LiveBalanced: React.FC = () => {
                                     <li>Equity-focused financial programs for underserved communities</li>
                                 </ul>
                                 <div className="statistic-chart">
-                                    <canvas id="financialChart"></canvas>
-                                    <div className="chart-center-text">31%</div>
+                                    <div className="pie animate no-round" style={{ "--p": "31", "--c": "orange" } as React.CSSProperties}> 31%</div>
+                                    {/* <canvas id="financialChart"></canvas>
+                                    <div className="chart-center-text">31%</div> */}
                                 </div>
+
+
                                 <p className="chart-caption">Just 31% of American adults are considered financially healthy.
-                                    1
+
                                 </p>
                             </div>
                             <div className="col col-md-6 d-none d-lg-block"> <img

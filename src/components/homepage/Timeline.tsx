@@ -1,6 +1,11 @@
 import React from 'react';
+import { ArrowUp, CaretUpSquare, CaretUpSquareFill } from 'react-bootstrap-icons';
 
-const Timeline: React.FC = () => {
+interface TimelineProps {
+  setExpanded: React.Dispatch<React.SetStateAction<boolean>>;
+  expanded: boolean;
+}
+const Timeline: React.FC<TimelineProps> = ({ setExpanded, expanded }) => {
     return (
         <div style={{ backgroundColor: "#0B3144", paddingBottom: '50px' }}>
             {/* Mobile timeline */}
@@ -125,7 +130,7 @@ const Timeline: React.FC = () => {
 
             {/* Desktop Timeline */}
             <div className="container d-none d-lg-block" id="timeline">
-                <div className="row justify-content-center justify-content-md-end">
+                <div className="row justify-content-center justify-content-md-end mt-5">
                     <div className="col-10">
                         <div className="box-right row">
                             <div className="col-12 col-md-5"><img src='/img/timeline/aboldbeginning.png' className='img-fluid me-5' /></div>
@@ -287,6 +292,7 @@ const Timeline: React.FC = () => {
 
                     </div>
                 </div>
+                          {expanded && <div className="chevron-icon text-center" style={{cursor:"pointer"}} onClick={() => setExpanded(false)}><CaretUpSquare size={50}/></div>}
             </div>
         </div>
     );

@@ -10,6 +10,8 @@ import SocialWellness from './pages/livebalanced/SocialWellness';
 import HealthProductivity from './pages/health/HealthProductivity';
 import Footer from './components/Footer/Footer';
 import Copyright from './components/Footer/Copyright';
+import ChildReads from './pages/resources/ChildReads';
+import Publications from './pages/livebalanced/Publications';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/livebalanced/financialwellness" element={<FinancialWellness />} />
         <Route path="/livebalanced/socialwellness" element={<SocialWellness />} />
         <Route path="/health/healthandproductivity" element={<HealthProductivity />} />
+        <Route path="/resources/readsforchildren" element={<ChildReads />} />
+        <Route path="/publications" element={<Publications />} />
       </Routes>
       <Footer />
       <Copyright />

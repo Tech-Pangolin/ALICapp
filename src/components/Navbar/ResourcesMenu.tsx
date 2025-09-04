@@ -79,7 +79,7 @@ const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
     
     blueText: {
       fontSize: '1.1rem',
-      fontWeight: '600',
+      // fontWeight: '600',
       color: '#2c3e50',
       textTransform: 'uppercase' as const,
       marginBottom: '8px'
@@ -129,7 +129,7 @@ const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
       <div className="row g-0 w-100">
         {/* Left Section - Square Image */}
         <div className="col-lg-4">
-          <div className="image-section" style={devStyles.imageSection}>
+          <div className="image-section me-3" style={devStyles.imageSection}>
             <img
               src="/img/navbar/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
               alt="Community Resources"
@@ -149,20 +149,20 @@ const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
             </h2>
             
             {/* Decorative Lines */}
-            <div style={devStyles.decorativeLines}>
-              <div style={devStyles.blueLine}></div>
-              <div style={devStyles.orangeLine}></div>
+            <div style={{width:"50%", border:'none'}}>
+              <img src="/img/navbar/bar.jpg" alt="" className="img-fluid" />
             </div>
             
+            
             {/* Styled Text (Not Links) */}
-            <div className="styled-text">
+            <div className="styled-text mt-3">
               <div style={devStyles.blueText}>
                 EXPLORE OUR <span style={{ color: '#f39c12' }}>RESOURCES</span>
               </div>
-              <div style={devStyles.orangeText}>
+              <div style={devStyles.blueText}>
                 EXPLORE OUR <span style={{ color: '#f39c12' }}>APPROACH</span>
               </div>
-              <div style={devStyles.orangeTextNoMargin}>
+              <div style={devStyles.blueText}>
                 EXPLORE OUR <span style={{ color: '#f39c12' }}>COMMITMENT</span>
               </div>
             </div>
@@ -171,12 +171,12 @@ const ResourcesMenu = ({ variant = 'desktop' }: MenuProps) => {
         
         {/* Right Section - Family Content */}
         <div className="col-lg-5" style={devStyles.rightSection}>
-          <div className="family-content">
+          <div className="family-content ms-3">
             <div style={devStyles.rightSectionText}>
               FOR FAMILIES
             </div>
             <div style={devStyles.rightSectionSubText}>
-              ESSENTIAL READS FOR EVERY CHILD
+              <a href="/resources/readsforchildren">ESSENTIAL READS FOR EVERY CHILD</a>
             </div>
           </div>
         </div>

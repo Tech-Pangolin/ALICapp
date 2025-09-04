@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import 'react-circular-progressbar/dist/styles.css';
 
 
 const LiveBalanced: React.FC = () => {
-    useEffect(() => {
-
-    }, []);
-
-    return (
+      return (
         <div id="livebalanced">
 
             <main id="main">

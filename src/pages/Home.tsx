@@ -1,4 +1,3 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
 import Timeline from "../components/homepage/Timeline";
 import Hero from "../components/homepage/Hero";
 import CelebrateSection from "../components/homepage/CelebrateSection";

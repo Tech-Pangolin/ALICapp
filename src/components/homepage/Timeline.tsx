@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, CaretUpSquare, CaretUpSquareFill } from 'react-bootstrap-icons';
+import {  CaretUpSquare } from 'react-bootstrap-icons';
 
 interface TimelineProps {
   setExpanded: React.Dispatch<React.SetStateAction<boolean>>;

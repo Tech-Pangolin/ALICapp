@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Hero from "../components/homepage/Hero";
 import CelebrateSection from "../components/homepage/CelebrateSection";
 import GradientBox from "../components/homepage/GradientBox";
+import CardsSection from "../components/homepage/CardsSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
 
       {/* ======= Gradient Box Section ======= */}
       <GradientBox />
+
+      {/* ======= Cards Section ======= */}
+      <CardsSection />
 
       {/* ======= About Section ======= */}
       <section id="about" className="about">

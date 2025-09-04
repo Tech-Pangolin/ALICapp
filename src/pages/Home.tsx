@@ -3,6 +3,7 @@ import Hero from "../components/homepage/Hero";
 import CelebrateSection from "../components/homepage/CelebrateSection";
 import GradientBox from "../components/homepage/GradientBox";
 import CardsSection from "../components/homepage/CardsSection";
+import SolutionsSection from "../components/homepage/SolutionsSection";
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
 
       {/* ======= Cards Section ======= */}
       <CardsSection />
+
+      {/* ======= Solutions Section ======= */}
+      <SolutionsSection />
 
       {/* ======= About Section ======= */}
       <section id="about" className="about">

@@ -1,0 +1,158 @@
+/* Solutions Section Styles */
+.solutions-section {
+  width: 100vw !important;
+  display: flex;
+  align-items: center;
+  padding: 80px 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  background-color: #ffffff;
+}
+
+.solutions-layout {
+  display: grid;
+  grid-template-columns: 2% 98%;
+  width: 100%;
+}
+
+.left-strip {
+  background: linear-gradient(to bottom, #0b3144, #c98f16);
+  width: 100%;
+}
+
+.main-content {
+  padding: 0 50px 0 70px;
+}
+
+/* Shared text styles */
+.text-base {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.text-large {
+  font-weight: 700;
+  font-size: large;
+  color: #0b3144;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin: 0;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.text-medium {
+  font-weight: 600;
+  font-size: 1em;
+  color: #0b3144;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+.text-small {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #0b3144;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Layout components */
+.solutions-content {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  gap: 40px;
+  align-items: start;
+}
+
+.solutions-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 40px;
+}
+
+.solutions-images {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.solution-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+  .text-large {
+    font-size: 2.2em;
+  }
+  
+  .solutions-content {
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-large {
+    font-size: 2em;
+  }
+  
+  .solutions-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .solutions-images {
+    order: -1;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-large {
+    font-size: 1.8em;
+    padding: 0 20px;
+  }
+  
+  .main-content {
+    padding: 0 30px 0 50px;
+  }
+  
+  .solutions-text {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-large {
+    font-size: 1.5em;
+    padding: 0 15px;
+  }
+  
+  .main-content {
+    padding: 0 20px 0 40px;
+  }
+  
+  .solutions-text {
+    gap: 25px;
+  }
+}

@@ -8,6 +8,8 @@ const ContactForm: React.FC = () => {
     subject: "",
     message: "",
   });
+  const [success, setSuccess] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -17,6 +19,7 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    setIsSending(true);
     fetch("https://us-central1-greywebsupportfxns.cloudfunctions.net/submitForm", {
       method: "POST",
       headers: {
@@ -28,13 +31,15 @@ const ContactForm: React.FC = () => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
+
         return response.json();
       })
-      .then((data) => {
-        console.log("Success:", data);
-        alert("Message sent successfully!");
+      .then((_) => {
+        setIsSending(false);
+        setSuccess(true);
       })
       .catch((error) => {
+        setIsSending(false);
         console.error("Error:", error);
         alert("There was an error sending your message.");
       });
@@ -99,11 +104,14 @@ const ContactForm: React.FC = () => {
         </Form.Group>
 
         <div className="text-center">
-          <Button variant="primary" type="submit" className="orange-btn">
-            Send Message
+          <Button variant="primary" type="submit" className="orange-btn" disabled={isSending}>
+            {isSending ? "Sending..." : "Send Message"}
           </Button>
         </div>
       </Form>
+      {success && <div className="alert alert-success mt-5 text-center" role="alert">
+        Message sent successfully!
+      </div>}
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React from 'react';
 import { CurrencyDollar, HeartPulse, EmojiSmile, People, ClipboardPulse, BarChart, ArrowReturnRight, Gear, PersonWorkspace,
-    Award, Cash, HandThumbsUp, PersonRaisedHand, Search, Lightbulb
+    Award, Cash, HandThumbsUp, PersonRaisedHand, Search, Lightbulb,
+    GraphUp,
+    CheckCircle
  } from 'react-bootstrap-icons';
 
 const HealthProductivity: React.FC = () => {
@@ -240,8 +242,8 @@ const HealthProductivity: React.FC = () => {
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="initiative-block">
-                                        <div className="initiative-icon">
-                                            <i className="bi bi-graph-up"></i>
+                                        <div className="mt-1">
+                                           <GraphUp size={70} color='rgb(179, 122, 4)'/>
                                         </div>
                                         <div className="initiative-content">
                                             <h3 className="initiative-title">Assessment & Data</h3>
@@ -253,8 +255,8 @@ const HealthProductivity: React.FC = () => {
                                 </div>
                                 <div className="col-md-4">
                                     <div className="initiative-block">
-                                        <div className="initiative-icon">
-                                            <i className="bi bi-people"></i>
+                                        <div className="mt-1">
+                                            <People size={70} color='rgb(179, 122, 4)'/>
                                         </div>
                                         <div className="initiative-content">
                                             <h3 className="initiative-title">Targeted Strategies</h3>
@@ -266,8 +268,8 @@ const HealthProductivity: React.FC = () => {
                                 </div>
                                 <div className="col-md-4">
                                     <div className="initiative-block">
-                                        <div className="initiative-icon">
-                                            <i className="bi bi-check-circle"></i>
+                                        <div className="mt-1">
+                                            <CheckCircle size={70} color='rgb(179, 122, 4)'/>
                                         </div>
                                         <div className="initiative-content">
                                             <h3 className="initiative-title">Execution & Engagement</h3>

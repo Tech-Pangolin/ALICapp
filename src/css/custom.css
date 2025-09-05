@@ -162,6 +162,11 @@ section#hero {
   text-align: center;
   margin: 20px;
 }
+#financial-wellness p{
+  font-size: 20px;
+  font-family: "BR Segma", Arial, sans-serif;
+}
+
 
 
 #livebalanced .tl {

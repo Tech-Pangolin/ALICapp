@@ -105,6 +105,8 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
     subject: "",
     message: "",
   });
+  const [success, setSuccess] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -113,6 +115,7 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSending(true)
     console.log("Form submitted:", formData);
     fetch("https://us-central1-greywebsupportfxns.cloudfunctions.net/submitForm", {
       method: "POST",
@@ -127,13 +130,13 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
         }
         return response.json();
       })
-      .then((data) => {
-        console.log("Success:", data);
-        alert("Message sent successfully!");
+      .then((_) => {
+        setSuccess(true);
+        setIsSending(false);
       })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert("There was an error sending your message.");
+      .catch((_) => {
+        setSuccess(false);
+        setIsSending(false);
       });
     // Here you could send the data to your backend / email service
   };
@@ -146,9 +149,12 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
           <div className="col-lg-3">
             <div className="left-column" style={devStyles.leftColumn}>
               <button type="submit" className="gradient-header" style={devStyles.gradientHeader}>
-                SEND US A MESSAGE
+                {isSending ? "Sending..." : "SEND US A MESSAGE"}
               </button>
             </div>
+            {success && <div className="alert alert-success mt-5 text-center" role="alert">
+              Message sent successfully!
+            </div>}
           </div>
 
           {/* Right Column - Contact Form */}
@@ -160,6 +166,7 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
                   <div className="form-group" style={devStyles.formGroup}>
                     <label htmlFor="name" style={devStyles.formLabel}>NAME</label>
                     <input
+                      required
                       type="text"
                       id="name"
                       name="name"
@@ -173,6 +180,7 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
                   <div className="form-group" style={devStyles.formGroup}>
                     <label htmlFor="email" style={devStyles.formLabel}>EMAIL</label>
                     <input
+                      required
                       type="email"
                       id="email"
                       name="email"

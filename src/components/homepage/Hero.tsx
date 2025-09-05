@@ -13,9 +13,10 @@ const Hero: React.FC = () => {
                   src="/img/home/graphiclogo.png"
                   alt="Atlanta Life Heritage Collage"
                   className="img-fluid" style={{ position: 'relative', bottom: '136px' }} />
-                
+
               </div>
             </Col>
+
           </Row>
         </Container>
       </section>
@@ -33,10 +34,17 @@ const Hero: React.FC = () => {
               </div>
             </Col>
 
+
             {/* Right Column - Text Content */}
             <Col lg={7} className="d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="400">
               <div className="hero-content">
-               
+                <div className="hero-graphic">
+                  <img
+                    src="/img/home/honorpast.png"
+                    alt="Honoring the Past"
+                    className="img-fluid"  />
+
+                </div>
               </div>
             </Col>
           </Row>

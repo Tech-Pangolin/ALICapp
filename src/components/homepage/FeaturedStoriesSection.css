@@ -1,7 +1,8 @@
-@import './base.css';
+@import '../base.css';
 
 /* Featured Stories Section Styles */
 .featured-stories-section {
+  background-color: var(--white);
   width: 100vw !important;
   display: flex;
   align-items: center;
@@ -13,9 +14,11 @@
   right: 50%;
   margin-left: -50vw !important;
   margin-right: -50vw !important;
-  background-color: var(--white);
 }
 
+#featured-stories {
+    background-color: var(--white);
+}
 
 
 .left-strip {
@@ -119,7 +122,7 @@
   padding-left:25px;
   padding-right:50px;
   position:relative;
-  z-index: 9999;
+  z-index: 2;
   margin-left:0px;
   width: 93%;
   bottom: 15%
@@ -131,7 +134,7 @@
   align-items: center;
   /* padding-left:25px; */
   /* padding-right:50px; */
-  z-index: 9999;
+  z-index: 2;
   margin-left:0px;
   /* width: 93%; */
   bottom: 15%;

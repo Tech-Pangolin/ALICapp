@@ -125,6 +125,7 @@ const Timeline: React.FC<TimelineProps> = ({ setExpanded, expanded }) => {
                     </div>
 
                 </div>
+                 {expanded && <div className="chevron-icon text-center" style={{cursor:"pointer"}} onClick={() => setExpanded(false)}><CaretUpSquare size={50}/></div>}
             </div>
 
 

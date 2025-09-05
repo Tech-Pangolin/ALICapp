@@ -31,9 +31,11 @@
 .top-text-section {
   margin-bottom: 60px;
 }
-
+#featured-stories h2{
+  font-size: 1.5rem;
+}
 .main-heading {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--primary-blue);
   text-transform: uppercase;
@@ -94,7 +96,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0;
-  height: 400px;
+  height: 375px;
 }
 
 .image-collage img {
@@ -104,13 +106,35 @@
   display: block;
 }
 
+.image-collage .col{
+  padding:0 5px;
+}
+
 /* Dark overlay with CTA */
 .cta-overlay {
-  height: 400px;
+  height: 275px;
   background-color: var(--primary-blue);
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  padding-left:25px;
+  padding-right:50px;
+  position:relative;
+  z-index: 9999;
+  margin-left:0px;
+  width: 93%;
+  bottom: 15%
+}
+.cta-overlay-mobile {
+  height: 350px;
+  background-color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  /* padding-left:25px; */
+  /* padding-right:50px; */
+  z-index: 9999;
+  margin-left:0px;
+  /* width: 93%; */
+  bottom: 15%;
 }
 
 .overlay-content {
@@ -123,6 +147,9 @@
 
 .overlay-heading {
   color: var(--white);
+  font-weight: bold;
+  width:280px;
+  line-height: 35px;
 }
 
 .cta-button {
@@ -147,4 +174,5 @@
 .overlay-description {
   color: var(--white);
   font-size: large;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
 }

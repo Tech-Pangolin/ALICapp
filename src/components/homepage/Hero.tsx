@@ -12,8 +12,8 @@ const Hero: React.FC = () => {
                 <img
                   src="/img/home/graphiclogo.png"
                   alt="Atlanta Life Heritage Collage"
-                  className="img-fluid"
-                />
+                  className="img-fluid" style={{ position: 'relative', bottom: '136px' }} />
+                
               </div>
             </Col>
           </Row>
@@ -36,9 +36,7 @@ const Hero: React.FC = () => {
             {/* Right Column - Text Content */}
             <Col lg={7} className="d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="400">
               <div className="hero-content">
-                <h1 className="display-1 fw-bold text-white text-uppercase mb-3">
-                  ATLANTA LIFE INSURANCE COMPANY
-                </h1>
+               
               </div>
             </Col>
           </Row>

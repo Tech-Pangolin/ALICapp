@@ -1,4 +1,7 @@
 import './App.css'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 import NavbarComponent from './components/Navbar/Navbar'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
@@ -14,6 +17,13 @@ import ChildReads from './pages/resources/ChildReads';
 import Publications from './pages/livebalanced/Publications';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      // Optional: Configure global AOS settings here
+      duration: 1000,
+      once: true, // Only animate once
+    });
+  }, []);
   return (
     <Router>
       <NavbarComponent />

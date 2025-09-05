@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "icons": "^1.0.0",
     "lodash": "^4.17.21",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
+    "@types/aos": "^3.0.7",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",

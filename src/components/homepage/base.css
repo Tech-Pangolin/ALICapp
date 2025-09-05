@@ -1,0 +1,44 @@
+:root {
+    --primary-blue: #0b3144;
+    --primary-gold: #d4af37;
+    --white: #fcfcfc;
+    --ss-font: "Open Sans";
+}
+
+.text-blue {
+    color: var(--primary-blue);
+}
+
+.text-gold {
+    color: var(--primary-gold);
+}
+
+p, h1, h2, h3 {
+    font-family: var(--ss-font), sans-serif;
+    color: var(--primary-blue);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}

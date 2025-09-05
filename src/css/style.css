@@ -539,6 +539,14 @@ section {
     height: auto;
     padding: 120px 0 60px 0;
   }
+  #mobile-hero {
+    padding: 148px 0 0 0;
+  }
+
+  .hero-container{
+    padding:0;
+    margin:0;
+  }
 
   .hero .hero-img {
     text-align: center;

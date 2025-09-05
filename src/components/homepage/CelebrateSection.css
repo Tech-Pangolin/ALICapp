@@ -17,6 +17,12 @@
   justify-content: center;
   align-items: center;
 }
+.main-text-mobile{
+  font-size: 2em;
+}
+.celebrate-background-mobile{
+    height: 215px;
+}
 
 .celebrate-text-overlay {
   position: absolute;
@@ -27,7 +33,15 @@
   max-width: 80%;
   height: auto;
 }
-
+.celebrate-text-overlay-mobile {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 40%;
+  height: auto;
+}
 .celebrate-additional-text {
   position: absolute;
   bottom: 20px;

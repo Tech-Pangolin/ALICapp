@@ -16,6 +16,10 @@
   background-color: var(--white);
 }
 
+section.container-fluid {
+  background-color: var(--white);
+}
+
 .solutions-layout {
   display: grid;
   grid-template-columns: 2% 98%;

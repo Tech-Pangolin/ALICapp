@@ -2,6 +2,7 @@
 
 /* Featured Stories Section Styles */
 .featured-stories-section {
+  background-color: var(--white);
   width: 100vw !important;
   display: flex;
   align-items: center;
@@ -13,9 +14,11 @@
   right: 50%;
   margin-left: -50vw !important;
   margin-right: -50vw !important;
-  background-color: var(--white);
 }
 
+#featured-stories {
+    background-color: var(--white);
+}
 
 
 .left-strip {

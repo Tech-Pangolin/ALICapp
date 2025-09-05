@@ -3,7 +3,7 @@ import './GradientBox.css';
 
 const GradientBox: React.FC = () => {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="row">
         <div className="col" style={{ padding: 0 }}>
           <div className="white-box">

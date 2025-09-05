@@ -905,6 +905,7 @@ section#hero {
 
 #mentalwellness {
   background-color: #0B3144;
+  margin-top: 75px;
 }
 
 #mentalwellness .blog .entry {
@@ -1237,17 +1238,16 @@ section#hero {
   width: 100%;
 }
 #timeline {
-  background: url(/img/timeline/timelinebackground.png) no-repeat center center;
+  background: url(/img/timeline/timeline-bg.png) no-repeat center center;
   background-color: #0B3144;
   background-size: contain;
   height: 100%;
   width: 100%;
-  padding-top: 165px;
+  padding-top: 20px;
 }
 #timeline h1, #mobile-timeline h1{
   color: #CC9110;
-  text-transform: uppercase;
-  font-size: 65px;
+ font-size: 65px;
   font-weight: bolder;
 }
 #timeline h2, #mobile-timeline h2{
@@ -1353,6 +1353,12 @@ font-size: 20px;
   from{--p:0}
 }
 
-body {
+/* body {
   background:#f2f2f2;
+} */
+
+#solutions{
+  background-color: #FFF;
 }
+
+section{background-color: #FFF;}

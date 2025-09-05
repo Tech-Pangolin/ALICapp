@@ -40,7 +40,7 @@ function NavbarComponent() {
   return (
     <>
       <Navbar bg="light" expand="lg" fixed="top" className="shadow-sm">
-        <Container fluid className="container-xl">
+        <Container fluid>
           {/* Logo */}
           <Navbar.Brand href="/" className="d-flex align-items-center">
             <img

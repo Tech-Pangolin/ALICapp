@@ -3,7 +3,7 @@ import './SolutionsSection.css';
 
 const SolutionsSection: React.FC = () => {
   return (
-    <section className="container-fluid">
+    <section className="container" id="solutions">
       <div className="solutions-layout">
         <div className="left-strip"></div>
 

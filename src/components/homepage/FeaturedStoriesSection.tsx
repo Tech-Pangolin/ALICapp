@@ -3,7 +3,7 @@ import './FeaturedStoriesSection.css';
 
 const FeaturedStoriesSection: React.FC = () => {
     return (
-        <div className="container-fluid" id="featured-stories">
+        <div className="container" id="featured-stories">
             <div className="row">
                 <div className="col-12">
                     <h1 className="main-heading ms-5">

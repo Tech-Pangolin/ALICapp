@@ -13,7 +13,7 @@
   right: 50%;
   margin-left: -50vw !important;
   margin-right: -50vw !important;
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 
 .solutions-layout {

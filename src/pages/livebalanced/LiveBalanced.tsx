@@ -4,7 +4,7 @@ import 'react-circular-progressbar/dist/styles.css';
 
 const LiveBalanced: React.FC = () => {
       return (
-        <div id="livebalanced">
+        <div id="livebalanced" className="mt-5">
 
             <main id="main">
                 {/* 
@@ -233,7 +233,7 @@ const LiveBalanced: React.FC = () => {
 
                             </div>
                         </div>
-                        <p className="statistic-text">Statistic: 76% need to manage their condition during work hours. 2</p>
+                        <p className="statistic-text">Statistic: 76% need to manage their condition during work hours.</p>
                     </div>
                 </section>
 

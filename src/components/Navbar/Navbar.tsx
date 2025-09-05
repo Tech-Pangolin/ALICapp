@@ -44,14 +44,15 @@ function NavbarComponent() {
         <Container fluid>
           {/* Logo */}
           <Navbar.Brand href="/" className="d-flex align-items-center">
+            
             <img
               src={alicLogo}
               alt="Atlanta Life Logo"
               height="60"
               className="me-2 my-3"
             />
-            <div id="brand-celebrating">
-              <p id="celebrating">Celebrating</p> 
+            <div id="brand-celebrating" className="d-none d-lg-block">
+              <p id="celebrating">Celebrating</p>
               <p id="years">120 Years</p>
             </div>
           </Navbar.Brand>

@@ -5,7 +5,7 @@ import AboutMenu from './AboutMenu';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
 import ContactMenu from './ContactMenu';
-import '../base.css'
+import './Navbar.css'
 
 function NavbarComponent() {
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
@@ -50,7 +50,10 @@ function NavbarComponent() {
               height="60"
               className="me-2 my-3"
             />
-         
+            <div id="brand-celebrating">
+              <p id="celebrating">Celebrating</p> 
+              <p id="years">120 Years</p>
+            </div>
           </Navbar.Brand>
 
           {/* Toggle for mobile */}

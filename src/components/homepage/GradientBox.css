@@ -1,4 +1,4 @@
-@import './base.css';
+@import '../base.css';
 
 .gradient-box-section {
   width: 100vw !important;

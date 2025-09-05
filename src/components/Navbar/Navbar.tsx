@@ -5,6 +5,7 @@ import AboutMenu from './AboutMenu';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
 import ContactMenu from './ContactMenu';
+import '../base.css'
 
 function NavbarComponent() {
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
@@ -100,7 +101,7 @@ function NavbarComponent() {
                   onMouseEnter={() => handleMouseEnter('contact')}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <a className="nav-link dropdown-toggle" href="#" role="button">
+                  <a className="nav-link dropdown-toggle" href="#" role="button" style={{color: 'var(--primary-gold)'}}>
                     Contact Us
                   </a>
                 </div>

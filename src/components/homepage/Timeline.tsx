@@ -10,8 +10,8 @@ const Timeline: React.FC<TimelineProps> = ({ setExpanded, expanded }) => {
         <div style={{ backgroundColor: "#0B3144", paddingBottom: '50px' }}>
             {/* Mobile timeline */}
             <div className="container d-block d-lg-none" id="mobile-timeline">
-                <div className="row mb-5 pb-5">
-                    <div className="col-4">
+                <div className="row mb-5 ">
+                    <div className="col-12">
                         <img src="/img/timeline/builtbyresilience.png" alt="" className="img-fluid mt-5" />
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const Timeline: React.FC<TimelineProps> = ({ setExpanded, expanded }) => {
                     <div className="col-12 mt-4">
                         <h1 className='kapakana-cursive text-center'>1973</h1>
                         <h2 className="text-center my-2">A new era of leadership</h2>
-                        <h3 className="text-center">Jesse Hill Jr., the company’s first non-Herndon president, expanded Atlanta Life's influence, guiding it to become the largest Black owned life insurance company in the United States and a leading voice for equality, economic justice, and corporate responsibility.</h3>
+                        <h3 className="text-center">Jesse Hill Jr., the company's first non-Herndon president, expanded Atlanta Life's influence, guiding it to become the largest Black owned life insurance company in the United States and a leading voice for equality, economic justice, and corporate responsibility.</h3>
                     </div>
 
 
@@ -128,6 +128,11 @@ const Timeline: React.FC<TimelineProps> = ({ setExpanded, expanded }) => {
                             Innovation & Expansion</h2>
                         <h3 className="text-center">Today, Atlanta Life stands as an innovative and modern reinsurance company, steadily expanding our capabilities and delivering industry leading solutions. By forging new partnerships and deepening connections with companies and communities, we are extending our impact and creating value that resonates far beyond traditional insurance. Our growth reflects both strategic collaboration and an unwavering commitment to strengthening the ecosystems we serve.</h3>
                     </div>
+                    <div className="row">
+                        <div className="col-12 justify-content-center d-flex">
+                            <img src="/img/timeline/120calls.png" alt="" className="img-fluid mt-5" />
+                        </div>
+                    </div>
 
                 </div>
                 {expanded && <div className="chevron-icon text-center" style={{ cursor: "pointer" }} onClick={() => setExpanded(false)}><CaretUpSquare size={50} /></div>}
@@ -144,9 +149,9 @@ const Timeline: React.FC<TimelineProps> = ({ setExpanded, expanded }) => {
             </div> */}
             <div className="container d-none d-lg-block">
                 <img src="/img/timeline/timeline-bg.png" alt="" className="img-fluid" />
-            </div>
-              {expanded && <div className="chevron-icon text-center" style={{ cursor: "pointer" }} onClick={() => setExpanded(false)}><CaretUpSquare size={50} /></div>}
 
+                {expanded && <div className="chevron-icon text-center" style={{ cursor: "pointer" }} onClick={() => setExpanded(false)}><CaretUpSquare size={50} /></div>}
+            </div>
             {/* <div className="container d-none d-lg-block" id="timeline" style={{height:"1000px"}}>
                 <div className="spacer" style={{ height: "90px" }}></div>
                 <div className="row" >
@@ -311,11 +316,7 @@ const Timeline: React.FC<TimelineProps> = ({ setExpanded, expanded }) => {
 
                     </div>
                 </div>
-                <div className="row my-5">
-                    <div className="col-11 justify-content-center d-flex">
-                        <img src="/img/timeline/120calls.png" alt="" className="img-fluid mt-5" />
-                    </div>
-                </div> 
+              
               
             </div>*/}
         </div>

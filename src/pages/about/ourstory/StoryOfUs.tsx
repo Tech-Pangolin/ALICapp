@@ -5,7 +5,7 @@ import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 const StoryOfUs: React.FC = () => {
     return (
         <Container className="about-container">
-            <ContentPageHeader src="/img/about/storyofus/header.png" alt="Story of Us Header" />
+            <ContentPageHeader src="/img/about/storyofus/header.png" alt="Story of Us Header" title="Lilo and Stitch" />
             <Row>
                 <Col xs={12} sm={12} md={8} >
                     <h6>Birth of a lasting legacy</h6>

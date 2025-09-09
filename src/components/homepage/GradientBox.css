@@ -1,18 +1,11 @@
 @import '../base.css';
 
 .gradient-box-section {
-  /* width: 100vw !important; */
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 !important;
-  
+  justify-content: center;  
   overflow: hidden;
   position: relative;
-  /* left: 50%;
-  right: 50%;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important; */
 }
 
 .white-box {

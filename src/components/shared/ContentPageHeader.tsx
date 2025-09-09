@@ -1,6 +1,6 @@
 import './ContentPageHeader.css';
 
-const ContentPageHeader: React.FC<{src: string, alt: string, title: string}> = ({src, alt, title}) => {
+const ContentPageHeader: React.FC<{src: string, title: string}> = ({src, title}) => {
     return (
         <div 
             className="position-relative w-100 content-page-header"
@@ -9,13 +9,16 @@ const ContentPageHeader: React.FC<{src: string, alt: string, title: string}> = (
             }}
         >
             {/* Gradient overlay */}
-            <div className="position-absolute w-100 h-100 content-page-header-gradient" />
+            <div className="position-absolute w-100 h-100" />
             
             {/* Text overlay */}
-            <div className="position-absolute w-100 h-100 d-flex align-items-end justify-content-center p-lg-5 p-3">
-                <h1 className="text-white text-center mb-lg-0 mb-3 display-1 d-lg-block d-none fw-bold">
-                    {title}
-                </h1>
+            <div className="position-absolute w-100 h-100 d-flex align-items-center align-items-md-end justify-content-center justify-content-md-start p-3">
+                <div className="position-absolute w-45 h-25 text-overlay-bg d-flex align-items-center justify-content-center" id="title-text-overlay">
+                    <h1 className="title-text">
+                        {title}
+                    </h1>
+                </div>
+                
             </div>
         </div>
     );

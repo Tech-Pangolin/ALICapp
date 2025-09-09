@@ -1,4 +1,4 @@
-@import './base.css';
+@import '../base.css';
 
 /* ContentPageHeader specific styles */
 .content-page-header {
@@ -6,8 +6,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 50px;
 }
 
-.content-page-header-gradient {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+#title-text-overlay {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 45%;
+    height: 25%;
+}
+
+.title-text {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }

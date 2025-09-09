@@ -1394,3 +1394,13 @@ section{background-color: #FFF;}
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
 }
+.about-container .subheader{
+  color: #0B3144;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+.about-container ul li{
+  color: #0B3144;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}

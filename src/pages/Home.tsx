@@ -21,7 +21,7 @@ const Home = () => {
       {expanded && <Timeline setExpanded={setExpanded} expanded={expanded} />}
 
       {/* ======= Gradient Box Section ======= */}
-      <GradientBox />
+      <GradientBox line1Text="BUILT ON RESILIENCE," line2Text="ANCHORED BY PROGRESS."/>
 
       {/* ======= Cards Section ======= */}
       <CardsSection />

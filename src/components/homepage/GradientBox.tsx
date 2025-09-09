@@ -1,7 +1,12 @@
 import React from 'react';
 import './GradientBox.css';
 
-const GradientBox: React.FC = () => {
+interface GradientBoxProps {
+  line1Text: string;
+  line2Text?: string;
+}
+const GradientBox: React.FC<GradientBoxProps> = ({ line1Text, line2Text }) => {
+
   return (
     <div className="container">
       <div className="row">
@@ -9,19 +14,19 @@ const GradientBox: React.FC = () => {
           <div className="white-box">
             <div className="white-box-content">
               <h1 className="d-none d-lg-block fw-bold text-uppercase main-text">
-                BUILT ON RESILIENCE,<br />
-                ANCHORED BY PROGRESS.
+                {line1Text}<br />
+                {line2Text}
               </h1>
               <h1 className="d-block d-lg-none fw-bold text-uppercase main-text-mobile">
-                BUILT ON RESILIENCE,<br />
-                ANCHORED BY PROGRESS.
+                {line1Text}<br />
+                {line2Text}
               </h1>
             </div>
           </div>
         </div>
       </div>
     </div>
-  
+
   );
 };
 

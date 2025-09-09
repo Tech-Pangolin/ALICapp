@@ -1,4 +1,5 @@
 import { NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import type { MenuProps } from "../../types";
 
 const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
@@ -6,19 +7,19 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
     return (
       <NavDropdown title="About Us" id="mobile-about-dropdown">
         <NavDropdown.Item href="#"><strong>Our Story</strong></NavDropdown.Item>
-        <NavDropdown.Item href="/about/ourstory"><strong>The Story of Us</strong></NavDropdown.Item>
-        <NavDropdown.Item href="/about/ourcommunities">Our Communities</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/ourstory"><strong>The Story of Us</strong></NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/ourcommunities">Our Communities</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#"><strong>Our Team</strong></NavDropdown.Item>
-        <NavDropdown.Item href="/about/executiveleadership">Executive Leadership</NavDropdown.Item>
-        <NavDropdown.Item href="/about/businessdevelopment">Business Development</NavDropdown.Item>
-        <NavDropdown.Item href="/about/actuaryrisk">Actuary & Risk</NavDropdown.Item>
-        <NavDropdown.Item href="/about/organizationalstrategy">Organizational Strategy</NavDropdown.Item>
-        <NavDropdown.Item href="/about/internship">Internship Program</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/executiveleadership">Executive Leadership</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/businessdevelopment">Business Development</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/actuaryrisk">Actuary & Risk</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/organizationalstrategy">Organizational Strategy</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/internship">Internship Program</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#leadership"><strong>More About Us</strong></NavDropdown.Item>
-        <NavDropdown.Item href="/about/newsroom">Newsroom</NavDropdown.Item>
-        <NavDropdown.Item href="/about/awards">Awards & Recognition</NavDropdown.Item>
+        <NavDropdown.Item href="#"><strong>More About Us</strong></NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/newsroom">Newsroom</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/awards">Awards & Recognition</NavDropdown.Item>
       </NavDropdown>
     );
   }
@@ -199,10 +200,10 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  <a href="/about/ourstory">The Story of Us</a>
+                  <Link to="/about/ourstory">The Story of Us</Link>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/about/ourcommunities">Our Communities</a>
+                  <Link to="/about/ourcommunities">Our Communities</Link>
                 </div>
 
               </div>
@@ -214,10 +215,10 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                 <a href="/about/newsroom">NEWSROOM</a>
+                 <Link to="/about/newsroom">NEWSROOM</Link>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/about/awards">AWARDS & RECOGNITION</a>
+                  <Link to="/about/awards">AWARDS & RECOGNITION</Link>
                 </div>
               </div>
             </div>
@@ -228,19 +229,19 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  <a href="/about/executiveleadership">EXECUTIVE LEADERSHIP</a>
+                  <Link to="/about/executiveleadership">EXECUTIVE LEADERSHIP</Link>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/about/businessdevelopment">BUSINESS DEVELOPMENT</a>
+                  <Link to="/about/businessdevelopment">BUSINESS DEVELOPMENT</Link>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/about/actuaryrisk">ACTUARY & RISK</a>
+                  <Link to="/about/actuaryrisk">ACTUARY & RISK</Link>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/about/organizationalstrategy">Organizational Strategy</a>
+                  <Link to="/about/organizationalstrategy">Organizational Strategy</Link>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/about/internship">INTERNSHIP PROGRAM</a>
+                  <Link to="/about/internship">INTERNSHIP PROGRAM</Link>
                 </div>
               </div>
             </div>

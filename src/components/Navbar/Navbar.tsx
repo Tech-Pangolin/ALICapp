@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import alicLogo from '/img/ALIClogo.png';
 import AboutMenu from './AboutMenu';
 import SolutionsMenu from './SolutionsMenu';
@@ -43,7 +44,7 @@ function NavbarComponent() {
       <Navbar bg="light" expand="lg" fixed="top" className="shadow-sm">
         <Container fluid>
           {/* Logo */}
-          <Navbar.Brand href="/" className="d-flex align-items-center">
+          <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
             
             <img
               src={alicLogo}

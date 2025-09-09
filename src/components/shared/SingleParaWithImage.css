@@ -1,5 +1,8 @@
-/* InternshipProgram specific styles */
 .internship-benefits-image {
     width: 200px;
     height: auto;
+}
+
+#para-with-image-div {
+    margin-bottom: 20px;
 }

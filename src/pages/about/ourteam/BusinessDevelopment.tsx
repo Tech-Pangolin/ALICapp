@@ -5,7 +5,7 @@ import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 const BusinessDevelopment: React.FC = () => {
     return (
         <Container className="about-container">
-            <ContentPageHeader src="/img/about/bizdev/bd-header.png" title="Business Development" />
+            <ContentPageHeader src="/img/about/shared/bd-header.png" title="Business Development" />
             <Row>
                 <Col xs={12} sm={12} md={8} >
                     <h6>About Business Development</h6>

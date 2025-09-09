@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 
 const StoryOfUs: React.FC = () => {
     return (
         <Container className="about-container">
-            {/* Placeholder for hero component */}
+            <ContentPageHeader src="/img/about/storyofus/header.png" alt="Story of Us Header" />
             <Row>
                 <Col xs={12} sm={12} md={8} >
                     <h6>Birth of a lasting legacy</h6>

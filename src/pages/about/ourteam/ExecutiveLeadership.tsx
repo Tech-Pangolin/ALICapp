@@ -1,17 +1,33 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import PhotoCard from '../../../components/utilities/PhotoCard';
 
 const ExecutiveLeadership: React.FC = () => {
     return (
-         <Container className="about-container">
+        <Container className="about-container">
             <Row>
                 <Col>
-                    <div>
-                        <h1>Exective Leadership</h1>
-                        <p>Placeholder text for Exective Leadership page.</p>
-                    </div>
+                    <PhotoCard name="Eric L. Holoman" title="President & Chief Executive Officer" image="https://placehold.co/400x300" />
+                </Col>
+                <Col>
+                    <PhotoCard name="Ryan L. Smith" title="Executive Vice President" image="https://placehold.co/400x300" />
+                </Col>
+                <Col>
+                    <PhotoCard name="Paul A. Miller" title="Corporate Secretary & Treasurer" image="https://placehold.co/400x300" />
                 </Col>
             </Row>
+            <Row>
+                <Col>
+                    <PhotoCard name="Kam Harris" title="Vice President, Actuary" image="https://placehold.co/400x300" />
+                </Col>
+                <Col>
+                    <PhotoCard name="Courtney Johnson" title="Vice President, Business Development" image="https://placehold.co/400x300" />
+                </Col>
+                <Col>
+                    <PhotoCard name="Trish Payne" title="Vice President, Business Development" image="https://placehold.co/400x300" />
+                </Col>
+            </Row>
+
         </Container>
     );
 };

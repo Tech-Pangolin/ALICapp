@@ -1,0 +1,51 @@
+.photo-card-bio{
+    background-color: #0B3144;
+    color: white;
+    padding: 0 ;
+    position: relative;
+    bottom:122px;
+    height:200px;
+    
+    animation: slide-in 3s;
+
+}
+.photo-card-bio h2{
+    color: #FFF;
+    padding-left:20px;
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: normal;
+}
+
+.photo-card-bio .photo-card-description{
+    color:#FFF;
+     font-family: "DM Sans", sans-serif;
+}
+.close{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@keyframes slide-in {
+  from {
+    display: none;
+ 
+  }
+
+  to {
+    display: block;
+  }
+  
+}
+
+@keyframes text-appear {
+  from {
+    display: none;
+ 
+  }
+
+  to {
+    display: block;
+  }
+  
+}

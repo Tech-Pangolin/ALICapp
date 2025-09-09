@@ -1,17 +1,18 @@
 import React from 'react';
 import './FeaturedStoriesSection.css';
 
-const FeaturedStoriesSection: React.FC = () => {
+const FeaturedStoriesSection: React.FC<{showTitle?: boolean}> = ({showTitle = true}) => {
     return (
         <div className="container" id="featured-stories">
-            <div className="row">
+            {showTitle && <div className="row">
                 <div className="col-12">
                     <h1 className="main-heading ms-5">
                         WE MEASURE OUR IMPACT BY THE RESULTS WE HELP CREATE. EVERY WIN WE ACHIEVE TOGETHER IS PROOF OF WHAT TRUE PARTNERSHIP CAN DELIVER
                     </h1>
                     <h2 className='ms-5 my-5'>FEATURED STORIES</h2>
                 </div>
-            </div>
+            </div>}
+
             <div className="row">
                 <div className="d-none col-lg-2 d-lg-flex justify-content-center">
                     <img src="/img/home/featured-stories-vert.png" alt="FEATURED STORIES" className='ms-5' style={{ height: "75%" }} />

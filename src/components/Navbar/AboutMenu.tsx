@@ -98,7 +98,6 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
 
     orangeText: {
       fontSize: '1.1rem',
-      // fontWeight: '',
       color: '#f39c12',
       textTransform: 'uppercase' as const,
       marginBottom: '8px'
@@ -139,7 +138,7 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
     // Navigation item styles
     navItem: {
       fontSize: '0.85rem',
-      color: '#2c3e50',
+      color: '#2c3e50!important',
       marginBottom: '8px',
       textTransform: 'uppercase' as const,
     }
@@ -192,24 +191,6 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
         {/* Right Section - Navigation Grid */}
         <div className="col-lg-5" style={devStyles.rightSection}>
           <div className="ms-3 nav-grid" style={devStyles.navGrid}>
-            {/* CORPORATE PROFILE */}
-            {/* <div className="nav-section">
-              <h6 className="section-header" style={devStyles.navLinkHeaderText}>
-                CORPORATE PROFILE
-              </h6>
-              <div className="nav-items">
-                <div style={devStyles.navItem}>
-                  EQUITRUST LIFE INSURANCE COMPANY
-                </div>
-                <div style={devStyles.navItem}>
-                  MINORITY BUSINESS ENTERPRISE
-                </div>
-                <div style={devStyles.navItem}>
-                  PARTNERSHIPS
-                </div>
-              </div>
-            </div>
-             */}
             {/* OUR STORY */}
             <div className="nav-section">
               <h6 className="section-header" style={devStyles.navLinkHeaderText}>

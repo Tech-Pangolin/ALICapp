@@ -1367,3 +1367,9 @@ section{background-color: #FFF;}
 .about-container{
   margin-top:115px;
 }
+.about-menu-container a{
+  color: #2c3e50!important;
+}
+.about-menu-container a:hover{
+  color: #f39c12!important;
+}

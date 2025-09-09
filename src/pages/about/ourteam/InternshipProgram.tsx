@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import './InternshipProgram.css';
+import PhotoCard from '../../../components/utilities/PhotoCard';
 
 const InternshipProgram: React.FC = () => {
     return (
@@ -20,9 +21,24 @@ const InternshipProgram: React.FC = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} sm={12} md={8} >
+                <Col xs={12} sm={12} md={12} >
                     <h6>Our Intern Team</h6>
-                    {/* placeholder for photo cards */}
+                   <Row className='d-flex justify-content-center mx-auto'>
+                        <Col xs={12} lg={4}  >
+                            <PhotoCard name="Meet Patel" title="Intern, Actuary & Risk" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                        <Col xs={12} lg={4}  >
+                            <PhotoCard name="Aaron Alexander" title="Intern, Actuary & Risk" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                      
+                    </Row>
+                    <Row style={{ width: '70%' }} className='d-flex justify-content-center mx-auto'>
+                        <Col xs={12} lg={6}  >
+                            <PhotoCard name="Garrett Stiell" title="Intern, Business Development" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                       
+                       
+                    </Row>
                 </Col>
             </Row>
             <Row>

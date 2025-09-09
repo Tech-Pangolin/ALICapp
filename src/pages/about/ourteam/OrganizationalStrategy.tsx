@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
+import PhotoCard from '../../../components/utilities/PhotoCard';
 
 const OrganizationalStrategy: React.FC = () => {
     return (
@@ -18,9 +19,28 @@ const OrganizationalStrategy: React.FC = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} sm={12} md={8} >
+                <Col xs={12} sm={12} md={12} >
                     <h6>Our Organizational Strategy Team</h6>
-                    {/* placeholder for photo cards */}
+                    <Row className='d-flex justify-content-center mx-auto'>
+                        <Col xs={12} lg={4}  >
+                            <PhotoCard name="Mia Dodson" title="Manager, Compliance" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                        <Col xs={12} lg={4}  >
+                            <PhotoCard name="Dayina Luxama" title="Office Coordinator & Customer Care Specialist" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                        <Col xs={12} lg={4}  >
+                            <PhotoCard name="Glenda Madrigal" title="Executive Assistant" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                    </Row>
+                    <Row style={{ width: '70%' }} className='d-flex justify-content-center mx-auto'>
+                        <Col xs={12} lg={6}  >
+                            <PhotoCard name="Darielle Jones" title="Administrator, IT Support Services" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                        <Col xs={12} lg={6}  >
+                            <PhotoCard name="Tamantha Smith" title="Project Manager" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                        </Col>
+                       
+                    </Row>
                 </Col>
             </Row>
         </Container>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import GradientBox from '../../../components/homepage/GradientBox';
+import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 
 const OurCommunities: React.FC = () => {
     return (
         <Container className="about-container">
-            {/* Placeholder for hero component */}
-           <GradientBox line1Text="Community is the center of what we do." line2Text="our mission is to build the future together."/>
+            <ContentPageHeader src="/img/about/ourcommunities/header.png" title="Our Communities" />
+            <GradientBox line1Text="Community is the center of what we do." line2Text="our mission is to build the future together."/>
             <Row>
                 <Col>
                     <h6>community is our commitment</h6>

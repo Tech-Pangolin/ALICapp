@@ -15,6 +15,15 @@ import Footer from './components/Footer/Footer';
 import Copyright from './components/Footer/Copyright';
 import ChildReads from './pages/resources/ChildReads';
 import Publications from './pages/livebalanced/Publications';
+import StoryOfUs from './pages/about/ourstory/StoryOfUs';
+import OurCommunities from './pages/about/ourstory/OurCommunities';
+import ActuaryRisk from './pages/about/ourteam/ActuaryRisk';
+import BusinessDevelopment from './pages/about/ourteam/BusinessDevelopment';
+import ExecutiveLeadership from './pages/about/ourteam/ExecutiveLeadership';
+import InternshipProgram from './pages/about/ourteam/InternshipProgram';
+import OrganizationalStrategy from './pages/about/ourteam/OrganizationalStrategy';
+import AwardsRecognition from './pages/about/newsroom/AwardsRecognition';
+import Newsroom from './pages/about/newsroom/Newsroom';
 
 function App() {
   useEffect(() => {
@@ -37,6 +46,15 @@ function App() {
         <Route path="/health/healthandproductivity" element={<HealthProductivity />} />
         <Route path="/resources/readsforchildren" element={<ChildReads />} />
         <Route path="/publications" element={<Publications />} />
+        <Route path="/about/ourstory" element={<StoryOfUs />} />
+        <Route path="/about/ourcommunities" element={<OurCommunities />} />
+        <Route path="/about/actuaryrisk" element={<ActuaryRisk />} />
+        <Route path="/about/businessdevelopment" element={<BusinessDevelopment />} />
+        <Route path="/about/executiveleadership" element={<ExecutiveLeadership />} />
+        <Route path="/about/organizationalstrategy" element={<OrganizationalStrategy />} />
+        <Route path="/about/internship" element={<InternshipProgram />} />
+        <Route path="/about/awards" element={<AwardsRecognition />} />
+        <Route path="/about/newsroom" element={<Newsroom />} />
       </Routes>
       <Footer />
       <Copyright />

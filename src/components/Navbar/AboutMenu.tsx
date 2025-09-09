@@ -5,10 +5,11 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {
     return (
       <NavDropdown title="About Us" id="mobile-about-dropdown">
-        <NavDropdown.Item href="/about/ourstory"><strong>Our Story</strong></NavDropdown.Item>
+        <NavDropdown.Item href="#"><strong>Our Story</strong></NavDropdown.Item>
+        <NavDropdown.Item href="/about/ourstory"><strong>The Story of Us</strong></NavDropdown.Item>
         <NavDropdown.Item href="/about/ourcommunities">Our Communities</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#history"><strong>Our Team</strong></NavDropdown.Item>
+        <NavDropdown.Item href="#"><strong>Our Team</strong></NavDropdown.Item>
         <NavDropdown.Item href="/about/executiveleadership">Executive Leadership</NavDropdown.Item>
         <NavDropdown.Item href="/about/businessdevelopment">Business Development</NavDropdown.Item>
         <NavDropdown.Item href="/about/actuaryrisk">Actuary & Risk</NavDropdown.Item>

@@ -5,6 +5,12 @@
   font-weight: 400;
   font-style: normal;
 }
+.dm-sans-atlsans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
 
 section#hero {
   margin-top: 100px!important;
@@ -1372,4 +1378,19 @@ section{background-color: #FFF;}
 }
 .about-menu-container a:hover{
   color: #f39c12!important;
+}
+
+.about-container h6{
+  color: #0B3144;
+  text-transform: uppercase;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+
+}
+.about-container p{
+  color: #0B3144;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
 }

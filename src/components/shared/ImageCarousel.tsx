@@ -4,6 +4,7 @@ import type { EmblaOptionsType } from 'embla-carousel';
 import './ImageCarousel.css';
 
 interface ImageCarouselProps {
+  headerText?: string;
   images: string[];
   options?: EmblaOptionsType;
   className?: string;
@@ -16,6 +17,7 @@ interface ImageCarouselProps {
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({
+  headerText = '',
   images,
   options = {},
   className = '',
@@ -83,6 +85,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   }
 
   return (
+    <>
+    {headerText && <h6>{headerText}</h6>}
     <div className={`image-carousel ${className}`}>
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
@@ -158,9 +162,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
-        </div>
-      )}
-    </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

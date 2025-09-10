@@ -14,6 +14,19 @@ interface PhotoCardProps {
 
 const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio, alignment, setSelectedCard, layout }) => {
     const [expand, setExpand] = React.useState(false);
+    const [isMobile, setIsMobile] = React.useState(false);
+    
+    React.useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+    
     function expandBio() {
         setSelectedCard({ name, title, image, bio, alignment, layout });
         setExpand(!expand);
@@ -24,9 +37,10 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio, alignmen
         <Card className='photo-card my-3'>
             <Card.Img variant="top" src={image} alt={name} className='image' /> {/* Display the image */}
             <div className='gradient-top-border'></div>
-            <Card.Body className={`body card-body`}>
-                <Card.Title onClick={expandBio}>{name}</Card.Title>
+            <Card.Body className={`body card-body`} onClick={expandBio}>
+                <Card.Title>{name}</Card.Title>
                 <Card.Text>{title}</Card.Text>
+                {isMobile && expand && <Card.Text>{bio}</Card.Text>}
             </Card.Body>
         </Card>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
-import PhotoCard from '../../../components/utilities/PhotoCard';
+import PhotoCard from '../../../components/shared/PhotoCard';
 import SingleParaWithImage from '../../../components/shared/SingleParaWithImage';
 
 const InternshipProgram: React.FC = () => {

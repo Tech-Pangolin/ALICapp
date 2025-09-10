@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import ImageCarousel from '../../../components/shared/ImageCarousel';
-import PhotoCard from '../../../components/utilities/PhotoCard';
+import PhotoCard from '../../../components/shared/PhotoCard';
 
 const Newsroom: React.FC = () => {
     // Team images for development - replace with actual newsroom images when available

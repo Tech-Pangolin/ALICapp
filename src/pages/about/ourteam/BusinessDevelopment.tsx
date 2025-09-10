@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
-import PhotoCard from '../../../components/utilities/PhotoCard';
+import PhotoCard from '../../../components/shared/PhotoCard';
 
 const BusinessDevelopment: React.FC = () => {
     return (

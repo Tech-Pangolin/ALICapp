@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import PhotoCard from '../../../components/utilities/PhotoCard';
-import PhotoCardBio from '../../../components/utilities/PhotoCardBio';
+import PhotoCard from '../../../components/shared/PhotoCard';
+import PhotoCardBio from '../../../components/shared/PhotoCardBio';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 
 const ExecutiveLeadership: React.FC = () => {

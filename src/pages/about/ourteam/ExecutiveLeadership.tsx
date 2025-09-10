@@ -28,7 +28,12 @@ const ExecutiveLeadership: React.FC = () => {
                         <PhotoCard layout="top" name={teamInformation.paul.name} title={teamInformation.paul.title} bio={teamInformation.paul.bio} setSelectedCard={setSelectedCard} image={teamInformation.paul.photo} alignment='end' />
                     </Col>
                 </Row>
-                {(selectedBio && selectedBio?.layout === 'top') && <div className="row d-none d-lg-flex justify-content-center" ><PhotoCardBio selectedBio={selectedBio} setSelectedCard={setSelectedCard} /></div>}
+                <Row className='ms-1 d-flex justify-content-lg-end '>
+                    <Col xl={11} className='' style={{backgroundColor: '#0B3144', height: '300px'}}>
+
+                    </Col>
+                </Row>
+                {/* {(selectedBio && selectedBio?.layout === 'top') && <div className="row d-none d-lg-flex justify-content-center" ><PhotoCardBio selectedBio={selectedBio} setSelectedCard={setSelectedCard} /></div>} */}
                 <Row className='photo-card-row'>
                     <Col xs={12} md={4} className='d-flex justify-content-lg-end'>
                         <PhotoCard layout="bottom" name={teamInformation.kam.name} bio={teamInformation.kam.bio} title={teamInformation.kam.title} setSelectedCard={setSelectedCard} image={teamInformation.kam.photo} alignment='start' />

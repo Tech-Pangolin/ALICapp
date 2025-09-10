@@ -28,17 +28,7 @@
     margin-left: 20px;
 }
 
-@keyframes slide-in {
-  from {
-    display: none;
- 
-  }
 
-  to {
-    display: block;
-  }
-  
-}
 
 @keyframes text-appear {
   from {

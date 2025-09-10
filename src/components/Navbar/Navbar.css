@@ -23,3 +23,15 @@
     font-weight: 700;
     color: var(--primary-blue);
 }
+
+.desktop-nav {
+    margin-top: 10px;
+}
+.navbar-nav .d-none.d-lg-block{
+    margin-top: 10px;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        height: 65px;
+    }
+}

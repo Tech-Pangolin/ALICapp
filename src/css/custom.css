@@ -12,9 +12,6 @@
   font-style: normal;
 }
 
-section#hero {
-  margin-top: 100px!important;
-}
 
 /* Fix for dropdown menu text overflow */
 .dropdown-item {

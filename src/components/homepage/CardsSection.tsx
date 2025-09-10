@@ -5,8 +5,7 @@ import SingleCard from './SingleCard';
 
 const CardsSection: React.FC = () => {
   return (
-    <section className="cards-section">
-      <Container>
+      <Container className='mt-5'>
         <Row className="justify-content-center">
           <div className="cards-title-container">
             <h2 className="fw-bold text-uppercase">
@@ -35,7 +34,6 @@ const CardsSection: React.FC = () => {
           />
         </Row>
       </Container>
-    </section>
   );
 };
 

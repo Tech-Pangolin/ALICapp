@@ -9,11 +9,12 @@ const SolutionsSection: React.FC = () => {
 
         <div className="row">
           <div className="col-12">
-            <h2 className="fw-bold text-uppercase ms-2 ms-lg-5">
+            {/* <h2 className="fw-bold text-uppercase ms-2 ms-lg-5"> */}
+             <h3 className="fw-semibold ms-2 ms-lg-5 my-5">
               WE ARE YOUR STRATEGIC REINSURANCE PARTNER<br />
               READY TO PROVIDE YOU WITH INDUSTRY LEADING<br />
               SOLUTIONS TAILORED FOR YOUR CLIENTELE
-            </h2>
+            </h3>
             <h3 className="fw-semibold ms-2 ms-lg-5 my-5">
               OUR SOLUTIONS
             </h3>

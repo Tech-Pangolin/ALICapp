@@ -4,9 +4,10 @@ import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import PhotoCard from '../../../components/utilities/PhotoCard';
 
 const OrganizationalStrategy: React.FC = () => {
-    return (
+    return (<>  
+    <ContentPageHeader src="/img/about/shared/bd-header.png" title="Organizational Strategy" />
         <Container className="about-container">
-            <ContentPageHeader src="/img/about/shared/bd-header.png" title="Organizational Strategy" />
+
             <Row>
                 <Col xs={12} sm={12} md={8} >
                     <h6>About Organizational Strategy</h6>
@@ -39,11 +40,12 @@ const OrganizationalStrategy: React.FC = () => {
                         <Col xs={12} lg={6}  >
                             <PhotoCard name="Tamantha Smith" title="Project Manager" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                         </Col>
-                       
+
                     </Row>
                 </Col>
             </Row>
         </Container>
+    </>
     );
 };
 

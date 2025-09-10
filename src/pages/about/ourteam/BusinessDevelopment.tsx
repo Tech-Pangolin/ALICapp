@@ -5,8 +5,10 @@ import PhotoCard from '../../../components/utilities/PhotoCard';
 
 const BusinessDevelopment: React.FC = () => {
     return (
+        <> 
+        <ContentPageHeader src="/img/about/shared/bd-header.png" title="Business Development" />
         <Container className="about-container">
-            <ContentPageHeader src="/img/about/shared/bd-header.png" title="Business Development" />
+           
             <Row>
                 <Col xs={12} sm={12} md={8} >
                     <h6>About Business Development</h6>
@@ -47,6 +49,7 @@ const BusinessDevelopment: React.FC = () => {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 };
 

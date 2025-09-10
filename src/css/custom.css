@@ -1414,3 +1414,9 @@ section{background-color: #FFF;}
 .executive-leadership-container{
   width:65%;
 }
+
+@media (min-width: 1200px) {
+  .executive-leadership-container .middle-col{
+    width: 26%;
+  }
+}

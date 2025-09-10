@@ -5,8 +5,10 @@ import PhotoCard from '../../../components/utilities/PhotoCard';
 
 const ActuaryRisk: React.FC = () => {
     return (
-        <Container className="about-container">
+        <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Actuary & Risk" />
+        <Container className="about-container">
+        
             <Row>
                 <Col xs={12} sm={12} md={8} >
                     <h6>About Actuary & Risk</h6>
@@ -39,6 +41,7 @@ const ActuaryRisk: React.FC = () => {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 };
 

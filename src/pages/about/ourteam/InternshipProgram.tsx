@@ -6,8 +6,10 @@ import SingleParaWithImage from '../../../components/shared/SingleParaWithImage'
 
 const InternshipProgram: React.FC = () => {
     return (
+        <>
+        <ContentPageHeader src="/img/about/internship/internship-header.png" title="The Internship Program" />
         <Container className="about-container">
-            <ContentPageHeader src="/img/about/internship/internship-header.png" title="The Internship Program" />
+            
             <Row>
                 <Col xs={12} sm={12} md={8} >
                     <h6>About the Internship Program</h6>
@@ -59,6 +61,7 @@ const InternshipProgram: React.FC = () => {
             />
             
         </Container>
+        </>
     );
 };
 

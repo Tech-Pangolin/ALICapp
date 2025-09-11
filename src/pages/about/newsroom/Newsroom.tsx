@@ -34,17 +34,17 @@ const Newsroom: React.FC = () => {
 
             <h6>View All Our Stories</h6>
             <Row className='photo-card-row'>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
                     <PhotoCard
                         layout="top"
                         name="Eric L. Holoman"
                         title="President & Chief Executive Officer"
                         setSelectedCard={() => { }}
                         image="https://placehold.co/400x300"
-                        alignment='start'
+                        alignment='end'
                     />
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} className='d-flex justify-content-center'>
                     <PhotoCard 
                         layout="top" 
                         name="Ryan L. Smith" 
@@ -54,30 +54,30 @@ const Newsroom: React.FC = () => {
                         alignment='center' 
                     />
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
                     <PhotoCard 
                         layout="top" 
                         name="Ryan L. Smith" 
                         title="Executive Vice President" 
                         setSelectedCard={() => { }} 
                         image="https://placehold.co/400x300" 
-                        alignment='center' 
+                        alignment='start' 
                     />
                 </Col>
             </Row>
 
             <Row className='photo-card-row'>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
                     <PhotoCard
                         layout="top"
                         name="Eric L. Holoman"
                         title="President & Chief Executive Officer"
                         setSelectedCard={() => { }}
                         image="https://placehold.co/400x300"
-                        alignment='start'
+                        alignment='end'
                     />
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} className='d-flex justify-content-center'>
                     <PhotoCard 
                         layout="top" 
                         name="Ryan L. Smith" 
@@ -87,14 +87,14 @@ const Newsroom: React.FC = () => {
                         alignment='center' 
                     />
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
                     <PhotoCard 
                         layout="top" 
                         name="Ryan L. Smith" 
                         title="Executive Vice President" 
                         setSelectedCard={() => { }} 
                         image="https://placehold.co/400x300" 
-                        alignment='center' 
+                        alignment='start' 
                     />
                 </Col>
             </Row>

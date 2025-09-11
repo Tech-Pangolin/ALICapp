@@ -30,22 +30,22 @@ const BusinessDevelopment: React.FC = () => {
             </Row>
             <Row style={{width:'75%'}} className='d-flex justify-content-center mx-auto'>
                 <Col xs={12} lg={6} className='d-flex justify-content-md-end'>
-                    <PhotoCard isExecutive={false} name="Courtney Johnson" title="Vice President, Business Development" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                    <PhotoCard name="Courtney Johnson" title="Vice President, Business Development" bio={"More information coming soon"} image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6}  >
-                    <PhotoCard isExecutive={false} name="Trish Payne" title="Vice President, Business Development" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                    <PhotoCard name="Trish Payne" title="Vice President, Business Development" bio={"More information coming soon"} image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6} className='d-flex justify-content-md-end' >
-                    <PhotoCard isExecutive={false} name="Paige Fenn" title="Director, Community Affairs" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                    <PhotoCard name="Paige Fenn" title="Director, Community Affairs" bio={"More information coming soon"} image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6}  >
-                    <PhotoCard isExecutive={false} name="Arielle Griffin" title="Business Development Associate" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                    <PhotoCard name="Arielle Griffin" title="Business Development Associate" bio={"More information coming soon"} image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6} className='d-flex justify-content-md-end' >
-                    <PhotoCard isExecutive={false} name="Michael Fields" title="Business Development Associate" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                    <PhotoCard name="Michael Fields" title="Business Development Associate" bio={"More information coming soon"} image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6}  >
-                    <PhotoCard isExecutive={false} name="De'Andre Williams" title="Business Development Analyst" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
+                    <PhotoCard name="De'Andre Williams" title="Business Development Analyst" bio={"More information coming soon"} image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
             </Row>
         </Container>

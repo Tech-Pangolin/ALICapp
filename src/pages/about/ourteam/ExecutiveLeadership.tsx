@@ -1,9 +1,10 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Modal, Row } from 'react-bootstrap';
 import PhotoCard from '../../../components/shared/PhotoCard';
 import PhotoCardBio from '../../../components/shared/PhotoCardBio';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import { teamInformation } from './teamInformation';
+import ExecutivePhotoCard from '../../../components/shared/ExecutivePhotoCard';
 
 const ExecutiveLeadership: React.FC = () => {
     interface Bio {
@@ -13,40 +14,70 @@ const ExecutiveLeadership: React.FC = () => {
     const [selectedBio, setSelectedBio] = React.useState<Bio | null>(null);
     function setSelectedCard(data: any) {
         setSelectedBio(data);
+        setModalShow(true);
     }
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <>
-        <ContentPageHeader src="/img/about/shared/bd-header.png" title="Executive Leadership" />
+            <ContentPageHeader src="/img/about/shared/bd-header.png" title="Executive Leadership" />
+            {/* <Container>
+                <Row className='d-flex justify-content-center my-4'>
+                    <Col lg={6} >
+                        <Card className='photo-card my-3 w-100'>
+                            <Card.Img variant="top" src={teamInformation.eric.photo} alt={teamInformation.eric.name} className='image' /> 
+                            <div className='gradient-top-border'></div>
+
+                            <Card.Body className={`body card-body`}>
+                                <Card.Title>{teamInformation.eric.name}</Card.Title>
+                                <Card.Text>{teamInformation.eric.title}</Card.Text>
+                                <Card.Text>{teamInformation.eric.bio}</Card.Text>
+
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container> */}
+            <Modal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        {selectedBio?.name} - {selectedBio?.title}
+                    </Modal.Title>
+                </Modal.Header>
+
+                <Modal.Body className='leadership-modal-body'>
+                    <div className="d-flex justify-content-center" >
+                        <img src={selectedBio?.image} alt={selectedBio?.name} className='img-fluid modal-image' style={{ width: "200px" }} />
+                    </div>
+
+                    <h4 className='text-center'>{selectedBio?.name}</h4>
+
+                    <div className="d-flex justify-content-center bio" >
+                        <p style={{ width: "100%" }}>
+                            {selectedBio?.bio}
+                        </p>
+                    </div>
+                </Modal.Body>
+                {/* <Modal.Footer>
+                    <Button onClick={() => setModalShow(false)}>Close</Button>
+                </Modal.Footer> */}
+            </Modal>
             <Container className="about-container executive-leadership-container">
                 <Row className='photo-card-row'>
-                    <Col xs={12} md={4} className='d-flex justify-content-lg-end'>
-                        <PhotoCard layout="top" name={teamInformation.eric.name} title={teamInformation.eric.title} bio={teamInformation.eric.bio} setSelectedCard={setSelectedCard} image={teamInformation.eric.photo} alignment='start' />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex middle-col'>
-                        <PhotoCard layout="top" name={teamInformation.ryan.name} title={teamInformation.ryan.title} bio={teamInformation.ryan.bio} setSelectedCard={setSelectedCard} image={teamInformation.ryan.photo} alignment='center' />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex justify-content-lg-start'>
-                        <PhotoCard layout="top" name={teamInformation.paul.name} title={teamInformation.paul.title} bio={teamInformation.paul.bio} setSelectedCard={setSelectedCard} image={teamInformation.paul.photo} alignment='end' />
-                    </Col>
-                </Row>
-                <Row className='ms-1 d-flex justify-content-lg-end '>
-                    <Col xl={11} className='' style={{backgroundColor: '#0B3144', height: '300px'}}>
-
-                    </Col>
-                </Row>
-                {/* {(selectedBio && selectedBio?.layout === 'top') && <div className="row d-none d-lg-flex justify-content-center" ><PhotoCardBio selectedBio={selectedBio} setSelectedCard={setSelectedCard} /></div>} */}
+                    <ExecutivePhotoCard name={teamInformation.eric.name} title={teamInformation.eric.title} bio={teamInformation.eric.bio} setSelectedCard={setSelectedCard} image={teamInformation.eric.photo} alignment='end' />
+                    <ExecutivePhotoCard name={teamInformation.ryan.name} title={teamInformation.ryan.title} bio={teamInformation.ryan.bio} setSelectedCard={setSelectedCard} image={teamInformation.ryan.photo} alignment='center' />
+                    <ExecutivePhotoCard name={teamInformation.paul.name} title={teamInformation.paul.title} bio={teamInformation.paul.bio} setSelectedCard={setSelectedCard} image={teamInformation.paul.photo} alignment='start' />
+               </Row>
                 <Row className='photo-card-row'>
-                    <Col xs={12} md={4} className='d-flex justify-content-lg-end'>
-                        <PhotoCard layout="bottom" name={teamInformation.kam.name} bio={teamInformation.kam.bio} title={teamInformation.kam.title} setSelectedCard={setSelectedCard} image={teamInformation.kam.photo} alignment='start' />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex middle-col'>
-                        <PhotoCard layout="bottom" name={teamInformation.courtney.name} bio={teamInformation.courtney.bio} title={teamInformation.courtney.title} setSelectedCard={setSelectedCard} image={teamInformation.courtney.photo} alignment='center' />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex justify-content-lg-start'>
-                        <PhotoCard layout="bottom" name={teamInformation.trish.name} bio={teamInformation.trish.bio} title={teamInformation.trish.title} setSelectedCard={setSelectedCard} image={teamInformation.trish.photo} alignment='end' />
-                    </Col>
+                    <ExecutivePhotoCard name={teamInformation.kam.name} bio={teamInformation.kam.bio} title={teamInformation.kam.title} setSelectedCard={setSelectedCard} image={teamInformation.kam.photo} alignment='end' />
+                    <ExecutivePhotoCard name={teamInformation.courtney.name} bio={teamInformation.courtney.bio} title={teamInformation.courtney.title} setSelectedCard={setSelectedCard} image={teamInformation.courtney.photo} alignment='center' />
+                    <ExecutivePhotoCard name={teamInformation.trish.name} bio={teamInformation.trish.bio} title={teamInformation.trish.title} setSelectedCard={setSelectedCard} image={teamInformation.trish.photo} alignment='start' />
                 </Row>
-                {(selectedBio && selectedBio?.layout === 'bottom') && <div className="d-none d-lg-block"><PhotoCardBio selectedBio={selectedBio} setSelectedCard={setSelectedCard} /></div>}
             </Container>
         </>
     );

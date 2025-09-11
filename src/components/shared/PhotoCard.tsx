@@ -13,9 +13,9 @@ interface PhotoCardProps {
     isExecutive?: boolean;
 }
 
-const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio, alignment, setSelectedCard, layout, isExecutive }) => {
+const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio}) => {
     const [expand, setExpand] = React.useState(false);
-    const [isMobile, setIsMobile] = React.useState(false);
+    const [_, setIsMobile] = React.useState(false);
     
     React.useEffect(() => {
         const checkMobile = () => {
@@ -29,7 +29,8 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio, alignmen
     }, []);
     
     function expandBio() {
-        setSelectedCard({ name, title, image, bio, alignment, layout });
+        console.log("expandBio called",expand, name, title, image, bio,);
+        // setSelectedCard({ name, title, image, bio, alignment, layout });
         setExpand(!expand);
     }
     //temporary image until we have bios and images
@@ -39,11 +40,11 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio, alignmen
             <Card.Img variant="top" src={image} alt={name} className='image' /> {/* Display the image */}
             <div className='gradient-top-border'></div>
             {/*  ${(expand &&!isMobile) ? 'expand-card-body' : ''} */}
-            <Card.Body className={`body card-body`} onClick={expandBio}>
-                <Card.Title>{name}</Card.Title>
+            <Card.Body className={`body card-body`}>
+                <Card.Title onClick={expandBio}>{name}</Card.Title>
                 <Card.Text>{title}</Card.Text>
-                {((isMobile || !isExecutive) && expand) && <Card.Text>{bio}</Card.Text>}
-                {/* {!isMobile && <Card.Text>{bio}</Card.Text>} */}
+                {expand && <Card.Text>{bio}</Card.Text>}
+              
             </Card.Body>
         </Card>
     );

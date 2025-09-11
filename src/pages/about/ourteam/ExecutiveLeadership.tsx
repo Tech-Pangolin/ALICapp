@@ -47,7 +47,7 @@ const ExecutiveLeadership: React.FC = () => {
                 </Modal.Body>
            
             </Modal>
-            <Container className="about-container executive-leadership-container">
+            <Container className="about-container executive-leadership-container" style={{marginTop:"50px"}}>
                 <Row className='photo-card-row'>
                     <ExecutivePhotoCard name={teamInformation.eric.name} title={teamInformation.eric.title} bio={teamInformation.eric.bio} setSelectedCard={setSelectedCard} image={teamInformation.eric.photo} alignment='end' />
                     <ExecutivePhotoCard name={teamInformation.ryan.name} title={teamInformation.ryan.title} bio={teamInformation.ryan.bio} setSelectedCard={setSelectedCard} image={teamInformation.ryan.photo} alignment='center' />

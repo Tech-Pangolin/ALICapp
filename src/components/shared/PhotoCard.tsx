@@ -29,8 +29,6 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio}) => {
     }, []);
     
     function expandBio() {
-        console.log("expandBio called",expand, name, title, image, bio,);
-        // setSelectedCard({ name, title, image, bio, alignment, layout });
         setExpand(!expand);
     }
     //temporary image until we have bios and images
@@ -39,7 +37,6 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio}) => {
         <Card className='photo-card my-3'>
             <Card.Img variant="top" src={image} alt={name} className='image' /> {/* Display the image */}
             <div className='gradient-top-border'></div>
-            {/*  ${(expand &&!isMobile) ? 'expand-card-body' : ''} */}
             <Card.Body className={`body card-body`}>
                 <Card.Title onClick={expandBio}>{name}</Card.Title>
                 <Card.Text>{title}</Card.Text>

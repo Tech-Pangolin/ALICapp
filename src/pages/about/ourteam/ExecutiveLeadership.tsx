@@ -1,7 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, Container, Modal, Row } from 'react-bootstrap';
-import PhotoCard from '../../../components/shared/PhotoCard';
-import PhotoCardBio from '../../../components/shared/PhotoCardBio';
+import {  Container, Modal, Row } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import { teamInformation } from './teamInformation';
 import ExecutivePhotoCard from '../../../components/shared/ExecutivePhotoCard';
@@ -20,23 +18,7 @@ const ExecutiveLeadership: React.FC = () => {
     return (
         <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Executive Leadership" />
-            {/* <Container>
-                <Row className='d-flex justify-content-center my-4'>
-                    <Col lg={6} >
-                        <Card className='photo-card my-3 w-100'>
-                            <Card.Img variant="top" src={teamInformation.eric.photo} alt={teamInformation.eric.name} className='image' /> 
-                            <div className='gradient-top-border'></div>
-
-                            <Card.Body className={`body card-body`}>
-                                <Card.Title>{teamInformation.eric.name}</Card.Title>
-                                <Card.Text>{teamInformation.eric.title}</Card.Text>
-                                <Card.Text>{teamInformation.eric.bio}</Card.Text>
-
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container> */}
+       
             <Modal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
@@ -63,9 +45,7 @@ const ExecutiveLeadership: React.FC = () => {
                         </p>
                     </div>
                 </Modal.Body>
-                {/* <Modal.Footer>
-                    <Button onClick={() => setModalShow(false)}>Close</Button>
-                </Modal.Footer> */}
+           
             </Modal>
             <Container className="about-container executive-leadership-container">
                 <Row className='photo-card-row'>

@@ -21,7 +21,7 @@ const ContentPageHeader: React.FC<{src: string, title: string}> = ({src, title})
             </div>}
             {title && <div className="position-absolute w-100 h-100 d-flex d-lg-none align-items-center align-items-md-end justify-content-center justify-content-md-start p-3">
                 <div className="d-flex align-items-center justify-content-center" id="title-text-overlay-mobile">
-                    <h1 className="title-text">
+                    <h1 className="title-text text-center">
                         {title}
                     </h1>
                 </div>

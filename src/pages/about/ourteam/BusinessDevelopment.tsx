@@ -29,19 +29,19 @@ const BusinessDevelopment: React.FC = () => {
                 </Col>
             </Row>
             <Row style={{width:'75%'}} className='d-flex justify-content-center mx-auto'>
-                <Col xs={12} lg={6}  >
+                <Col xs={12} lg={6} className='d-flex justify-content-md-end'>
                     <PhotoCard isExecutive={false} name="Courtney Johnson" title="Vice President, Business Development" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6}  >
                     <PhotoCard isExecutive={false} name="Trish Payne" title="Vice President, Business Development" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
-                <Col xs={12} lg={6}  >
+                <Col xs={12} lg={6} className='d-flex justify-content-md-end' >
                     <PhotoCard isExecutive={false} name="Paige Fenn" title="Director, Community Affairs" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6}  >
                     <PhotoCard isExecutive={false} name="Arielle Griffin" title="Business Development Associate" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
-                <Col xs={12} lg={6}  >
+                <Col xs={12} lg={6} className='d-flex justify-content-md-end' >
                     <PhotoCard isExecutive={false} name="Michael Fields" title="Business Development Associate" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                 </Col>
                 <Col xs={12} lg={6}  >

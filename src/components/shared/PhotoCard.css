@@ -1,7 +1,9 @@
 .photo-card {
   width: 300px;
 }
-
+.photo-card .card-img-top {
+height: 250px;
+}
 .photo-card .body {
   background-color: #0B3144;
   min-height: 100px;

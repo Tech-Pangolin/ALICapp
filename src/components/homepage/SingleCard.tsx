@@ -19,8 +19,8 @@ const SingleCard: React.FC<SingleCardProps> = ({ period, imageSrc, imageAlt, des
             className="single-card-image"
           />
         </div>
-        <h2 className="fw-semibold text-uppercase single-card-header text-gold">{period}</h2>
-        <p className="fs-5 single-card-description">{description}</p>
+        <h3 className="fw-semibold text-uppercase single-card-header text-gold">{period}</h3>
+        <p className="single-card-description">{description}</p>
         <img 
           src="/img/home/gradient-bar.png" 
           alt="Card separator" 

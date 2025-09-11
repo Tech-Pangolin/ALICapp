@@ -15,7 +15,8 @@ const ExecutiveLeadership: React.FC = () => {
         setSelectedBio(data);
     }
     return (
-        <><ContentPageHeader src="/img/about/shared/bd-header.png" title="Executive Leadership" />
+        <>
+        <ContentPageHeader src="/img/about/shared/bd-header.png" title="Executive Leadership" />
             <Container className="about-container executive-leadership-container">
                 <Row className='photo-card-row'>
                     <Col xs={12} md={4} className='d-flex justify-content-lg-end'>

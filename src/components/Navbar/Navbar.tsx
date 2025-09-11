@@ -2,6 +2,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import alicLogo from '/img/ALIClogo.png';
+import years from '/img/navbar/120years.png';
 import AboutMenu from './AboutMenu';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
@@ -52,10 +53,17 @@ function NavbarComponent() {
               height="60"
               className="me-2 my-3"
             />
-            <div id="brand-celebrating" className="d-none d-lg-block">
+            
+            <img
+              src={years}
+              alt="Celebrating 120 years"
+              height="45"
+              className="me-2 my-3 d-none d-lg-block"
+            />
+            {/* <div id="brand-celebrating" className="d-none d-lg-block">
               <p id="celebrating">Celebrating</p>
               <p id="years">120 Years</p>
-            </div>
+            </div> */}
           </Navbar.Brand>
 
           {/* Toggle for mobile */}

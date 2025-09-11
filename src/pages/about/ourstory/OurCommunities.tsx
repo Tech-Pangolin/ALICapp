@@ -2,11 +2,14 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import GradientBox from '../../../components/homepage/GradientBox';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
+import TextPictureOverlap from '../../../components/shared/TextPictureOverlap';
 
 const OurCommunities: React.FC = () => {
-    return (
-        <Container className="about-container">
-            <ContentPageHeader src="/img/about/ourcommunities/header.png" title="Our Communities" />
+    return (     
+    <>
+    <ContentPageHeader src="/img/about/ourcommunities/header.png" title="Our Communities" />
+        <Container className="about-container" style={{marginTop:"20px"}}>
+       
             <GradientBox line1Text="Community is the center of what we do." line2Text="our mission is to build the future together."/>
             <Row>
                 <Col>
@@ -48,14 +51,15 @@ const OurCommunities: React.FC = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} md={5}>
-                    {/* Placeholder for See our community component */}
+                <Col xs={12} md={12}>
+                   <TextPictureOverlap />
                 </Col>
             </Row>
 
         </Container>
 
-    );
+    </>
+    )
 };
 
 export default OurCommunities;

@@ -9,22 +9,25 @@ interface SingleParaWithImageProps {
     paragraph: string;
 }
 
-const SingleParaWithImage: React.FC<SingleParaWithImageProps> = ({headerText, image, altText = '', paragraph}) => {
+const SingleParaWithImage: React.FC<SingleParaWithImageProps> = ({ headerText, image, altText = '', paragraph }) => {
     return (
-        <Row>
-                <Col xs={12} sm={12} md={10} >
-                    {headerText && <h6>{headerText}</h6>}
-                    <div className="d-flex align-items-start gap-3" id="para-with-image-div">
+        <>
+            {headerText && (<h6>{headerText}</h6>)}
+            <Row className='my-3'>
+                <Col xs={12} sm={12} md={3} >
+                    {/* placeholder for image */}
+                    {image && <img src={image} alt={altText} className="img-fluid " />}
+                </Col>
+                <Col xs={12} sm={12} md={7} >
 
-                        {/* placeholder for image */}
-                        {image && <img src={image} alt={altText} className="img-fluid internship-benefits-image" />}
-                        
+                    <div className="mt-3" id="para-with-image-div">
                         <p className='ms-4'>
                             {paragraph}
                         </p>
                     </div>
                 </Col>
             </Row>
+        </>
     );
 };
 

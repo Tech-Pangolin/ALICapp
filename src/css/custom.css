@@ -12,9 +12,6 @@
   font-style: normal;
 }
 
-section#hero {
-  margin-top: 100px!important;
-}
 
 /* Fix for dropdown menu text overflow */
 .dropdown-item {
@@ -1414,3 +1411,35 @@ section{background-color: #FFF;}
 .executive-leadership-container{
   width:65%;
 }
+.leadership-modal-body{
+  padding:0;
+}
+.leadership-modal-body .bio{
+  padding:0;
+  background-color: #0B3144;
+
+}
+.leadership-modal-body h4{ 
+  background-color: #0B3144;
+  color: #FFF;
+  text-transform: uppercase;
+  margin:5px 0 0 0;
+  padding-top: 10px;
+}
+.modal-title{
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.leadership-modal-body .bio p{  
+  color: #FFF;  
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  padding: 15px;
+}
+@media (min-width: 1200px) {
+  .executive-leadership-container .middle-col{
+    width: 26%;
+  }
+}
+

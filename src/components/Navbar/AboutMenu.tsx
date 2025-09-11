@@ -8,7 +8,7 @@ const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
     return (
       <NavDropdown title="About Us" id="mobile-about-dropdown">
         <NavDropdown.Item href="#"><strong>Our Story</strong></NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="/about/ourstory"><strong>The Story of Us</strong></NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/about/ourstory">The Story of Us</NavDropdown.Item>
         <NavDropdown.Item as={Link} to="/about/ourcommunities">Our Communities</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#"><strong>Our Team</strong></NavDropdown.Item>

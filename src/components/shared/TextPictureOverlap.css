@@ -1,47 +1,40 @@
 @import '../base.css';
 
 
-.gradient-box {
+.text-picture-overlap-container .gradient-box {
     width: 100%;
     height: 215px;
     background: linear-gradient(to right, var(--primary-blue), var(--primary-gold))
 }
 
-.text-picture-overlap {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-section {
+.text-picture-overlap-container .text-section {
     position: absolute;
     z-index: 2;
     color: var(--white);
     padding: 20px;
 }
 
-.picture-section {
+.text-picture-overlap-container .picture-section {
     z-index: 1;
 }
 
-h6.text-header {
+.text-picture-overlap-container h6.text-header {
     color: var(--white);
     font-size: 1.2rem;
     padding-left: 15px;
     padding-top: 20px;
 }
-.text-picture-overlap-container{
-    height:500px;
-    margin-top:50px;
+.text-picture-overlap-container {
+    height: 400px;
 }
+
 .text-picture-overlap-container p {
     color: var(--white);
     padding-left: 15px;
     width: 77%;
 }
 
-.learn-more-link {
+.text-picture-overlap-container .learn-more-link {
     margin: 15px 0 15px 15px;
     background-color: var(--white);
     padding: 10px;
@@ -50,7 +43,7 @@ h6.text-header {
     text-transform: uppercase;
 }
 
-.overlap-image{
+.text-picture-overlap-container .overlap-image{
         position: relative;
     right: 180px;
     top: 70px;

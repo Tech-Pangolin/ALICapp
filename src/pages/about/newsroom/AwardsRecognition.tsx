@@ -8,14 +8,14 @@ const AwardsRecognition: React.FC = () => {
     return (
         <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Awards & Recognition" />
-            <Container className="about-container">
-                <Row id="awards-section">
+            <Container id="awards-recognition">
+                <Row>
                     <Col xs={12} sm={12} md={8} >
-                        <h6 className='mb-4'>Our Awards</h6>
+                        <h4>Our Awards</h4>
 
                         {/* Individual Awards each have their own row  */}
                         <Row className='ms-4'>
-                            <h6>Award Title</h6>
+                            <h5>Award Title</h5>
                             <p>Award Description</p>
                         </Row>
 

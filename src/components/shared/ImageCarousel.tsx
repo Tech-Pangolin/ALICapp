@@ -86,7 +86,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
 
   return (
     <>
-    {headerText && <h6>{headerText}</h6>}
+    {headerText && <h4>{headerText}</h4>}
     <div className={`image-carousel ${className}`}>
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">

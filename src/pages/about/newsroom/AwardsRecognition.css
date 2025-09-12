@@ -1,3 +1,8 @@
-#awards-section {
-    margin-bottom: 50px;
+@import '../../../components/base.css';
+
+#awards-recognition h5 {
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    margin-bottom: unset;
 }

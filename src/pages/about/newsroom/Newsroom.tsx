@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import ImageCarousel from '../../../components/shared/ImageCarousel';
 import PhotoCard from '../../../components/shared/PhotoCard';
+import '../../../components/base.css';
 
 const Newsroom: React.FC = () => {
     // Team images for development - replace with actual newsroom images when available
@@ -16,9 +17,9 @@ const Newsroom: React.FC = () => {
     return (
         <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Newsroom" />
-            <Container className="about-container">
+            <Container>
 
-                <Row className="mt-4">
+                <Row className="std-bottom-space">
                     <Col>
                         <ImageCarousel
                             headerText="One Stop for All Things News and Media"
@@ -33,7 +34,7 @@ const Newsroom: React.FC = () => {
                     </Col>
                 </Row>
 
-                <h6>View All Our Stories</h6>
+                <h4>View All Our Stories</h4>
                 <Row className='photo-card-row'>
                     <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
                         <PhotoCard

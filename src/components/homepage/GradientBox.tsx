@@ -8,7 +8,7 @@ interface GradientBoxProps {
 const GradientBox: React.FC<GradientBoxProps> = ({ line1Text, line2Text }) => {
 
   return (
-    <div className="container">
+    <div className="container std-bottom-space">
       <div className="row">
         <div className="col" style={{ padding: 0 }}>
           <div className="white-box">

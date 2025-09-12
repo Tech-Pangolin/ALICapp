@@ -14,92 +14,94 @@ const Newsroom: React.FC = () => {
     ];
 
     return (
-        <Container className="about-container">
+        <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Newsroom" />
+            <Container className="about-container">
 
-            <Row className="mt-4">
-                <Col>
-                    <ImageCarousel
-                        headerText="One Stop for All Things News and Media"
-                        images={teamImages}
-                        showDots={true}
-                        showArrows={true}
-                        autoPlay={true}
-                        autoPlayInterval={4000}
-                        objectFit="contain"
-                        loop={true}
-                    />
-                </Col>
-            </Row>
+                <Row className="mt-4">
+                    <Col>
+                        <ImageCarousel
+                            headerText="One Stop for All Things News and Media"
+                            images={teamImages}
+                            showDots={true}
+                            showArrows={true}
+                            autoPlay={true}
+                            autoPlayInterval={4000}
+                            objectFit="contain"
+                            loop={true}
+                        />
+                    </Col>
+                </Row>
 
-            <h6>View All Our Stories</h6>
-            <Row className='photo-card-row'>
-                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
-                    <PhotoCard
-                        layout="top"
-                        name="Eric L. Holoman"
-                        title="President & Chief Executive Officer"
-                        setSelectedCard={() => { }}
-                        image="https://placehold.co/400x300"
-                        alignment='end'
-                    />
-                </Col>
-                <Col xs={12} md={4} className='d-flex justify-content-center'>
-                    <PhotoCard 
-                        layout="top" 
-                        name="Ryan L. Smith" 
-                        title="Executive Vice President" 
-                        setSelectedCard={() => { }} 
-                        image="https://placehold.co/400x300" 
-                        alignment='center' 
-                    />
-                </Col>
-                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
-                    <PhotoCard 
-                        layout="top" 
-                        name="Ryan L. Smith" 
-                        title="Executive Vice President" 
-                        setSelectedCard={() => { }} 
-                        image="https://placehold.co/400x300" 
-                        alignment='start' 
-                    />
-                </Col>
-            </Row>
+                <h6>View All Our Stories</h6>
+                <Row className='photo-card-row'>
+                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
+                        <PhotoCard
+                            layout="top"
+                            name="Eric L. Holoman"
+                            title="President & Chief Executive Officer"
+                            setSelectedCard={() => { }}
+                            image="https://placehold.co/400x300"
+                            alignment='end'
+                        />
+                    </Col>
+                    <Col xs={12} md={4} className='d-flex justify-content-center'>
+                        <PhotoCard
+                            layout="top"
+                            name="Ryan L. Smith"
+                            title="Executive Vice President"
+                            setSelectedCard={() => { }}
+                            image="https://placehold.co/400x300"
+                            alignment='center'
+                        />
+                    </Col>
+                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
+                        <PhotoCard
+                            layout="top"
+                            name="Ryan L. Smith"
+                            title="Executive Vice President"
+                            setSelectedCard={() => { }}
+                            image="https://placehold.co/400x300"
+                            alignment='start'
+                        />
+                    </Col>
+                </Row>
 
-            <Row className='photo-card-row'>
-                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
-                    <PhotoCard
-                        layout="top"
-                        name="Eric L. Holoman"
-                        title="President & Chief Executive Officer"
-                        setSelectedCard={() => { }}
-                        image="https://placehold.co/400x300"
-                        alignment='end'
-                    />
-                </Col>
-                <Col xs={12} md={4} className='d-flex justify-content-center'>
-                    <PhotoCard 
-                        layout="top" 
-                        name="Ryan L. Smith" 
-                        title="Executive Vice President" 
-                        setSelectedCard={() => { }} 
-                        image="https://placehold.co/400x300" 
-                        alignment='center' 
-                    />
-                </Col>
-                <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
-                    <PhotoCard 
-                        layout="top" 
-                        name="Ryan L. Smith" 
-                        title="Executive Vice President" 
-                        setSelectedCard={() => { }} 
-                        image="https://placehold.co/400x300" 
-                        alignment='start' 
-                    />
-                </Col>
-            </Row>
+                <Row className='photo-card-row'>
+                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
+                        <PhotoCard
+                            layout="top"
+                            name="Eric L. Holoman"
+                            title="President & Chief Executive Officer"
+                            setSelectedCard={() => { }}
+                            image="https://placehold.co/400x300"
+                            alignment='end'
+                        />
+                    </Col>
+                    <Col xs={12} md={4} className='d-flex justify-content-center'>
+                        <PhotoCard
+                            layout="top"
+                            name="Ryan L. Smith"
+                            title="Executive Vice President"
+                            setSelectedCard={() => { }}
+                            image="https://placehold.co/400x300"
+                            alignment='center'
+                        />
+                    </Col>
+                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
+                        <PhotoCard
+                            layout="top"
+                            name="Ryan L. Smith"
+                            title="Executive Vice President"
+                            setSelectedCard={() => { }}
+                            image="https://placehold.co/400x300"
+                            alignment='start'
+                        />
+                    </Col>
+                </Row>
 
-        </Container>
+            </Container>
+        </>
     );
 };
 

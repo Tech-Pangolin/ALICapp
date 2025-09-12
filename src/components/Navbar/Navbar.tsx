@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import alicLogo from '/img/ALIClogo.png';
+import alicLogo from '/img/atlifelogo.png';
 import years from '/img/navbar/120years.png';
 import AboutMenu from './AboutMenu';
 import SolutionsMenu from './SolutionsMenu';

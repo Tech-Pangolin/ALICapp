@@ -7,11 +7,11 @@ const BusinessDevelopment: React.FC = () => {
     return (
         <> 
         <ContentPageHeader src="/img/about/shared/bd-header.png" title="Business Development" />
-        <Container className="about-container">
+        <Container id="business-development">
            
             <Row>
                 <Col xs={12} sm={12} md={8} >
-                    <h6>About Business Development</h6>
+                    <h4>About Business Development</h4>
                     <p className='ms-4'>
                         The Business Development team drives Atlanta Life's growth by cultivating relationships,
                         expanding partnerships, and identifying new opportunities that align with our mission.
@@ -25,7 +25,7 @@ const BusinessDevelopment: React.FC = () => {
             </Row>
             <Row>
                 <Col xs={12} sm={12} md={8} >
-                    <h6>Our Business Development Team</h6>
+                    <h4>Our Business Development Team</h4>
                 </Col>
             </Row>
             <Row style={{width:'75%'}} className='d-flex justify-content-center mx-auto'>

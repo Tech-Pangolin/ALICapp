@@ -7,11 +7,11 @@ const ActuaryRisk: React.FC = () => {
     return (
         <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Actuary & Risk" />
-            <Container className="about-container">
+            <Container id="actuary-risk">
 
                 <Row>
                     <Col xs={12} sm={12} md={8} >
-                        <h6>About Actuary & Risk</h6>
+                        <h4>About Actuary & Risk</h4>
                         <p className='ms-4'>
                             The Actuary & Risk team safeguards Atlanta Life's long term stability by analyzing data,
                             assessing financial risk, and ensuring our products and strategies remain strong in a
@@ -23,7 +23,7 @@ const ActuaryRisk: React.FC = () => {
                 </Row>
                 <Row>
                     <Col xs={12} sm={12} md={12} >
-                        <h6>Our Actuary & Risk Team</h6>
+                        <h4>Our Actuary & Risk Team</h4>
                         <Row className='d-flex justify-content-center mx-auto'>
                             <Col xs={12} lg={12} className='d-flex justify-content-center'>
                                 <PhotoCard name="Kam Harris" title="Vice President, Actuary" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
@@ -37,7 +37,6 @@ const ActuaryRisk: React.FC = () => {
                             <Col xs={12} lg={4}  >
 
                             </Col>
-
                         </Row>
                         <Row className='d-flex justify-content-center mx-auto d-lg-none d-xs-flex'>
                             <Col xs={12} className='d-flex justify-content-center'  >
@@ -47,7 +46,6 @@ const ActuaryRisk: React.FC = () => {
                             <Col xs={12} className='d-flex justify-content-center'  >
                                 <PhotoCard name="Tony She" title="Business Development Associate" image="https://placehold.co/400x300" setSelectedCard={() => { }} />
                             </Col>
-
                         </Row>
                     </Col>
                 </Row>

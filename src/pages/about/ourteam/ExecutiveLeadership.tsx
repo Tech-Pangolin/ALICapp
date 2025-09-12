@@ -15,6 +15,7 @@ const ExecutiveLeadership: React.FC = () => {
         setModalShow(true);
     }
     const [modalShow, setModalShow] = React.useState(false);
+    
     return (
         <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Executive Leadership" />
@@ -47,7 +48,7 @@ const ExecutiveLeadership: React.FC = () => {
                 </Modal.Body>
            
             </Modal>
-            <Container className="about-container executive-leadership-container" style={{marginTop:"50px"}}>
+            <Container className="executive-leadership-container">
                 <Row className='photo-card-row'>
                     <ExecutivePhotoCard name={teamInformation.eric.name} title={teamInformation.eric.title} bio={teamInformation.eric.bio} setSelectedCard={setSelectedCard} image={teamInformation.eric.photo} alignment='end' />
                     <ExecutivePhotoCard name={teamInformation.ryan.name} title={teamInformation.ryan.title} email={"messagehere@atl.life"} bio={teamInformation.ryan.bio} setSelectedCard={setSelectedCard} image={teamInformation.ryan.photo} alignment='center' />

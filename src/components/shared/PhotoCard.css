@@ -1,23 +1,27 @@
+@import '../base.css';
+
 .photo-card {
   width: 300px;
 }
+
 .photo-card .card-img-top {
-height: 250px;
+  height: 250px;
 }
+
 .photo-card .body {
-  background-color: #0B3144;
+  background-color: var(--primary-blue);
   min-height: 100px;
   height: 100%;
-  color: #FFF;
+  color: var(--white);
   cursor: pointer
 }
 
 .photo-card .body p {
-  color: #FFF;
+  color: var(--white);
 }
 
 .photo-card .body div {
-  color: #FFF;
+  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -35,21 +39,21 @@ height: 250px;
   height: 300px !important;
 }
 
-.expand-card-body{
+.expand-card-body {
   position: relative;
   z-index: 9999;
-    /* width:100%; */
-    animation: expand 3s forwards;
+  /* width:100%; */
+  animation: expand 3s forwards;
 }
 
 @keyframes expand {
   from {
     width: 100%;
- 
+
   }
 
   to {
-   width:305%
+    width: 305%
   }
-  
+
 }

@@ -11,7 +11,7 @@ const TextPictureOverlap: React.FC = () => {
                         className='gradient-box my-4'
                     >
                         <h6 className='text-header'>See Our Community Engagement Activities</h6>
-                        <p className='text-body'>We connect with communities in ways that are genuine, intentional, and rooted in real understanding - creating relationships that last and make a difference.  We connect with communities in need.</p>
+                        <p>We connect with communities in ways that are genuine, intentional, and rooted in real understanding - creating relationships that last and make a difference.  We connect with communities in need.</p>
                         <div className="pb-5"><a href="/about/ourstory#communityengagement" className='learn-more-link my-5'>Visit Community Engagement</a></div>
                     </div>
                 </Col>
@@ -31,7 +31,7 @@ const TextPictureOverlap: React.FC = () => {
                         className='gradient-box my-4' style={{height:"100%"}}
                     >
                         <h6 className='text-header'>See Our Community Engagement Activities</h6>
-                        <p className='text-body'>We connect with communities in ways that are genuine, intentional, and rooted in real understanding - creating relationships that last and make a difference.  We connect with communities in need.</p>
+                        <p>We connect with communities in ways that are genuine, intentional, and rooted in real understanding - creating relationships that last and make a difference.  We connect with communities in need.</p>
                         <div className="pb-5"><a href="/about/ourstory#communityengagement" className='learn-more-link my-5'>Visit Community Engagement</a></div>
                     </div>
                 </Col>

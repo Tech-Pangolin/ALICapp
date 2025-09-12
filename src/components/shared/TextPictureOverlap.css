@@ -1,7 +1,10 @@
+@import '../base.css';
+
+
 .gradient-box {
     width: 100%;
     height: 215px;
-    background: linear-gradient(to right, #0B3144, #CA8E15)
+    background: linear-gradient(to right, var(--primary-blue), var(--primary-gold))
 }
 
 .text-picture-overlap {
@@ -14,7 +17,7 @@
 .text-section {
     position: absolute;
     z-index: 2;
-    color: white;
+    color: var(--white);
     padding: 20px;
 }
 
@@ -23,7 +26,7 @@
 }
 
 h6.text-header {
-    color: #FFF;
+    color: var(--white);
     font-size: 1.2rem;
     padding-left: 15px;
     padding-top: 20px;
@@ -32,15 +35,15 @@ h6.text-header {
     height:500px;
     margin-top:50px;
 }
-.text-picture-overlap-container p.text-body {
-    color: #FFF;
+.text-picture-overlap-container p {
+    color: var(--white);
     padding-left: 15px;
     width: 77%;
 }
 
 .learn-more-link {
     margin: 15px 0 15px 15px;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 10px;
     color: var(--primary-blue);
     font-weight: bold;

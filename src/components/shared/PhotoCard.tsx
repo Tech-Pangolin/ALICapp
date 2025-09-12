@@ -5,6 +5,7 @@ import { Card } from 'react-bootstrap';
 interface PhotoCardProps {
     name: string;
     title: string;
+    email?: string;
     image: string;
     bio?: string;
     alignment?: 'start' | 'center' | 'end';
@@ -13,7 +14,7 @@ interface PhotoCardProps {
     isExecutive?: boolean;
 }
 
-const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio}) => {
+const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, email = '', image, bio}) => {
     const [expand, setExpand] = React.useState(false);
     const [_, setIsMobile] = React.useState(false);
     
@@ -40,6 +41,7 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio}) => {
             <Card.Body className={`body card-body`}>
                 <Card.Title onClick={expandBio}>{name}</Card.Title>
                 <Card.Text>{title}</Card.Text>
+                {email && <Card.Text>{email}</Card.Text>}
                 {expand && <Card.Text>{bio}</Card.Text>}
               
             </Card.Body>

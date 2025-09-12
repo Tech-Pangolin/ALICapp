@@ -50,7 +50,7 @@ const ExecutiveLeadership: React.FC = () => {
             <Container className="about-container executive-leadership-container" style={{marginTop:"50px"}}>
                 <Row className='photo-card-row'>
                     <ExecutivePhotoCard name={teamInformation.eric.name} title={teamInformation.eric.title} bio={teamInformation.eric.bio} setSelectedCard={setSelectedCard} image={teamInformation.eric.photo} alignment='end' />
-                    <ExecutivePhotoCard name={teamInformation.ryan.name} title={teamInformation.ryan.title} bio={teamInformation.ryan.bio} setSelectedCard={setSelectedCard} image={teamInformation.ryan.photo} alignment='center' />
+                    <ExecutivePhotoCard name={teamInformation.ryan.name} title={teamInformation.ryan.title} email={"messagehere@atl.life"} bio={teamInformation.ryan.bio} setSelectedCard={setSelectedCard} image={teamInformation.ryan.photo} alignment='center' />
                     <ExecutivePhotoCard name={teamInformation.paul.name} title={teamInformation.paul.title} bio={teamInformation.paul.bio} setSelectedCard={setSelectedCard} image={teamInformation.paul.photo} alignment='start' />
                </Row>
                 <Row className='photo-card-row'>

@@ -4,7 +4,7 @@ import ContactForm from '../ContactForm';
 
 const Footer: React.FC = () => {
     return (
-        <footer id="footer">
+        <footer id="footer" style={{ marginTop: '2rem' }}>
             <div className="container-fluid">
                 <div className="row">
                     <div className="footer-logo">

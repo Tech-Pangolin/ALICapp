@@ -13,7 +13,6 @@
   right: 50%;
   margin-left: -50vw !important;
   margin-right: -50vw !important;
-  /* background-color: var(--white); */
 }
 
 section.container-fluid {
@@ -34,31 +33,6 @@ section.container-fluid {
 .main-content {
   padding: 0 50px 0 70px;
 }
-
-/* Shared text styles */
-/* .text-base {
-  font-family: var(--ss-font), sans-serif;
-  text-transform: uppercase;
-} */
-
-/* .text-large {
-  font-weight: 700;
-  color: var(--primary-blue);
-  letter-spacing: 3px;
-  line-height: 1.1;
-  margin: 0;
-  max-width: 1200px;
-  margin-bottom: 40px;
-}
-
-.text-medium {
-  font-weight: 600;
-  color: var(--primary-blue);
-  letter-spacing: 0.05em;
-  margin-bottom: 15px;
-} */
-
-
 
 /* Layout components */
 .solutions-content {

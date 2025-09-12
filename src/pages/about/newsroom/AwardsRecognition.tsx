@@ -6,22 +6,24 @@ import './AwardsRecognition.css';
 
 const AwardsRecognition: React.FC = () => {
     return (
-        <Container className="about-container">
+        <>
             <ContentPageHeader src="/img/about/shared/bd-header.png" title="Awards & Recognition" />
-            <Row id="awards-section">
-                <Col xs={12} sm={12} md={8} >
-                    <h6 className='mb-4'>Our Awards</h6>
+            <Container id="awards-recognition">
+                <Row>
+                    <Col xs={12} sm={12} md={8} >
+                        <h4>Our Awards</h4>
 
-                    {/* Individual Awards each have their own row  */}
-                    <Row className='ms-4'>
-                        <h6>Award Title</h6>
-                        <p>Award Description</p>
-                    </Row>
+                        {/* Individual Awards each have their own row  */}
+                        <Row className='ms-4'>
+                            <h5>Award Title</h5>
+                            <p>Award Description</p>
+                        </Row>
 
-                </Col>
-            </Row>
-            <FeaturedStoriesSection showTitle={false} />
-        </Container>
+                    </Col>
+                </Row>
+                <FeaturedStoriesSection showTitle={false} />
+            </Container>
+        </>
     );
 };
 

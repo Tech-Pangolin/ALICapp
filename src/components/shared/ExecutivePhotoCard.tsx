@@ -6,6 +6,7 @@ interface PhotoCardProps {
     name: string;
     title: string;
     image: string;
+    email?: string;
     bio?: string;
     alignment?: 'start' | 'center' | 'end';
     setSelectedCard: (data: any) => void;
@@ -13,7 +14,7 @@ interface PhotoCardProps {
     isExecutive?: boolean;
 }
 
-const ExecutivePhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio, alignment, setSelectedCard, layout,  }) => {  
+const ExecutivePhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio, email = '', alignment, setSelectedCard, layout,  }) => {  
 
     function expandBio() {
         setSelectedCard({ name, title, image, bio, alignment, layout });     
@@ -29,6 +30,7 @@ const ExecutivePhotoCard: React.FC<PhotoCardProps> = ({ name, title, image, bio,
                 <Card.Body className={`body card-body`} onClick={expandBio}>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>{title}</Card.Text>
+                    {email && <Card.Text>{email}</Card.Text>}
                 </Card.Body>
             </Card>
         </Col>

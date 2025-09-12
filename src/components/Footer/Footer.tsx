@@ -4,11 +4,11 @@ import ContactForm from '../ContactForm';
 
 const Footer: React.FC = () => {
     return (
-        <footer id="footer">
+        <footer id="footer" style={{ marginTop: '2rem' }}>
             <div className="container-fluid">
                 <div className="row">
                     <div className="footer-logo">
-                        <img src="/img/ALIClogo.png" alt="ALIC Logo" className='img-fluid' />
+                        <img src="/img/atlifelogo.png" alt="ALIC Logo" className='img-fluid' />
                     </div>
                 </div>
                 <div className="row">

@@ -74,7 +74,12 @@ h4 {
     letter-spacing: 1px;
     margin-bottom: unset;
 } */
-
+.sub-header{
+    text-transform: none;
+}
+.p-text-group{
+    margin-bottom:1em;
+}
 .std-bottom-space {
     margin-bottom: 2rem;
 }

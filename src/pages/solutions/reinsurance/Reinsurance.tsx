@@ -8,47 +8,46 @@ const Reinsurance: React.FC = () => (
       <Row>
         <Col xs={12} sm={12} md={8} >
           <h4>Reinsurance 101</h4>
-          <h5>test</h5>
-          <p className='ms-4'>The story of Atlanta Life begins with Alonzo Franklin Herndon,
-            a man whose determination and foresight reshaped opportunities for countless others.
-            Rising from modest beginnings, Herndon built a reputation as a successful barber and entrepreneur in Atlanta.
-            His ventures flourished, but he always looked beyond his own achievements.
-            He envisioned creating an institution that would not only build wealth,
-            but also provide stability and opportunity to communities that had long been excluded from financial security.</p>
-          <div className='hr'><img src="/img/about/storyofus/hr.png" alt="Horizontal Rule" className='img-fluid' /></div>
+          <h4 className="ms-4 sub-header mb-1">What is Reinsurance?</h4>
+          <p className='ms-4 p-text-group'>Reinsurance is the process by which insurance companies transfer portions of their risk portfolios to other insurance entities, known as reinsurers. Through formal agreements, reinsurers agree to absorb a share of potential losses, providing carriers with stability and protection.</p>
+          <p className='ms-4 p-text-group'>In practice, this means insurers pay a premium to reinsurers in exchange for coverage of specific risks. For example, if an insurer faces unusually large claims due to a natural disaster, the reinsurer helps absorb that financial burden. This allows insurers to underwrite higher-limit policies or serve higher-risk clients without jeopardizing their financial stability.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={12} md={8} >
+          <h4 className="ms-4 sub-header mt-4 mb-1">Why U.S. Based Reinsurance Matters</h4>
+          <p className='ms-4 p-text-group'>U.S. based reinsurance plays a critical role in supporting the strength of the domestic insurance industry. Operating within established regulatory frameworks, U.S. reinsurers provide transparency, legal oversight, and financial accountability that safeguard the entire risk management process.</p>
+          <p className='ms-4 p-text-group'>Partnering with U.S. reinsurers also ensures closer alignment with U.S. market conditions and more responsive coordination during times of crisis. These reinsurers offer tailored solutions designed to meet the unique needs of American insurers and policyholders.</p>
         </Col>
       </Row>
 
       <Row>
         <Col xs={12} md={8} >
-          <h4>Welcome to Atlanta life</h4>
-          <p className='ms-4'>In 1905, Herndon acquired a small association and transformed it into what would become Atlanta Life Insurance Company. To him, insurance was more than a product—it was a tool for empowerment. At a time when many families were denied access to protection and planning, Atlanta Life became a symbol of progress. It offered dignity, peace of mind, and a foundation on which to build futures.
-            Herndon's vision turned Atlanta Life into more than a company; it became a movement dedicated to opening doors and creating pathways for prosperity.</p>
-          <div className='hr'><img src="/img/about/storyofus/hr.png" alt="Horizontal Rule" className='img-fluid' /></div>
+          <h4 className='mt-4'>Key benefits of u.s. based reinsurance</h4>
+          <h4 className="ms-4 sub-header mb-1">Rate Reduction for Policyholders</h4>
+          <ul className='ms-4'>
+            <li>By spreading risk across a broader financial base, reinsurance helps carriers manage claims more efficiently, often lowering premium rates for policyholders.</li>
+          </ul>
+          <h4 className="ms-4 sub-header mb-1">Financial Protection Against Catastrophic Events</h4>
+          <ul className='ms-4'>
+            <li>Reinsurance shields carriers from natural disasters, economic downturns, and other large-scale risks, ensuring they remain financially secure and capable of honoring claims.</li>
+          </ul>
+          <h4 className="ms-4 sub-header mb-1">Economies of Scale</h4>
+          <ul className='ms-4'>
+            <li>U.S.-based reinsurance allows insurers to access large pools of capital and risk-sharing mechanisms. This efficiency reduces overhead costs and enhances industry resilience.</li>
+          </ul>
+          <h4 className="ms-4 sub-header mb-1">Strengthening Market Stability</h4>
+          <ul className='ms-4'>
+            <li>By enhancing the financial security of insurers, reinsurance promotes consumer confidence and ensures carriers can underwrite larger policies while maintaining balance sheet strength.</li>
+          </ul>
+          <h4 className="ms-4 sub-header mb-1">Supporting Growth and Innovation</h4>
+          <ul className='ms-4'>
+            <li>By mitigating financial risk, reinsurance empowers insurers to expand coverage options, innovate services, and strengthen the overall insurance landscape.</li>
+          </ul>
+          <h4 className="ms-4 sub-header mb-1 mt-5">Atlanta Life's Commitment</h4>
+          <p className="ms-4">For more than a century, Atlanta Life has combined financial strength with a legacy of community advancement. As a U.S.-based, minority-led reinsurer, we deliver more than protection—we create partnerships that build stability, foster innovation, and extend opportunity to the communities our carriers serve.</p>
         </Col>
       </Row>
-
-      <Row>
-        <Col xs={12} md={8} >
-          <h4>A century of growth & Strength</h4>
-          <p className='ms-4'>Across generations, Atlanta Life has grown into one of the most influential institutions of its kind. We have stood strong through the challenges of changing economies, shifting industries, and evolving communities. From supporting families through uncertain times to investing in education, business development, and community initiatives, Atlanta Life became a pillar of progress.
-            The company's impact has extended far beyond financial services — it has helped shape the fabric of Atlanta and inspired progress across the nation.</p>
-          <div className='hr'><img src="/img/about/storyofus/hr.png" alt="Horizontal Rule" className='img-fluid' /></div>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col xs={12} md={8} >
-          <h4>Carrying the vision forward</h4>
-          <p className='ms-4'>Across generations, Atlanta Life has grown into one of the most influential institutions of its kind.
-            We have stood strong through the challenges of changing economies, shifting industries, and evolving communities.
-            From supporting families through uncertain times to investing in education, business development, and community initiatives,
-            Atlanta Life became a pillar of progress.
-            The company's impact has extended far beyond financial services—it has helped shape the fabric of Atlanta and inspired progress across the nation.</p>
-          <div className='hr'><img src="/img/about/storyofus/hr.png" alt="Horizontal Rule" className='img-fluid' /></div>
-        </Col>
-      </Row>
-
     </Container>
   </div>
 );

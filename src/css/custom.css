@@ -265,6 +265,10 @@ section {
   text-align: center;
 }
 
+#what-is-reinsurance ul{
+  margin-bottom:0.5rem;
+}
+
 @media (min-width: 1200px) {
   .executive-leadership-container .middle-col {
     width: 26%;

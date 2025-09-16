@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import GradientBox from '../../../components/homepage/GradientBox';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import TextPictureOverlap from '../../../components/shared/TextPictureOverlap';
-import '../../../components/base.css';
 
 const OurCommunities: React.FC = () => {
     return (

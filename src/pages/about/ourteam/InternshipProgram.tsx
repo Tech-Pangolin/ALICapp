@@ -3,7 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import PhotoCard from '../../../components/shared/PhotoCard';
 import SingleParaWithImage from '../../../components/shared/SingleParaWithImage';
-import '../../../components/base.css'
 
 const InternshipProgram: React.FC = () => {
     return (

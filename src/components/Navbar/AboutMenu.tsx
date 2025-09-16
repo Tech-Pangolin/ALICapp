@@ -1,7 +1,6 @@
 import { NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import type { MenuProps } from "../../types";
-import "./AboutMenu.css";
 
 const AboutMenu = ({ variant = 'desktop' }: MenuProps) => {
   if (variant === 'mobile') {

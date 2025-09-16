@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import ImageCarousel from '../../../components/shared/ImageCarousel';
 import PhotoCard from '../../../components/shared/PhotoCard';
-import '../../../components/base.css';
 import PaginationWrapper from '../../../components/shared/PaginationWrapper';
 
 const Newsroom: React.FC = () => {

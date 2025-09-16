@@ -1,5 +1,4 @@
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
-// import '../../../components/base.css';
 
 const MentalWellness: React.FC = () => (
   <div>

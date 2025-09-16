@@ -60,10 +60,6 @@ function NavbarComponent() {
               height="45"
               className="me-2 my-3 d-none d-lg-block"
             />
-            {/* <div id="brand-celebrating" className="d-none d-lg-block">
-              <p id="celebrating">Celebrating</p>
-              <p id="years">120 Years</p>
-            </div> */}
           </Navbar.Brand>
 
           {/* Toggle for mobile */}

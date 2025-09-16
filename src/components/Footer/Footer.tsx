@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css';
 import { Instagram, Twitter, Facebook, Linkedin, Youtube } from 'react-bootstrap-icons';
 import ContactForm from '../ContactForm';
 

@@ -1,4 +1,4 @@
-// import '../../../components/base.css';
+
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 
 const PhysicalWellness: React.FC = () => (

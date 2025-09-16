@@ -14,7 +14,7 @@ import Home from './pages/Home';
 import Footer from './components/Footer/Footer';
 import Copyright from './components/Footer/Copyright';
 import ChildReads from './pages/resources/ChildReads';
-import Publications from './pages/livebalanced/Publications';
+// import Publications from './pages/livebalanced/Publications';
 import StoryOfUs from './pages/about/ourstory/StoryOfUs';
 import OurCommunities from './pages/about/ourstory/OurCommunities';
 import ActuaryRisk from './pages/about/ourteam/ActuaryRisk';
@@ -49,10 +49,8 @@ function App() {
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/livebalanced" element={<LiveBalanced />} />
-       
+        <Route path="/livebalanced" element={<LiveBalanced />} />       
         <Route path="/resources/readsforchildren" element={<ChildReads />} />
-        <Route path="/publications" element={<Publications />} />
         <Route path="/about/ourstory" element={<StoryOfUs />} />
         <Route path="/about/ourcommunities" element={<OurCommunities />} />
         <Route path="/about/actuaryrisk" element={<ActuaryRisk />} />

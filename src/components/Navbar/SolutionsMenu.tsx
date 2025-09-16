@@ -204,14 +204,12 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  HOW IT WORKS
+                  <a href="/solutions/what-is-reinsurance">What is Reinsurance</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  RISK MANAGEMENT
+                  <a href="/solutions/how-it-works">How it Works</a>
                 </div>
-                <div style={devStyles.navItem}>
-                  PARTNERSHIPS
-                </div>
+                
               </div>
             </div>
             
@@ -222,16 +220,13 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  LOCAL COMMUNITY ENGAGEMENT
+                  <a href="/solutions/local-community-engagement">LOCAL COMMUNITY ENGAGEMENT</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  CONTINUED EDUCATION
+                  <a href="/solutions/corporate-sustainability">CORPORATE SUSTAINABILITY</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  CORPORATE SUSTAINABILITY
-                </div>
-                <div style={devStyles.navItem}>
-                  <a href="/health/healthandproductivity">HEALTH & PRODUCTIVITY</a>
+                  <a href="/solutions/healthandproductivity">HEALTH & PRODUCTIVITY</a>
                 </div>
               </div>
             </div>
@@ -243,22 +238,22 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div style={devStyles.navItem}>
-                  <a href="/livebalanced">ABOUT LIVEBALANCED™</a>
+                  <a href="/solutions/about-livebalanced">ABOUT LIVEBALANCED™</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/livebalanced/physicalwellness">PHYSICAL WELLNESS</a>
+                  <a href="/solutions/physicalwellness">PHYSICAL WELLNESS</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/livebalanced/socialwellness">SOCIAL WELLNESS</a>
+                  <a href="/solutions/socialwellness">SOCIAL WELLNESS</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/livebalanced/financialwellness">WEALTH & EQUITY</a>
+                  <a href="/solutions/financialwellness">WEALTH & EQUITY</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/livebalanced/mentalwellness">PURPOSE ALIGNMENT</a>
+                  <a href="/solutions/mentalwellness">PURPOSE ALIGNMENT</a>
                 </div>
                 <div style={devStyles.navItem}>
-                  <a href="/publications">THE NEWSLETTER</a>
+                  <a href="/solutions/newsletter">THE NEWSLETTER</a>
                 </div>
               </div>
             </div>

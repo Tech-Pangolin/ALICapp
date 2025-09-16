@@ -2,7 +2,15 @@
     --primary-blue: #0b3144;
     --primary-gold: #d4af37;
     --white: #fcfcfc;
-    --ss-font: "DM Sans", sans-serif;;
+    --ss-font: "DM Sans", sans-serif;
+    --cursive-font: "Kapakana", cursive;
+}
+
+.kapakana-cursive {
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .text-blue {
@@ -13,13 +21,23 @@
     color: var(--primary-gold);
 }
 
-p, h1, h2, h3, h4, h5, ul {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
     font-family: var(--ss-font), sans-serif;
     color: var(--primary-blue);
     margin-bottom: 2rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -49,7 +67,7 @@ h4 {
     letter-spacing: 1px;
 }
 
- /* this will need some additional work to play nicely with styling from custom.css */
+/* this will need some additional work to play nicely with styling from custom.css */
 /* h5 {
     font-size: 1rem;
     line-height: 1.1;

@@ -1,0 +1,35 @@
+#thefactsbox {
+    /* background-color: #F1F1F1; */
+    padding: 0px 0 40px 0; ;
+    margin-bottom: 30px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #0B3144, #f39c12);
+    border-image-slice: 1;
+    margin-left: 50px;
+    width: 90%;
+}
+
+#thefactsbox h2 {
+    color: #0B3144;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: none;
+    margin: 20px 0;
+    letter-spacing: 0px;
+}
+
+#thefactsbox p {
+    font-size: 16px;
+    text-transform: none;
+    margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#thefactsbox p:last-child {
+    border-bottom: 2px solid #ccc;
+}
+#thefactsbox p:first-of-type {
+    border-top: 2px solid #ccc;
+}

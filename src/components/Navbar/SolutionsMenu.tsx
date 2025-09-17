@@ -100,7 +100,7 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
                   <a href="/solutions/corporate-sustainability">CORPORATE SUSTAINABILITY</a>
                 </div>
                 <div className="navItem">
-                  <a href="/solutions/healthandproductivity">HEALTH & PRODUCTIVITY</a>
+                  <a href="/solutions/health-and-productivity">HEALTH & PRODUCTIVITY</a>
                 </div>
               </div>
             </div>

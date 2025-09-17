@@ -76,6 +76,7 @@ h4 {
 } */
 .sub-header{
     text-transform: none;
+    letter-spacing: 0px;
 }
 .p-text-group{
     margin-bottom:1em;

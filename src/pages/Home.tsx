@@ -1,7 +1,7 @@
 import Timeline from "../components/homepage/Timeline";
 import Hero from "../components/homepage/Hero";
 import CelebrateSection from "../components/homepage/CelebrateSection";
-import GradientBox from "../components/homepage/GradientBox";
+import GradientBox from "../components/shared/GradientBox";
 import CardsSection from "../components/homepage/CardsSection";
 import { useState } from "react";
 import SolutionsSection from "../components/homepage/SolutionsSection";

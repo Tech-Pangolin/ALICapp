@@ -239,6 +239,11 @@ section {
   border-image: linear-gradient(to right, #f39c12, #0B3144);
   border-image-slice: 1;
 }
+.gradient-top-border-slim {
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, #f39c12, #0B3144);
+  border-image-slice: 1;
+}
 
 .executive-leadership-container {
   width: 65%;

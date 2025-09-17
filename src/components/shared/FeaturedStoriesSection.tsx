@@ -1,7 +1,14 @@
 import React from 'react';
 import './FeaturedStoriesSection.css';
 
-const FeaturedStoriesSection: React.FC<{showTitle?: boolean}> = ({showTitle = true}) => {
+const FeaturedStoriesSection: React.FC<{
+    showTitle?: boolean, 
+    img1?: string,
+    img2?: string,
+    img3?: string,
+    img4?: string
+
+}> = ({showTitle = true, img1="/img/home/featured-1.png", img2="/img/home/featured-2.png", img3="/img/home/featured-3.png", img4="/img/home/featured-4.png"}) => {
     return (
         <div className="container" id="featured-stories">
             {showTitle && <div className="row">
@@ -19,10 +26,10 @@ const FeaturedStoriesSection: React.FC<{showTitle?: boolean}> = ({showTitle = tr
                 </div>
                 <div className="col-12 col-lg-9">
                     <div className="row">
-                        <div className="col-12 col-lg-3"> <img src="/img/home/featured-1.png" alt="Man in grey suit with tablet" className='img-fluid' /></div>
-                        <div className="col-12 col-lg-3"> <img src="/img/home/featured-2.png" alt="Man in suit with red tie" className='img-fluid' /></div>
-                        <div className="col-12 col-lg-3"> <img src="/img/home/featured-3.png" alt="Woman with curly hair in blazer" className='img-fluid' /></div>
-                        <div className="col-12 col-lg-3"> <img src="/img/home/featured-4.png" alt="People at networking event" className='img-fluid' /></div>
+                        <div className="col-12 col-lg-3"> <img src={img1} alt="Man in grey suit with tablet" className='img-fluid' /></div>
+                        <div className="col-12 col-lg-3"> <img src={img2} alt="Man in suit with red tie" className='img-fluid' /></div>
+                        <div className="col-12 col-lg-3"> <img src={img3} alt="Woman with curly hair in blazer" className='img-fluid' /></div>
+                        <div className="col-12 col-lg-3"> <img src={img4} alt="People at networking event" className='img-fluid' /></div>
                     </div>
                     <div className="cta-overlay row d-none d-lg-flex">
                         <div className="col-6"><h2 className="overlay-heading">SEE REAL PEOPLE MAKE REAL IMPACT.</h2>

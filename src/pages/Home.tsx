@@ -5,7 +5,8 @@ import GradientBox from "../components/homepage/GradientBox";
 import CardsSection from "../components/homepage/CardsSection";
 import { useState } from "react";
 import SolutionsSection from "../components/homepage/SolutionsSection";
-import FeaturedStoriesSection from "../components/homepage/FeaturedStoriesSection";
+import FeaturedStoriesSection from "../components/shared/FeaturedStoriesSection";
+
 
 const Home = () => {
   const [expanded, setExpanded] = useState(false);

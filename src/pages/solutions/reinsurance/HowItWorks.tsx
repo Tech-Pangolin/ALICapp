@@ -4,7 +4,7 @@ import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 const HowItWorks: React.FC = () => (
   <div>
   <ContentPageHeader src="/img/about/shared/bd-header.png" title="How It Works" />
-  <Container id="what-is-reinsurance">
+  <Container id="how-it-works">
       <Row>
         <Col xs={12} sm={12} md={8} >
           <h4>How does partnering with Atlanta life work?</h4>

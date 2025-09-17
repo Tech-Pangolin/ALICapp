@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
-import FeaturedStoriesSection from '../../../components/homepage/FeaturedStoriesSection';
+import FeaturedStoriesSection from '../../../components/shared/FeaturedStoriesSection';
+
+
 
 const AwardsRecognition: React.FC = () => {
     return (

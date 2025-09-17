@@ -1,0 +1,12 @@
+.card-body {
+    background-color: var(--primary-blue);
+    height: 100px;
+}
+
+.card-body a {
+    margin-top: 10px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--ss-font), sans-serif;
+}

@@ -164,36 +164,45 @@
   font-weight: bold;
   font-family: sans-serif;
 }
+
 .pie:before,
 .pie:after {
   content: "";
   position: absolute;
   border-radius: 50%;
 }
+
 .pie:before {
   inset: 0;
   background:
     radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
     conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-          mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
+
 .pie:after {
   inset: calc(50% - var(--b)/2);
   background: var(--c);
   transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
 }
+
 .animate {
   animation: p 1s .5s both;
 }
+
 .no-round:before {
   background-size: 0 0, auto;
 }
+
 .no-round:after {
   content: none;
 }
+
 @keyframes p {
-  from { --p: 0 }
+  from {
+    --p: 0
+  }
 }
 
 #solutions,
@@ -239,6 +248,7 @@ section {
   border-image: linear-gradient(to right, #f39c12, #0B3144);
   border-image-slice: 1;
 }
+
 .gradient-top-border-slim {
   border-top: 2px solid;
   border-image: linear-gradient(to right, #f39c12, #0B3144);
@@ -271,23 +281,46 @@ section {
   text-align: center;
 }
 
-#what-is-reinsurance ul{
-  margin-bottom:0.5rem;
+#what-is-reinsurance ul {
+  margin-bottom: 0.5rem;
 }
 
 #livebalanced-page h6 {
-    color: #0B3144;
-    font-size: 16px;
-    font-weight: bolder;
-    text-transform: none;
-    margin: 50px 0 0px 0;
-    letter-spacing: 1px;
+  color: #0B3144;
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: none;
+  margin: 50px 0 0px 0;
+  letter-spacing: 1px;
 }
+
 #livebalanced-page ul li {
   letter-spacing: 1px;
 }
+
 #livebalanced-page p {
   letter-spacing: 1px;
+}
+
+#physical-wellness-page .percentage, #mental-wellness-page .percentage, #financial-wellness-page .percentage {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--primary-gold);
+  margin-right: 8px;
+}
+
+#physical-wellness-page .highlighted, #mental-wellness-page .highlighted, #financial-wellness-page .highlighted {
+  font-size: 20px;
+  color: var(--primary-blue);
+}
+.learn-more-live-balanced{
+    color: rgb(212, 175, 55); 
+    font-weight: 400; 
+    font-style: 'italic';     
+}
+.clickable {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media (min-width: 1200px) {

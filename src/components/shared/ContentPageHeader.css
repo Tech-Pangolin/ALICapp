@@ -2,9 +2,10 @@
 .content-page-header {
     height:500px;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     margin-bottom: 50px;
+    margin-top:50px;
 }
 
 #title-text-overlay {

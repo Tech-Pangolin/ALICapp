@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import GradientBox from '../../../components/shared/GradientBox';
-import LiveBalancedCards from './livebalanced/LiveBalancedCards';
+import LiveBalancedCards from '../../../components/livebalanced/LiveBalancedCards';
 
 const LiveBalanced: React.FC = () => (
   <div id="livebalanced-page">
@@ -28,10 +28,11 @@ const LiveBalanced: React.FC = () => (
       </Row>
       <Row>
         <Col lg={8} >
-          <h5 className="fw-semibold mt-5">Learn more about the LIVE<span style={{ color: 'rgb(212, 175, 55)', fontWeight: 400, fontStyle: 'italic' }}>BALANCED</span>™ Pillars</h5>
+          <h5 className="fw-semibold mt-5">Learn more about the LIVE<span className="learn-more-live-balanced">BALANCED</span>™ Pillars</h5>
      
         </Col>
         </Row>     
+        
         <LiveBalancedCards />
     </Container>
   </div>

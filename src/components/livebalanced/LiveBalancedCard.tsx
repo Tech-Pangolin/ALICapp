@@ -12,10 +12,11 @@ const LiveBalancedCard: React.FC<LiveBalancedCardProps> = ({ text, url, imageSrc
     return (
         <Card className='custom-card mb-3' >
             <Card.Img variant="top" src={imageSrc} alt="Card image" />
+            <div className="gradient-top-border"></div>
             <Card.Body>
                 <Card.Text>{text}</Card.Text>
                 <div className='d-flex justify-content-center'>
-                    <Card.Link href={url} target="_blank" rel="noopener noreferrer">
+                    <Card.Link href={url}>
                     Learn More
                 </Card.Link>
                 </div>

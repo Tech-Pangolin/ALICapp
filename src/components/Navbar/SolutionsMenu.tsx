@@ -121,10 +121,10 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
                   <a href="/solutions/socialwellness">SOCIAL WELLNESS</a>
                 </div>
                 <div className="navItem">
-                  <a href="/solutions/financialwellness">WEALTH & EQUITY</a>
+                  <a href="/solutions/financialwellness">FINANCIAL WELLNESS</a>
                 </div>
                 <div className="navItem">
-                  <a href="/solutions/mentalwellness">PURPOSE ALIGNMENT</a>
+                  <a href="/solutions/mentalwellness">MENTAL WELLNESS</a>
                 </div>
                 <div className="navItem">
                   <a href="/solutions/newsletter">THE NEWSLETTER</a>

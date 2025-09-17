@@ -15,7 +15,7 @@ const ChildReads: React.FC = () => {
 
                 </div>
             </section>
-            <section id="blog" className="blog">
+            <section id="blog" className="">
                 <div className="container" data-aos="fade-up">
 
                     <div className="row">

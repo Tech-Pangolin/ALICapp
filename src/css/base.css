@@ -66,6 +66,9 @@ h4 {
     line-height: 1.1;
     letter-spacing: 1px;
 }
+p,li{
+    letter-spacing: 1px;;
+}
 
 /* this will need some additional work to play nicely with styling from custom.css */
 /* h5 {
@@ -80,6 +83,7 @@ h4 {
 }
 .p-text-group{
     margin-bottom:1em;
+    letter-spacing: 1px;
 }
 .std-bottom-space {
     margin-bottom: 2rem;

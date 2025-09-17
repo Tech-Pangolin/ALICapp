@@ -23,25 +23,24 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
 
     // Left column styles
     leftColumn: {
-      padding: '20px 0',
+      // padding: '20px 0',
       display: 'flex',
-      flexDirection: 'column' as const,
-      alignItems: 'center',
-      justifyContent: 'center'
+      // flexDirection: 'column' as const,
+      // alignItems: 'center',
+      justifyContent: 'start'
     },
 
     // Gradient header styles
     gradientHeader: {
       background: 'linear-gradient(90deg, #2c3e50 0%, #f39c12 100%)',
       color: 'white',
-      padding: '20px 30px',
-      borderRadius: '8px',
+      padding: '10px 50px',
       textAlign: 'center' as const,
-      fontSize: '1.2rem',
+      fontSize: '1.0rem',
       fontWeight: '700',
       textTransform: 'uppercase' as const,
       letterSpacing: '1px',
-      boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+      border: 0,
     },
 
     // Right column styles
@@ -147,14 +146,12 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
         <div className="row g-0 w-100">
           {/* Left Column - Gradient Header */}
           <div className="col-lg-3">
-            <div className="left-column" style={devStyles.leftColumn}>
-              <button type="submit" className="gradient-header" style={devStyles.gradientHeader}>
-                {isSending ? "Sending..." : "SEND US A MESSAGE"}
+            <div className="left-column">
+              <button className="gradient-header" style={devStyles.gradientHeader}>
+               Contact Us
               </button>
             </div>
-            {success && <div className="alert alert-success mt-5 text-center" role="alert">
-              Message sent successfully!
-            </div>}
+        
           </div>
 
           {/* Right Column - Contact Form */}
@@ -218,6 +215,14 @@ const ContactMenu = ({ variant = 'desktop' }: MenuProps) => {
                     onChange={handleChange}
                   ></textarea>
                 </div>
+                <div className="left-column" style={devStyles.leftColumn}>
+                  <button type="submit" className="gradient-header" style={devStyles.gradientHeader}>
+                    {isSending ? "Sending..." : "SEND"}
+                  </button>
+                </div>
+                {success && <div className="alert alert-success mt-5 text-center" role="alert">
+                  Message sent successfully!
+                </div>}
               </form>
             </div>
           </div>

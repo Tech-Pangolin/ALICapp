@@ -10,8 +10,8 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
         <NavDropdown.Item href="/solutions/how-it-works">How It Works</NavDropdown.Item>
 
         <NavDropdown.Divider />
-        <NavDropdown.Item href="/solutions/about-livebalanced">LiveBalanced™</NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/about-livebalanced">About LiveBalanced™</NavDropdown.Item>
+        <NavDropdown.Item href="#">LiveBalanced™</NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/livebalanced">About LiveBalanced™</NavDropdown.Item>
         <NavDropdown.Item href="/solutions/physicalwellness">Physical Wellness</NavDropdown.Item>
         <NavDropdown.Item href="/solutions/socialwellness">Mental Wellness</NavDropdown.Item>
         <NavDropdown.Item href="/solutions/financialwellness">Financial Wellness</NavDropdown.Item>
@@ -112,7 +112,7 @@ const SolutionsMenu = ({ variant = 'desktop' }: MenuProps) => {
               </h6>
               <div className="nav-items">
                 <div className="navItem">
-                  <a href="/solutions/about-livebalanced">ABOUT LIVEBALANCED™</a>
+                  <a href="/solutions/livebalanced">ABOUT LIVEBALANCED™</a>
                 </div>
                 <div className="navItem">
                   <a href="/solutions/physicalwellness">PHYSICAL WELLNESS</a>

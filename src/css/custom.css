@@ -245,6 +245,7 @@ section {
   border-image-slice: 1;
 }
 
+
 .executive-leadership-container {
   width: 65%;
 }
@@ -272,6 +273,21 @@ section {
 
 #what-is-reinsurance ul{
   margin-bottom:0.5rem;
+}
+
+#livebalanced-page h6 {
+    color: #0B3144;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: none;
+    margin: 50px 0 0px 0;
+    letter-spacing: 1px;
+}
+#livebalanced-page ul li {
+  letter-spacing: 1px;
+}
+#livebalanced-page p {
+  letter-spacing: 1px;
 }
 
 @media (min-width: 1200px) {

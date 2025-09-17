@@ -26,3 +26,8 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+.balanced {
+    color: var(--primary-gold);
+    font-style: italic;
+    font-weight: normal;
+}

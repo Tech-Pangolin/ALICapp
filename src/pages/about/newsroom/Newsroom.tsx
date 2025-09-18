@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ContentPageHeader from '../../../components/shared/ContentPageHeader';
 import ImageCarousel from '../../../components/shared/ImageCarousel';
-import PhotoCard from '../../../components/shared/PhotoCard';
-import PaginationWrapper from '../../../components/shared/PaginationWrapper';
+// import PhotoCard from '../../../components/shared/PhotoCard';
+// import PaginationWrapper from '../../../components/shared/PaginationWrapper';
 
 const Newsroom: React.FC = () => {
     // Team images for development - replace with actual newsroom images when available
@@ -14,26 +14,26 @@ const Newsroom: React.FC = () => {
         '/img/newsroom/office4.jpg'
     ];
 
-    const sampleData = [
-        { id: '1', name: 'Eric L. Holoman', title: 'President & Chief Executive Officer', image: 'https://placehold.co/400x300' },
-        { id: '2', name: 'Ryan L. Smith', title: 'Executive Vice President', image: 'https://placehold.co/400x300' },
-        { id: '3', name: 'Sarah Johnson', title: 'Chief Financial Officer', image: 'https://placehold.co/400x300' },
-        { id: '4', name: 'Michael Chen', title: 'Chief Technology Officer', image: 'https://placehold.co/400x300' },
-        { id: '5', name: 'Lisa Rodriguez', title: 'Head of Human Resources', image: 'https://placehold.co/400x300' },
-        { id: '6', name: 'David Thompson', title: 'Vice President of Operations', image: 'https://placehold.co/400x300' },
-        { id: '7', name: 'Jennifer Lee', title: 'Director of Marketing', image: 'https://placehold.co/400x300' },
-        { id: '8', name: 'Robert Wilson', title: 'Senior Legal Counsel', image: 'https://placehold.co/400x300' },
-        { id: '9', name: 'Amanda Davis', title: 'Director of Client Relations', image: 'https://placehold.co/400x300' },
-        { id: '10', name: 'James Brown', title: 'Head of Risk Management', image: 'https://placehold.co/400x300' },
-        { id: '11', name: 'Maria Garcia', title: 'Director of Analytics', image: 'https://placehold.co/400x300' },
-        { id: '12', name: 'Thomas Anderson', title: 'Senior Actuary', image: 'https://placehold.co/400x300' },
-        { id: '13', name: 'Rachel Green', title: 'Director of Training', image: 'https://placehold.co/400x300' },
-        { id: '14', name: 'Kevin Martinez', title: 'IT Security Manager', image: 'https://placehold.co/400x300' },
-        { id: '15', name: 'Nicole Taylor', title: 'Quality Assurance Lead', image: 'https://placehold.co/400x300' },
-        { id: '16', name: 'Alex Johnson', title: 'Business Analyst', image: 'https://placehold.co/400x300' },
-        { id: '17', name: 'Emma Wilson', title: 'Project Manager', image: 'https://placehold.co/400x300' },
-        { id: '18', name: 'Chris Davis', title: 'Software Developer', image: 'https://placehold.co/400x300' }
-    ];
+    // const sampleData = [
+    //     { id: '1', name: 'Eric L. Holoman', title: 'President & Chief Executive Officer', image: 'https://placehold.co/400x300' },
+    //     { id: '2', name: 'Ryan L. Smith', title: 'Executive Vice President', image: 'https://placehold.co/400x300' },
+    //     { id: '3', name: 'Sarah Johnson', title: 'Chief Financial Officer', image: 'https://placehold.co/400x300' },
+    //     { id: '4', name: 'Michael Chen', title: 'Chief Technology Officer', image: 'https://placehold.co/400x300' },
+    //     { id: '5', name: 'Lisa Rodriguez', title: 'Head of Human Resources', image: 'https://placehold.co/400x300' },
+    //     { id: '6', name: 'David Thompson', title: 'Vice President of Operations', image: 'https://placehold.co/400x300' },
+    //     { id: '7', name: 'Jennifer Lee', title: 'Director of Marketing', image: 'https://placehold.co/400x300' },
+    //     { id: '8', name: 'Robert Wilson', title: 'Senior Legal Counsel', image: 'https://placehold.co/400x300' },
+    //     { id: '9', name: 'Amanda Davis', title: 'Director of Client Relations', image: 'https://placehold.co/400x300' },
+    //     { id: '10', name: 'James Brown', title: 'Head of Risk Management', image: 'https://placehold.co/400x300' },
+    //     { id: '11', name: 'Maria Garcia', title: 'Director of Analytics', image: 'https://placehold.co/400x300' },
+    //     { id: '12', name: 'Thomas Anderson', title: 'Senior Actuary', image: 'https://placehold.co/400x300' },
+    //     { id: '13', name: 'Rachel Green', title: 'Director of Training', image: 'https://placehold.co/400x300' },
+    //     { id: '14', name: 'Kevin Martinez', title: 'IT Security Manager', image: 'https://placehold.co/400x300' },
+    //     { id: '15', name: 'Nicole Taylor', title: 'Quality Assurance Lead', image: 'https://placehold.co/400x300' },
+    //     { id: '16', name: 'Alex Johnson', title: 'Business Analyst', image: 'https://placehold.co/400x300' },
+    //     { id: '17', name: 'Emma Wilson', title: 'Project Manager', image: 'https://placehold.co/400x300' },
+    //     { id: '18', name: 'Chris Davis', title: 'Software Developer', image: 'https://placehold.co/400x300' }
+    // ];
 
     return (
         <>

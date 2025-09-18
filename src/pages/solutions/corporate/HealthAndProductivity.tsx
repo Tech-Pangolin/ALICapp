@@ -12,9 +12,9 @@ const HealthAndProductivity: React.FC = () => {
   return (
     <div>
       <ContentPageHeader src="/img/solutions/healthandproductivityheader.png" title="Health & Productivity" />
-      <Container>
+      <Container className="health-and-productivity-page">
         <Row>
-          <Col>
+          <Col className='mx-5'>
             <GradientBox line1Text='Wellness is complex but' line2Text='our strategy makes it work' />
           </Col>
         </Row>
@@ -27,14 +27,14 @@ const HealthAndProductivity: React.FC = () => {
         </Row>
         <Row>
           <Col>
-            <GradientBox staticHeight='175px' line1Text='53%' line2Text='Employees worried' line3Text='Most worried about rising expenses' mainFontSize='1rem' subFontSize='0.9rem' />
+            <GradientBox staticHeight='175px' line1Text='53%' line2Text='Employees worried' line3Text='Most worried about rising expenses' mainFontSize='1.2rem' subFontSize='1rem' />
           </Col>
           <Col>
-            <GradientBox staticHeight='175px' line1Text='59%' line2Text='Pay not keeping up' line3Text='Many say pay is not keeping up with costs of living.' mainFontSize='1rem' subFontSize='0.9rem' />
+            <GradientBox staticHeight='175px' line1Text='59%' line2Text='Pay not keeping up' line3Text='Many say pay is not keeping up with costs of living.' mainFontSize='1.2rem' subFontSize='1rem' />
 
           </Col>
           <Col>
-            <GradientBox staticHeight='175px' line1Text='51%' line2Text='Limited programs' line3Text='51% of employers offer financial wellness programs.' mainFontSize='1rem' subFontSize='0.9rem' />
+            <GradientBox staticHeight='175px' line1Text='51%' line2Text='Limited programs' line3Text='51% of employers offer financial wellness programs.' mainFontSize='1.2rem' subFontSize='1rem' />
           </Col>
         </Row>
         <Row>
@@ -45,7 +45,7 @@ const HealthAndProductivity: React.FC = () => {
           </Col>
         </Row>
         <Row>
-          <Col className="d-flex justify-content-center justify-content-lg-end">
+          <Col className="d-flex justify-content-center justify-content-lg-end mt-5">
             <FactsBox title="The Facts" facts={facts} />
           </Col>
         </Row>

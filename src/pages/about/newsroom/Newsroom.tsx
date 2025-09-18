@@ -8,12 +8,12 @@ import PaginationWrapper from '../../../components/shared/PaginationWrapper';
 const Newsroom: React.FC = () => {
     // Team images for development - replace with actual newsroom images when available
     const teamImages = [
-        '/img/team/team-1.jpg',
-        '/img/team/team-2.jpg',
-        '/img/team/team-3.jpg',
-        '/img/team/team-4.jpg'
+        '/img/newsroom/office1.jpg',
+        '/img/newsroom/office2.jpg',
+        '/img/newsroom/office3.jpg',
+        '/img/newsroom/office4.jpg'
     ];
-    
+
     const sampleData = [
         { id: '1', name: 'Eric L. Holoman', title: 'President & Chief Executive Officer', image: 'https://placehold.co/400x300' },
         { id: '2', name: 'Ryan L. Smith', title: 'Executive Vice President', image: 'https://placehold.co/400x300' },
@@ -56,110 +56,48 @@ const Newsroom: React.FC = () => {
                 </Row>
 
                 <h4>View All Our Stories</h4>
-                {/* <Row className='photo-card-row'>
-                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
-                        <PhotoCard
-                            layout="top"
-                            name="Eric L. Holoman"
-                            title="President & Chief Executive Officer"
-                            setSelectedCard={() => { }}
-                            image="https://placehold.co/400x300"
-                            alignment='end'
-                        />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex justify-content-center'>
-                        <PhotoCard
-                            layout="top"
-                            name="Ryan L. Smith"
-                            title="Executive Vice President"
-                            setSelectedCard={() => { }}
-                            image="https://placehold.co/400x300"
-                            alignment='center'
-                        />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
-                        <PhotoCard
-                            layout="top"
-                            name="Ryan L. Smith"
-                            title="Executive Vice President"
-                            setSelectedCard={() => { }}
-                            image="https://placehold.co/400x300"
-                            alignment='start'
-                        />
+                <Row>
+                    <Col className='d-flex justify-content-center'>
+                    <img src="/img/newsroom/comingsoonnews.png" style={{ width: '50%' }} alt="Coming soon" />
                     </Col>
                 </Row>
 
-                <Row className='photo-card-row'>
-                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-end'>
-                        <PhotoCard
-                            layout="top"
-                            name="Eric L. Holoman"
-                            title="President & Chief Executive Officer"
-                            setSelectedCard={() => { }}
-                            image="https://placehold.co/400x300"
-                            alignment='end'
-                        />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex justify-content-center'>
-                        <PhotoCard
-                            layout="top"
-                            name="Ryan L. Smith"
-                            title="Executive Vice President"
-                            setSelectedCard={() => { }}
-                            image="https://placehold.co/400x300"
-                            alignment='center'
-                        />
-                    </Col>
-                    <Col xs={12} md={4} className='d-flex justify-content-center justify-content-lg-start'>
-                        <PhotoCard
-                            layout="top"
-                            name="Ryan L. Smith"
-                            title="Executive Vice President"
-                            setSelectedCard={() => { }}
-                            image="https://placehold.co/400x300"
-                            alignment='start'
-                        />
-                    </Col>
-                </Row> */}
+                {/* <PaginationWrapper
+                    rowsPerPage={4}
+                    showPagination={true}
+                    totalItems={sampleData.length}
+                    itemLabel="stories"
+                >
+                    {Array.from({ length: Math.ceil(sampleData.length / 3) }, (_, rowIndex) => {
+                        const startIndex = rowIndex * 3;
+                        const rowData = sampleData.slice(startIndex, startIndex + 3);
 
-            <PaginationWrapper 
-                rowsPerPage={4} 
-                showPagination={true}
-                totalItems={sampleData.length}
-                itemLabel="stories"
-            >
-                {/* Group data into rows of 3 */}
-                {Array.from({ length: Math.ceil(sampleData.length / 3) }, (_, rowIndex) => {
-                    const startIndex = rowIndex * 3;
-                    const rowData = sampleData.slice(startIndex, startIndex + 3);
-                    
-                    return (
-                        <Row key={`row-${rowIndex}`} className='photo-card-row'>
-                            {rowData.map((item, colIndex) => (
-                                <Col 
-                                    key={item.id} 
-                                    xs={12} 
-                                    md={4} 
-                                    className={`d-flex justify-content-center ${
-                                        colIndex === 0 ? 'justify-content-lg-end' : 
-                                        colIndex === 1 ? '' : 
-                                        'justify-content-lg-start'
-                                    }`}
-                                >
-                                    <PhotoCard
-                                        layout="top"
-                                        name={item.name}
-                                        title={item.title}
-                                        setSelectedCard={() => { }}
-                                        image={item.image}
-                                        alignment={colIndex === 0 ? 'end' : colIndex === 1 ? 'center' : 'start'}
-                                    />
-                                </Col>
-                            ))}
-                        </Row>
-                    );
-                })}
-            </PaginationWrapper>
+                        return (
+                            <Row key={`row-${rowIndex}`} className='photo-card-row'>
+                                {rowData.map((item, colIndex) => (
+                                    <Col
+                                        key={item.id}
+                                        xs={12}
+                                        md={4}
+                                        className={`d-flex justify-content-center ${colIndex === 0 ? 'justify-content-lg-end' :
+                                                colIndex === 1 ? '' :
+                                                    'justify-content-lg-start'
+                                            }`}
+                                    >
+                                        <PhotoCard
+                                            layout="top"
+                                            name={item.name}
+                                            title={item.title}
+                                            setSelectedCard={() => { }}
+                                            image={item.image}
+                                            alignment={colIndex === 0 ? 'end' : colIndex === 1 ? 'center' : 'start'}
+                                        />
+                                    </Col>
+                                ))}
+                            </Row>
+                        );
+                    })}
+                </PaginationWrapper> */}
 
             </Container>
         </>

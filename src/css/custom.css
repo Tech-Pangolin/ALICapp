@@ -232,10 +232,15 @@ section {
 
 .about-container p,
 .about-container .subheader,
+
 .about-container ul li,
 .leadership-modal-body .bio p {
   color: #0B3144;
   font-size: 16px;
+}
+
+#our-communities .subheader{
+  font-size: 1.1rem;;
 }
 
 .leadership-modal-body .bio p {
@@ -321,6 +326,12 @@ section {
 .clickable {
     cursor: pointer;
     text-decoration: underline;
+}
+#story-of-us h4, #our-communities h4, #business-development h4, #actuary-risk h4, #organizational-strategy h4 {
+  margin-bottom:1rem;
+}
+.health-and-productivity-page .white-box-content h1 div.sub-header {
+  font-weight: normal;
 }
 
 @media (min-width: 1200px) {

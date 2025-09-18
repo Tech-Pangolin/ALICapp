@@ -22,8 +22,9 @@ const Home = () => {
       {expanded && <Timeline setExpanded={setExpanded} expanded={expanded} />}
 
       {/* ======= Gradient Box Section ======= */}
-      <GradientBox line1Text="BUILT ON RESILIENCE," line2Text="ANCHORED BY PROGRESS."/>
-
+      <div className="mt-5">
+        <GradientBox line1Text="BUILT ON RESILIENCE," line2Text="ANCHORED BY PROGRESS." />
+      </div>
       {/* ======= Cards Section ======= */}
       <CardsSection />
 
@@ -33,7 +34,7 @@ const Home = () => {
       {/* ======= Featured Stories Section ======= */}
       <FeaturedStoriesSection />
 
-      
+
     </>
   );
 };

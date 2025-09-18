@@ -13,6 +13,9 @@
   color: #FFF;
   cursor: pointer
 }
+.photo-card .card-title.h5 {
+  font-weight: bold;
+} 
 
 .photo-card .body p {
   color: #FFF;

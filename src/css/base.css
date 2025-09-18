@@ -21,6 +21,11 @@
     color: var(--primary-gold);
 }
 
+b,strong{
+    font-family: var(--ss-font), sans-serif;
+    color: var(--primary-blue);
+}
+
 p,
 h1,
 h2,

@@ -16,19 +16,8 @@ interface PhotoCardProps {
 
 const PhotoCard: React.FC<PhotoCardProps> = ({ name, title, email = '', image, bio}) => {
     const [expand, setExpand] = React.useState(false);
-    const [_, setIsMobile] = React.useState(false);
     
-    React.useEffect(() => {
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-        
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
-        
-        return () => window.removeEventListener('resize', checkMobile);
-    }, []);
-    
+   
     function expandBio() {
         setExpand(!expand);
     }

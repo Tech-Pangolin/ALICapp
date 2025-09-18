@@ -70,7 +70,7 @@ const ChildReads: React.FC = () => {
 
     return (
         <>
-            <ContentPageHeader src="/img/solutions/livebalanced/financialwellnessheader.png" title="Essential Reads for Every Child" />
+            <ContentPageHeader src="/img/reads/readsheader.png" title="Essential Reads for Every Child" />
             <Container data-aos="fade-up">
                 <h4>Making Reading Fundamental</h4>
                 <Row>

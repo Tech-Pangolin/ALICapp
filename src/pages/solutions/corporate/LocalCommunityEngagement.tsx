@@ -15,7 +15,7 @@ const LocalCommunityEngagement: React.FC = () => (
         </Col>
       </Row>      
       <Row>
-        <Col>
+        <Col style={{ marginTop: '5rem' }}>
         <FeaturedStoriesSection showTitle={true} img1="/img/solutions/localengagement-fs1.png" img2="/img/solutions/localengagement-fs2.png" img3="/img/solutions/localengagement-fs3.png" img4="/img/solutions/localengagement-fs4.png" />
         </Col>
       </Row>

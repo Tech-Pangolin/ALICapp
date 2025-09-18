@@ -30,7 +30,7 @@ const OurCommunities: React.FC = () => {
                             <li>Houston</li>
                             <li>New York City</li>
                             <li>Detroit</li>
-                            <li><strong>More to come!</strong></li>
+                            <li><span className='subheader'><strong>More to come!</strong></span></li>
                         </ul>
                     </Col>
                 </Row>
